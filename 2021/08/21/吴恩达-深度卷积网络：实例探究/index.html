@@ -6,15 +6,40 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://zz-m-918.github.io">
-  <title>Archives: 2021/8 | ZSH</title>
+  <title>吴恩达-深度卷积网络：实例探究 | ZSH</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="ZSH">
-<meta property="og:url" content="https://zz-m-918.github.io/archives/2021/08/index.html">
+  <meta name="description" content="深度神经网络：实例探究">
+<meta property="og:type" content="article">
+<meta property="og:title" content="吴恩达-深度卷积网络：实例探究">
+<meta property="og:url" content="https://zz-m-918.github.io/2021/08/21/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/index.html">
 <meta property="og:site_name" content="ZSH">
+<meta property="og:description" content="深度神经网络：实例探究">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210819173119447.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210819173833164.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210819175148276.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210819183242172.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210819195010069.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210819195130401.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210819195928867.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210819221058951.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210820153745789.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210820154051473.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210820154726755.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210820155457490.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210820160204836.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210820160343389.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210821191052209.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210821192124409.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210821195620864.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210821201005110.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210821201136382.png">
+<meta property="article:published_time" content="2021-08-21T12:36:15.000Z">
+<meta property="article:modified_time" content="2021-08-21T12:38:23.642Z">
 <meta property="article:author" content="ZSH">
+<meta property="article:tag" content="吴恩达深度学习">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://zz-m-918.github.io/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210819173119447.png">
   
     <link rel="alternative" href="/atom.xml" title="ZSH" type="application/atom+xml">
   
@@ -150,36 +175,180 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-吴恩达-深度卷积网络：实例探究" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      吴恩达-深度卷积网络：实例探究
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/08/21/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/" class="archive-article-date">
+
+        
+        <a href="/2021/08/21/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/" class="archive-article-date">
   	<time datetime="2021-08-21T12:36:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-21</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/21/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/">吴恩达-深度卷积网络：实例探究</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1><span id="深度神经网络实例探究">深度神经网络：实例探究</span></h1><span id="more"></span>
+<!-- toc -->
+<ul>
+<li><a href="#1为什么要进行实例探究">1.为什么要进行实例探究</a></li>
+<li><a href="#2经典网络">2.经典网络</a><ul>
+<li><a href="#lenet-5">LeNet-5</a></li>
+<li><a href="#alexnet">AlexNet</a></li>
+<li><a href="#vgg-16">VGG-16</a></li>
+</ul>
+</li>
+<li><a href="#3残差网络">3.残差网络</a></li>
+<li><a href="#4残差网络为什么有用">4.残差网络为什么有用</a></li>
+<li><a href="#5networks-in-networks-and-1x1卷积">5.Networks in Networks and 1x1卷积</a></li>
+<li><a href="#6inception-network-motivation">6.Inception Network Motivation</a></li>
+<li><a href="#7inception-network">7.Inception Network</a></li>
+<li><a href="#8使用开源的实现方案">8.使用开源的实现方案</a></li>
+<li><a href="#9迁移学习">9.迁移学习</a></li>
+<li><a href="#10数据扩充">10.数据扩充</a></li>
+<li><a href="#11计算机视觉现状">11.计算机视觉现状</a></li>
+</ul>
+<!-- tocstop -->
+<p>课程来源：吴恩达老师 Deeplearning课程 卷积神经网络部分</p>
+<p><a target="_blank" rel="noopener" href="https://mooc.study.163.com/learn/2001281004?tid=2403042001#/learn/content?type=detail&amp;id=2403379456">卷积神经网络 - 网易云课堂 (163.com)</a></p>
+<h2><span id="1为什么要进行实例探究">1.为什么要进行实例探究</span></h2><p>本周课程主要通过几个经典CNN案例，帮助理解知识并训练实际的模型。</p>
+<p>经典网络：</p>
+<ul>
+<li>LeNet-5</li>
+<li>AlexNet</li>
+<li>VGG</li>
+</ul>
+<p>除了这些性能较好的CNN模型之外还会介绍ResNet，其特点是可以构建很深的神经网络。同时还会介绍Inception Netural Network</p>
+<h2><span id="2经典网络">2.经典网络</span></h2><h3><span id="lenet-5">LeNet-5</span></h3><p>  LeNet-5是1998年被提出，是第一个成功应用于数字识别问题的卷积神经网络，其经典的结构包括Conv layer，Pool layer， FC layer，顺序一般是Conv layer-&gt;Pool layer-&gt;Conv layer-&gt;Pool layer-&gt;FC layer-&gt;output,最后就输出预测结果（如果是预测数字识别就是十个结果中的一个），经典结构如下图所示：</p>
+<p><img src="/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210819173119447.png" alt></p>
+<p>  上述图中的模型大约包含了6万个参数，这与当前的一些神经网络比起来相对较小，需要注意的是，在提出这一网络的时候使用较多的还是Average pool，而现在使用较多的是max pool，且当时使用的激活函数一般为Sigmoid和tanh，而现在较为流行的是ReLU。且由于当时没有使用padding，因此随着网络深度的增加，图片的尺寸在不断减小。</p>
+<h3><span id="alexnet">AlexNet</span></h3><p>AlexNet模型是由Alex Krizhevsky、Ilya Sutskever和Geoffrey Hinton共同提出的，其结构如下所示：</p>
+<p><img src="/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210819173833164.png" alt></p>
+<p>这种网络和LeNet有很多相似之处，但是这一网络明显较大，具有大约6000万个参数，在用于训练图像和数据集的时候，ALexNet能处理非常相似的基本构造模块，这些模块汪往往包含大量的隐藏单元和数据。同时ALexNet比LeNet更优秀的一点在于其使用了tanh激活函数。</p>
+<p>以下是读原文的时候需要注意的点：</p>
+<ul>
+<li>在这一网络提出的时候GPU计算还很慢，因此论文中采用的是将网络拆分到两个GPU上的方法</li>
+<li>经典AlexNet还存在一个LRN层（局部响应归一层），但是使用等并不多。这一层的主要思想就是对于局部进行归一化，主要动机在于对于13*13中的每一个通道我们可能不需要使用太多的高激活神经元，但是经研究意义不大。</li>
+</ul>
+<h3><span id="vgg-16">VGG-16</span></h3><p>需要注意的是这一网络没有大量的超参数，优点在于简化了神经网络结构，其经典结构如下图所示：</p>
+<p><img src="/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210819175148276.png" alt></p>
+<p>这一网络大约有1.38亿参数，相对来说很大，但是结构并不复杂，且非常规整，是由多个卷积层后跟着一个池化层的接班结构构成的，相对来说较为一致，大师主要缺点是需要训练的特征的数量很大。<strong>注意：图像缩小的比例和通道增加的比例是有规律的。</strong></p>
+<h2><span id="3残差网络">3.残差网络</span></h2><p>如果神经网络层数越多，网络越深，源于梯度消失和梯度爆炸的影响，整个模型难以训练成功。解决的方法之一就是使用跳远连接，也就是跳过下一层或者下几层的连接，隔层相连，弱化每层之间的连接关系，从而达到减少梯度消失或者梯度爆炸的影响。</p>
+<p>残差网络主要由残差块构成，残差块的基本结构如下：</p>
+<p><img src="/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210819183242172.png" alt></p>
+<p>上述残差块跳过了第$l+1$层，直接将l层与$l+2$​层相连。具体表达式如下：</p>
+<script type="math/tex; mode=display">
+Linear:        Z^{[l+1]}=W^{[l+1]}a^{[l]}+b^{[l+1]}</script><script type="math/tex; mode=display">
+ReLU:        a^{[l+1]}=g(z^{[l+1]})</script><script type="math/tex; mode=display">
+Linear:        Z^{[l+2]}=W^{[l+2]}a^{[l+1]}+b^{[l+2]}</script><script type="math/tex; mode=display">
+ReLU:        a^{[l+2]}=g(z^{[l+2]}+a^{[l]})</script><p>需要注意的是存在差异的就是最后一个激活函数，正常情况下没有a的一项，不是用残差网络的时候最后一项应该是：$a^{[l+2]}=g(z^{[l+2]})$使用残差网络之后$a^{[l]}$直接隔层与下一层的线性输出相连，与$z^{[l+2]}$共同通过激活函数输出$a^NaN$​​。</p>
+<p>实验表明<strong>使用残差块可以训练更深的神经网络</strong>。为了将不使用残差块的网络（plain Network）改变为残差网络，需要做的就是加上所有的跳远连接，如下图所示：</p>
+<p><img src="/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210819195010069.png" alt></p>
+<p>与Plain Network相比，Residual Network能够训练更深层的神经网络，有效避免发生发生梯度消失和梯度爆炸。从下面两张图的对比中可以看出，随着神经网络层数增加，Plain Network实际性能会变差，training error甚至会变大。然而，Residual Network的训练效果却很好，training error一直呈下降趋势。<br><img src="/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210819195130401.png" alt></p>
+<p>图片来源：<a target="_blank" rel="noopener" href="https://blog.csdn.net/red_stone1/article/details/78769236">Coursera吴恩达《卷积神经网络》课程笔记（2）— 深度卷积模型：案例研究_红色石头的专栏-CSDN博客</a></p>
+<h2><span id="4残差网络为什么有用">4.残差网络为什么有用</span></h2><p>首先来看一个例子：</p>
+<p><img src="/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210819195928867.png" alt></p>
+<p>假设输入x通过多层神经网络之后输出值为$a^{[l]}$,$a^{[l]}$经过一个残差神经网络之后得到输出结果$a^{[l+2]}$,根据上一节对于$a^{[l+2]}$的推导可以得出如下等式：</p>
+<script type="math/tex; mode=display">
+a^{[l+2]}=g(z^{[l+2]}+a^{[l]})=g(W^{[l+2]}a^{[l+1]}+b^{[l+2]}+a^{[l]})</script><p>也就是说，即使发生了梯度消失，也就是说假设$W^{[l+2]}\approx0,b^{[l+2]}\approx0$也能建立$a^{[l+2]}$和$a^{[l]}$之间的线性关系，也就是$a^{[l+2]}$=$a^{[l]}$，这其实就是identity function（<strong>需要注意的是残差网络能较好的模拟恒等变换</strong>）。我们直接把$a^{[l]}$和$a^{[l+2]}$相连，相当于忽略了$a^{[l]}$之后的两层神经层，也就是说减弱了某些神经层之间的关系，实现的是隔层之间的线性传播而不是一味追求非线性关系。且从性能上来说在任意位置添加的两层额外的残差块并不会影响性能。</p>
+<p>而如果残差块中确实存在非线性关系那么也会正常传递，不会影响效果。</p>
+<p><strong>注</strong>：上述中我们的$a^{[l+2]}$和$a^{[l]}$的维度都是一样的，如果不一样话可以引入一个矩阵$W_s$,将其与$a^{[l]}$相乘，使得乘积得到的结果的维度和$a^{[l+2]}$是一致的。这一矩阵$W_s$​的获取方法有两种：1.作为参数训练；2.固定参数，不需要训练，乘积只是达到截断或者补零的效果。</p>
+<p>下图是传统CNN引入残差网络之后的结构：</p>
+<p><img src="/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210819221058951.png" alt></p>
+<p>残差网络更多有效之处可查看如下链接：</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/80226180">残差网络解决了什么，为什么有效？ - 知乎 (zhihu.com)</a></p>
+<h2><span id="5networks-in-networks-and-1x1卷积">5.Networks in Networks and 1x1卷积</span></h2><p>MIn Lin，Qiang Chen等人提出的1x1卷积也称为Networks in Networks，主要的特点就是每一个filter的维度都是1x1，也就是说对于单个filter来说卷积操作和乘积操作是一致的，这种情况卷积的意义并不是很大，可以看如下例子：</p>
+<p><img src="/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210820153745789.png" alt></p>
+<p>但是如果图片的通道不止一个，filter也不止一个的话按情况就不一样了，相当于遍历某所有通道的信息，类似于全连接层的作用。，具体的例子如下图所示，相对比较好理解：</p>
+<p><img src="/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210820154051473.png" alt></p>
+<p><strong>注</strong>：使用1x1卷积可以减小卷积的通道数，只需要控制卷积的filter的数量即可，详细例子可见下图：</p>
+<p><img src="/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210820154726755.png" alt></p>
+<h2><span id="6inception-network-motivation">6.Inception Network Motivation</span></h2><p>之前我们使用的卷积网络的filter的维数都是一定的，例如1x1,3x3等，Inception网络的主要思想就是在一个图片上使用多种维度的filter，将多种维度的filter进行拼接得到我们最终需要的结果（<strong>注：需要注意必须使用same pool</strong>）。示例图如下：</p>
+<p><img src="/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210820155457490.png" alt></p>
+<p>这一网络的关键点就在于使用不同尺寸和功能的filter的组合，将CONV和POOL层混合在一起，将所哟肚饿功能组合输出，再由神经网络学习参数来选择最好的模块。但是需要注意的是这样操作势必带来计算量大的问题，如下图：</p>
+<p><img src="/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210820160204836.png" alt></p>
+<p>下图中这一个卷积层需要的计算量是28x28x192x28x28x32=120million，可以从这里看出如果不使用适当的手段的话每一层的计算量都会很大，因此可以使用1x1卷积来减少通道数量进而减少计算量，具体操作方法图如下：</p>
+<p><img src="/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210820160343389.png" alt></p>
+<p>我们通常将1x1卷积层称为“瓶颈层（bottleneck layer）”，引入该层之后，总共的计算量变为：28x28x16x29x29x192+28x28x16+28x28x32=12.4million，可见在减少计算量的方面还是很有效果的，减少了近90%的计算量。由此可见，1x1卷积可以有效减少卷积层的计算量。</p>
+<h2><span id="7inception-network">7.Inception Network</span></h2><p>本节的主要内容是将上述的模块组合成一个真正的Inception网络，下图就是一个简单的Inception网络中某一层的结构的示意：</p>
+<p><img src="/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210821191052209.png" alt></p>
+<p>其中可以发现最下方的池化层如果不进行一定的操作可能会导致最后连接后的结果中很大一部分通道都是池化的结果，因此使用一个1x1卷积层进行减少通道的处理。</p>
+<p>在卷积完成之后将所有的结果连接在一起就得到了我们这一层需要的结果。当我们把多个简单的模块组合到一起之后就得到了如下图所示的Inception网络的结构，其中每一个小部分都与上一张图的结构相类似。</p>
+<p><img src="/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210821192124409.png" alt></p>
+<p>在原文中还是用了一些分支，也就是上图中圈出的部分，这些分支就是通过隐藏层来进行预测，将分支的结果连接一个Softmax之后输出一个预测的结果，保证了隐藏层中也有效参加了特征的计算，有利于防止发生过拟合。</p>
+<h2><span id="8使用开源的实现方案">8.使用开源的实现方案</span></h2><p>由于某些神经网络的细节较难复制，例如学习率，衰减率等都有可能对最终的结果造成影响，因此可以尝试使用论文作者的源码来辅助进行实验。因此可以从github上查找一些开源的资源辅助实现，具体github使用不再赘述。</p>
+<h2><span id="9迁移学习">9.迁移学习</span></h2><p>对于一个任务的训练来说，如果使用一定已经训练好的权重作为预训练再根据自己需要的功能进行调整能得到较好的效果。</p>
+<p>例如，假设需要建立一个检测器来检测一只猫，假设Tigger和Misty是两只猫，忽略两只猫出现在一张图片里的情况，需要输出的是图片中的猫是Tigger或是Misty或是Neither，因此假设我们下载了一个网络和它的权重，假设原网络最后需要输出1000个类别中的一个，我们或许只需要修改和训练最后的softmax层即可，将其从输出1000个结果改变为输出3个结果，具体结构如下图所示：</p>
+<p><img src="/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210821195620864.png" alt></p>
+<p>如果有一个较大量的标定数据集，可以考虑冻结较少的层，训练较多的层，也就是可以把softmax层之前几层的参数也加入训练，也就是说如果有足够多的数据，可以考虑不仅仅训练softmax层，而是训练较多的层。</p>
+<p>之所以能够进行迁移学习，是因为<strong>神经网络的浅层部分能够检测出许多图片固有的特征</strong>，例如图像的边缘、曲线等，在都是处理图片的情况下，是有相同的地方的，一个已经训练好的神经网络已经帮我们实现如何提取图片中的部分有效特征了，因此即使我们需要训练的神经网络样本数目少，仍然可以根据第一个神经网络结构和权重系数得到健壮性好的模型。</p>
+<h2><span id="10数据扩充">10.数据扩充</span></h2><p>动机：在很多计算机视觉的训练中训练数据是不够的。</p>
+<p><strong>常见的数据扩充技巧</strong>：</p>
+<ul>
+<li><p>Mirroring</p>
+</li>
+<li><p>Random Cropping</p>
+<p><img src="/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210821201005110.png" alt></p>
+</li>
+</ul>
+<p>另一种方式是color shifting</p>
+<p><img src="/images/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/image-20210821201136382.png" alt></p>
+<p>上述图片是随机修改RGB的值，还可以使用PCA颜色增强方法（例如图片中呈现紫色，那么就是红色和蓝色含量较多，绿色较少，这种方法就是大幅度增减红色和蓝色的量，对绿色的量改变不大，保持总体颜色一致）对RGB进行修改。</p>
+<p><strong>注</strong>：在构建大型神经网络的时候，data augmentation和training可以由两个不同的线程来进行。</p>
+<h2><span id="11计算机视觉现状">11.计算机视觉现状</span></h2><p>大多数机器学习任务可以看成是在拥有较小量数据的情况下需要对将来可能出现的较大量的数据进行处理的任务。如果拥有较多的数据，人们倾向于使用较简单的算法和较少的人工参与；然而在数据较少的时候人们可能需要较多的人工参与（复杂的网络结构等）。</p>
+<p>学习算法的只是来源主要有：1、标注信息，2.人工参与（网络结构等）</p>
+<p>提高benchmarks/winning competition的要点：</p>
+<ul>
+<li><p>集成</p>
+</li>
+<li><p>Multi-crop（在多个版本的测试集上运行算法并取平均结果）</p>
+</li>
+</ul>
+<p>但是由于以上两种方法计算成本较大，一般不适用于实际项目开发。</p>
+<ul>
+<li><p>使用已经提出的网络的架构</p>
+</li>
+<li><p>使用开源数据</p>
+</li>
+<li><p>使用预训练模型，并进行微调</p>
+</li>
+</ul>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -191,133 +360,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://zz-m-918.github.io/2021/08/21/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/08/15/PyTorch-%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B/" class="archive-article-date">
-  	<time datetime="2021-08-15T13:24:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-15</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2021/08/15/PyTorch-%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">PyTorch-线性模型</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/15/PyTorch-%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B/">PyTorch-线性模型</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/08/15/PyTorch-Overview/" class="archive-article-date">
-  	<time datetime="2021-08-15T13:23:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/15/PyTorch-Overview/">PyTorch-Overview</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/08/15/%E5%90%B4%E6%81%A9%E8%BE%BE-CNN/" class="archive-article-date">
-  	<time datetime="2021-08-15T12:33:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/15/%E5%90%B4%E6%81%A9%E8%BE%BE-CNN/">吴恩达-卷积神经网络</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">吴恩达深度学习</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -340,8 +482,8 @@
 	var yiliaConfig = {
 		mathjax: [object Object],
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
