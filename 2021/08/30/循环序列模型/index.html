@@ -6,15 +6,34 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://zz-m-918.github.io">
-  <title>Archives: 2021/8 | ZSH</title>
+  <title>循环序列模型 | ZSH</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="ZSH">
-<meta property="og:url" content="https://zz-m-918.github.io/archives/2021/08/index.html">
+  <meta name="description" content="循环序列模型课程来源：吴恩达老师 Deeplearning课程 卷积神经网络部分 卷积神经网络 - 网易云课堂 (163.com) [TOC] 1.为什么选择序列模型序列模型应用领域  语音识别 音乐生成问题：生成一段音乐 情感分类：判断一段话的情感 DNA序列分析 机器翻译：对一种语言进行翻译 视频行为识别：识别一段视频中的行为 命名实体识别  详细图片如下：  注意：这些序列模型基本都属于监督">
+<meta property="og:type" content="article">
+<meta property="og:title" content="循环序列模型">
+<meta property="og:url" content="https://zz-m-918.github.io/2021/08/30/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/index.html">
 <meta property="og:site_name" content="ZSH">
+<meta property="og:description" content="循环序列模型课程来源：吴恩达老师 Deeplearning课程 卷积神经网络部分 卷积神经网络 - 网易云课堂 (163.com) [TOC] 1.为什么选择序列模型序列模型应用领域  语音识别 音乐生成问题：生成一段音乐 情感分类：判断一段话的情感 DNA序列分析 机器翻译：对一种语言进行翻译 视频行为识别：识别一段视频中的行为 命名实体识别  详细图片如下：  注意：这些序列模型基本都属于监督">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210828200404560-16303166538641.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210828203151496-16303166538652.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210828203807439-16303166538654.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210828204332804-16303166538653.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210828204332804-16303166538653.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210830174507728.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210830174528932.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210830174550939.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210830174602400.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210830174622835.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210830174641150.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210830174653524.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210830174711699.png">
+<meta property="article:published_time" content="2021-08-30T09:42:52.000Z">
+<meta property="article:modified_time" content="2021-08-30T09:47:17.458Z">
 <meta property="article:author" content="ZSH">
+<meta property="article:tag" content="吴恩达深度学习">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://zz-m-918.github.io/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210828200404560-16303166538641.png">
   
     <link rel="alternative" href="/atom.xml" title="ZSH" type="application/atom+xml">
   
@@ -150,36 +169,212 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-循环序列模型" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      循环序列模型
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/08/30/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/" class="archive-article-date">
+
+        
+        <a href="/2021/08/30/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/" class="archive-article-date">
   	<time datetime="2021-08-30T09:42:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-30</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/30/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/">循环序列模型</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1><span id="循环序列模型">循环序列模型</span></h1><p>课程来源：吴恩达老师 Deeplearning课程 卷积神经网络部分</p>
+<p><a target="_blank" rel="noopener" href="https://mooc.study.163.com/learn/2001281004?tid=2403042001#/learn/content?type=detail&amp;id=2403379456">卷积神经网络 - 网易云课堂 (163.com)</a></p>
+<p>[TOC]</p>
+<h2><span id="1为什么选择序列模型">1.为什么选择序列模型</span></h2><p>序列模型应用领域</p>
+<ul>
+<li>语音识别</li>
+<li>音乐生成问题：生成一段音乐</li>
+<li>情感分类：判断一段话的情感</li>
+<li>DNA序列分析</li>
+<li>机器翻译：对一种语言进行翻译</li>
+<li>视频行为识别：识别一段视频中的行为</li>
+<li>命名实体识别</li>
+</ul>
+<p>详细图片如下：</p>
+<p><img src="/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210828200404560-16303166538641.png" alt="image-20210828200404560" style="zoom:25%;"></p>
+<p>注意：这些序列模型基本都属于监督式学习，在一些问题中X和Y都是序列模型，但是在一些问题中只有X和Y中的一个是序列模型，且即使都是序列模型长度也可能不一样。</p>
+<h2><span id="2数学符号">2.数学符号</span></h2><p>建立序列模型之前，首先需要定义一些符号：</p>
+<p>下面以命名实体识别为例，介绍序列模型的命名规则。示例语句x为：<strong>Harry Potter and Hermione Granger invented a new spell. </strong>  需要输出的结果是句中的每一部分是否是人名。</p>
+<p>由于输入x是一个9个单词的句子，因此输出y应该是一个1x9的向量，向量的每一个元素表示句中对应位置的单词是否是人名，如果是1表示是人名一部分，如果是0表示不是人名的一部分。因此输出可以表示为：</p>
+<script type="math/tex; mode=display">
+y:\begin{bmatrix}
+1,1,0,1,1,0,0,0,0
+\end{bmatrix}</script><p>一般约定使用$x^{<t>}$​​序列输入部分对应位置的值，$y^{<t>}$​​​表示序列对应位置的输出，使用$T_y$​表示输出序列长度，需要满足$1\le t \le T_y$​​​。</t></t></p>
+<p>之前我们一般使用$x^{(i)}$​​​​​表示第i个训练样本，沿用此命名方式，我们一般使用$x^{(i)[t]}$​​​表示第i个训练样本中的第t个元素，由于不同训练样本的输入序列长度可能存在不同，因此我们使用$T_x^{(i)}$​​表示第i个训练样本的输入序列长度，输出序列同理。</p>
+<p>接下来我们需要考虑的是我们如何表示句子中的某一个单词，例如例子中的第一个词Harry。首先我们需要做一个词表，有的时候也叫字典，尽可能包含更多的词汇。例如一个包含10000个词汇的词汇库为：</p>
+<script type="math/tex; mode=display">
+\begin{bmatrix}
+a,aaron……and……harry……Potter……zulu
+\end{bmatrix}</script><p>假设在这个词表中harry处于第4075个位置，Potter在6830，需要注意的是在现代NLP的一般商用场景使用30000~50000词的词典较为常见，甚至较大的可能出现百万词的词典。在建立词典的过程中可以遍历英文前N个常用词来建立词典。</p>
+<p>接下来使用one-hot编码，也就是例句中的每个单词$x^{<t>}$都可以表示成10000 x 1的向量，词汇表中与对词$x^{<t>}$应的位置为1，其它位置为0。该词$x^{<t>}$​​为one-hot向量。值得一提的是如果出现词汇表之外的单词，可以使用UNK或其他字符串来表示。<strong>这样表示的目的是在输入X和输出Y之间建立一个映射。</strong></t></t></t></p>
+<h2><span id="3循环神经网络模型">3.循环神经网络模型</span></h2><p>现在讨论如何建立模型来建立X到Y的映射。</p>
+<p>首先我们讨论为什么不使用标准神经网络，使用标准神经网络结构如下：</p>
+<p><img src="/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210828203151496-16303166538652.png" alt="image-20210828203151496" style="zoom:25%;"></p>
+<p>主要存在两个问题:</p>
+<ul>
+<li>每一个样本中的输入和输出长度可能都不一样，造成模型难以统一。解决办法之一是设定一个最大序列长度，对每个输入和输出序列补零并统一到最大长度。但是这种做法实际效果并不理想。</li>
+<li>单纯的神经网络模型并不共享在文本不同位置学习到的信息。举例说明，假设在位置1出现的Harry可能是人名的一部分，在其他位置出现Harry的时候也识别为人名的一部分，这就是共享信息，但是，上图所示的网络不具备共享特征的能力。值得一提的是，共享特征还有助于减少神经网络中的参数数量，一定程度上减小了模型的计算复杂度。例如上图所示的标准神经网络，假设每个$x^{<t>}$扩展到最大序列长度为100，且词汇表长度为10000，则输入层就已经包含了100 x 10000个神经元了，权重参数很多，运算量将是庞大的。</t></li>
+</ul>
+<p>那么什么是循环神经网络呢？循环神经网络的基本结构如下：</p>
+<p><img src="/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210828203807439-16303166538654.png" alt="image-20210828203807439" style="zoom:25%;"></p>
+<p>我们将每一层的激活值$a^{<i>}$作为下一层的输入，因此为了顺利进行，我们在第一层也需要一个输入$a^{<0>}$​，这个向量是我们编造的，一般是零向量，也可以是随机向量。</0></i></p>
+<p>循环神经网络从左到右扫描数据，同时每个时间步的参数也是共享的，RNN模型有三种权重系数，分别是$W_{ax},W{aa},W{ya}$​，详细作用部分见下图，且在同一个模型的同一位置参数是共享的，也就是一样的。</p>
+<p><img src="/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210828204332804-16303166538653.png" alt="image-20210828204332804" style="zoom:25%;"></p>
+<p>图片来源：<a target="_blank" rel="noopener" href="https://blog.csdn.net/red_stone1/article/details/79446105">https://blog.csdn.net/red_stone1/article/details/79446105</a></p>
+<p> 值得一提的是，以上所述的RNN为单向RNN，即按照从左到右顺序，单向进行，$\hat y^{<t>}$只与左边的元素有关。但是，有时候也$\hat y^{<t>}$可能与右边元素有关。例如下面两个句子中，单凭前三个单词，无法确定“Teddy”是否为人名，必须根据右边单词进行判断。</t></t></p>
+<p>He said, “Teddy Roosevelt was a great President.”</p>
+<p>He said, “Teddy bears are on sale!”</p>
+<p>因此，有另外一种RNN结构是双向RNN，简称为BRNN。$\hat y^{<t>}$与左右元素均有关系，我们之后再详细介绍。</t></p>
+<p>RNN的前向传播是这样进行的：$a^{<t>}=g(W_{aa}a^{<t-1>}+W_{ax}x^{t}+b_a)$​​接着计算每一层的预测输出：$\hat y^{<t>}=g_2(W_{ya}a^{t}+b_y)$​​​，第一个式子中的激活函数g一般选择tanh或Relu，而对于第二个式子中$g_2$​可以使用sigmoid或softmax，取决于输出的y的种类​​。</t></t-1></t></p>
+<p>为了网络传播的方便，需要对式子进行简化：</p>
+<script type="math/tex; mode=display">
+W_a=\begin{bmatrix}
+W_{aa}  W_{ax}
+\end{bmatrix}</script><script type="math/tex; mode=display">
+\begin{bmatrix}
+a^{<t-1>},x^{<t>}
+\end{bmatrix}
+=\begin{bmatrix}
+a^{<t-1>}\\
+x^{<t>}
+\end{bmatrix}</script><p>则有：</p>
+<script type="math/tex; mode=display">
+a^{<t>}=g(W_a\begin{bmatrix}
+a^{<t-1>},x^{<t>}
+\end{bmatrix}+b_a)</script><p>对计算预测值的式子同样进行操作：</p>
+<script type="math/tex; mode=display">
+\hat y^{<t>}=g(W_ya^{<t>}+b_y)</script><h2><span id="4通过时间的反向传播">4.通过时间的反向传播</span></h2><p>对于前向传播的使用已经在上一个视频中介绍了，而反向传播方向与前向传播相反，前向传播简单示意图如下：</p>
+<p><img src="/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210828204332804-16303166538653.png" alt="image-20210828204332804" style="zoom:25%;"></p>
+<p>得到的针对单个单词的损失函数如下：</p>
+<script type="math/tex; mode=display">
+L^{<t>}（\hat y^{<t>},y^{<t>})=-y^{<t>}log(\hat y^{<t>})-(1-y^{<t>})log(1-\hat y^{<t>})</script><p>整个序列的损失函数如下：</p>
+<script type="math/tex; mode=display">
+L(\hat y,y)=\sum_{t=1}^{T_y}L^{<t>}（\hat y^{<t>},y^{<t>})</script><p>然后，反向传播（Backpropagation）过程就是从右到左分别计算L(y^,y)L(y^,y)对参数$W_a,W_y,b_a,b_y$​​的偏导数。思路与做法与标准的神经网络是一样的。一般可以通过成熟的深度学习框架自动求导，例如PyTorch、Tensorflow等。这种从右到左的求导过程被称为Backpropagation through time。</p>
+<h2><span id="5不同类型的循环神经网络">5.不同类型的循环神经网络</span></h2><p>上述我们介绍的RNN中输入与输出的长度$T_x,T_y$​​总是相等的，但是实际使用中并不总是这样，这节课将介绍更多的RNN结构。RNN结构有如下几种：</p>
+<ul>
+<li>Many to many: $T_x=T_y$</li>
+<li>Many to many: $T_x\neq T_y$</li>
+<li>Many to one ：​$T_x &gt; 1,T_y=1$</li>
+<li>ont to many: $T_x =1,T_y&gt;1$​</li>
+<li>one to one :$T_x =1,T_y=1$</li>
+</ul>
+<p>各种模型的详细可视化模型如下：</p>
+<p><img src="/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210830174507728.png" alt="image-20210830174507728" style="zoom:25%;"></p>
+<h2><span id="6语言模型和序列生成">6.语言模型和序列生成</span></h2><p>在自然语言处理中，构建语言模型是最基础的，也是最重要的工作，而使用RNN是其中的一种方式。</p>
+<p>什么是语言模型呢？举个简单的例子如下，下面是一个语音识别的翻译例子：</p>
+<ul>
+<li><strong>The apple and pair salad.</strong></li>
+<li><strong>The apple and pear salad.</strong></li>
+</ul>
+<p>显然在正常情况下第二句更有可能是真正的句子，真实使用中选择出第二个句子的方法就是使用一个语言模型，它能计算出这两句话各自的的可能性，例如计算出第一句话的可能性是$3.2\times 10^{-13}$，而计算出第二句话的概率是$5.7\times 10^{-10}$​这样就会选择第二个句子，因为概率比第一个句子高1000倍左右。​</p>
+<p>语言模型做的基本任务就是输入一个文本序列，估计某个句子序列中各个单词出现的可能性，计算得到的结果为：$P(y^{<1>},y^{<2>},……,y^{<t_y>})$</t_y></2></1></p>
+<p>为了训练出这样一个模型，首先需要一个包含很大的英文文本的语料库，或者其他的语言。训练集由大量的单词语句语料库（corpus）构成。然后，对corpus的每句话进行切分词（tokenize）。做法就跟第2节介绍的一样，建立vocabulary，对每个单词进行one-hot编码。例如下面这句话：</p>
+<p><strong>Cats average 15 hours of sleep a day.</strong></p>
+<p>需要注意的是要定义句子的结尾，一般是加上一个<eos>在句子结尾表示句子结束。使用的方法就是one-hot编码，不再赘述。另外，若语句中有词汇表中没有的单词，用<strong>&lt; UNK &gt;</strong>表示。在tokenize之后进行模型的构建。RNN结构如下：</eos></p>
+<p><img src="/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210830174528932.png" alt="image-20210830174528932" style="zoom:25%;"></p>
+<p>语言模型的RNN结构如上图所示，$x^{<1>}$和$a^{<0>}$均为零向量。Softmax输出层$y^{<1>}$​表示出现该语句第一个单词的概率，softmax输出层$y^{<2>}$​表示在第一个单词基础上出现第二个单词的概率，即条件概率，以此类推，最后是出现&lt; EOS &gt;的条件概率。</2></1></0></1></p>
+<p>单个单词损失函数为$L(\hat y^{<t>,y^{<t>}})=- \sum y_i^{<t>}log \hat y_i^{<t>}$，这既是softmax损失函数。总体损失函数为$L=\sum L^{<t>}(\hat y^{<t>},y^{<t>})$​。对语料库的每条语句进行RNN模型训练，最终得到的模型可以根据给出语句的前几个单词预测其余部分，将语句补充完整。例如给出<strong>“Cats average 15”</strong>，RNN模型可能预测完整的语句是<strong>“Cats average 15 hours of sleep a day.”</strong>。</t></t></t></t></t></t></t></p>
+<p>最后补充一点，整个语句出现的概率等于语句中所有元素出现的条件概率乘积。例如某个语句包含$y^{<1>},y^{<2>},y^{<3>}$​则整个语句出现的概率为：</3></2></1></p>
+<script type="math/tex; mode=display">
+P(y^{<1>},y^{<2>},y^{<3>})=P(y^{<1>})P(y^{<2>}|y^{<1>})P(y^{<3>}|y^{<1>},y^{<2>})</script><h2><span id="7对新序列采样">7.对新序列采样</span></h2><p>在训练了一个新的语言模型之后，我们就需要了解这个模型学到了什么。一种非正式的方法就是进行一次新序列采样。一个序列模型模拟了任意序列单词出现的概率，我们要做的就是对这个概率分布进行采样。</p>
+<p>首先，从第一个元素输出$y^{<1>}$​的softmax分布中随机选取一个word作为新语句的首单词。然后，$y^{<1>}$​作为$x^{<2>}$​，得到$y^{<1>}$​的softmax分布。从中选取概率最大的word作为$y^{<2>}$​，继续将$y^{<2>}$​作为$x^{<3>}$​​，以此类推。直到产生&lt; EOS &gt;结束符，则标志语句生成完毕。当然，也可以设定语句长度上限，达到长度上限即停止生成新的单词。最终，根据随机选择的首单词，RNN模型会生成一条新的语句。</3></2></2></1></2></1></1></p>
+<p>需要注意的是，如果不希望新的语句中包含<strong>&lt; UNK &gt;</strong>标志符，可以在每次产生<strong>&lt; UNK &gt;</strong>时重新采样，直到生成非<strong>&lt; UNK &gt;</strong>标志符为止。但是也可以不对其进行特殊处理。</p>
+<p>直到现在我们建立的都是基于词汇的RNN模型，也就是字典中的词都是的那个英文单词。另外一种情况是character level RNN，即词汇表由单个英文字母或字符组成，如下所示：</p>
+<script type="math/tex; mode=display">
+Vocabulary=[a,b,c……z,0,1,……9……]</script><p>基于字符的RNN有优点也有缺点，<strong>优点是不用担心出现未知的标识</strong>，<strong>缺点主要是最后会得到太多太长的序列，由于是字符表征，每句话的字符数量很大，这种大的跨度不利于寻找语句前部分和后部分之间的依赖性。同时训练价格高昂</strong>。</p>
+<h2><span id="8带有神经网络的梯度消失">8.带有神经网络的梯度消失</span></h2><p>现在已经了解了RNN是如何工作的了，并且知道如何应用到实际模型。其实RNN模型还存在梯度消失的问题，接下来要解决这个问题。</p>
+<p>语句中可能存在跨度很大的依赖关系，即某个word可能与它距离较远的某个word具有强依赖关系。例如下面这两条语句：</p>
+<p><strong>The <font color="red">cat</font>, which already ate fish, <font color="red">was</font> full.</strong></p>
+<p><strong>The <font color="red">cats</font>, which already ate fish,<font color="red">were</font> full.</strong></p>
+<p>第一句话中，was受cat影响；第二句话中，were受cats影响。它们之间都跨越了很多单词，而且理论上这些单词数量是可以很多的。但是我们目前见到的RNN结构都不擅长捕获这种长期依赖效应，原因是在之前构建很深的网络中我们讨论过梯度消失的问题，在反向传播过程中，最后输出结果$\hat y$反向传播的时候很难传播到较浅的部分，RNN网络同理，由于梯度消失的问题，后面层的偏差很难影响前面层的计算。</p>
+<p>也正是这个原因，基本的RNN模型受到较多的局部影响，这就是基本的RNN网络的一个缺点。尽管我们一直在讨论梯度消失，同时还有可能出现梯度爆炸的问题，但是梯度消失是训练RNN时候的首要问题。</p>
+<p>梯度爆炸比较容易发现，常用的解决办法是设定一个阈值，一旦梯度最大值达到这个阈值，就对整个梯度向量进行尺度缩小。这种做法被称为gradient clipping。</p>
+<h2><span id="9gru单元">9.GRU单元</span></h2><p>这节课将学习GRU单元，其改变了RNN的隐藏层，能更好的处理深层连接，并改善了梯度消失问题。</p>
+<p>首先，RNN的隐藏层单元结构可视化呈现如下图所示：</p>
+<p><img src="/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210830174550939.png" alt="image-20210830174550939" style="zoom:25%;"></p>
+<p>图片来源：<a target="_blank" rel="noopener" href="https://blog.csdn.net/red_stone1/article/details/79446105">https://blog.csdn.net/red_stone1/article/details/79446105</a></p>
+<p>首先给定这样一个句子：<strong>The <font color="red">cat</font>, which already ate fish, <font color="red">was</font> full.</strong></p>
+<p>当我们从左到右读这个句子的时候，GRU网络中有一部分成为C（memory cell）的部分用于记忆网络中的部分信息。GRU单元的结构图可视化如下：</p>
+<p><img src="/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210830174602400.png" alt="image-20210830174602400" style="zoom:25%;"></p>
+<p>图片来源：<a target="_blank" rel="noopener" href="https://blog.csdn.net/red_stone1/article/details/79446105">https://blog.csdn.net/red_stone1/article/details/79446105</a></p>
+<p>其中表达式分别为：</p>
+<script type="math/tex; mode=display">
+\tilde c^{<t>}=tanh(W_c[c^{<t-1>},x^{<t>}]+b_c)</script><script type="math/tex; mode=display">
+\Gamma_u=\sigma(W_u[c^{<t-1>},x^{<t>}]+b_u)</script><script type="math/tex; mode=display">
+c^{<t>}=\Gamma*\tilde c^{<t>}+(1-\Gamma_u)*c^{<t-1>}</script><p>其中，$c^{<t-1>}$=$a^{<t-1>}$,$c^{<t>}$=$a^{<t>}$,$\Gamma_u$意为gate，记忆单元。当$\Gamma_u=1$时，代表更新；当$\Gamma_u$=0时，代表记忆，保留之前的模块输出。这一点跟CNN中的ResNets的作用有点类似。因此，$\Gamma_u$​能够保证RNN模型中跨度很大的依赖关系不受影响，消除梯度消失问题。需要注意的是<strong>如果式子中出现的值如果是向量的话，那么*就表示表示元素相乘，而非矩阵相乘。</strong></t></t></t-1></t-1></p>
+<p>上述是简化的GRU模型，在完整的GRU网络中，还给第一项的候选项计算中添加了一个门$\Gamma_r$，具体式子如下：</p>
+<script type="math/tex; mode=display">
+\tilde c^{<t>}=tanh(W_c[\Gamma_r*c^{<t-1>},x^{<t>}]+b_c)</script><script type="math/tex; mode=display">
+\Gamma_u=\sigma(W_u[c^{<t-1>},x^{<t>}]+b_u)</script><script type="math/tex; mode=display">
+\Gamma_r=\sigma(W_r[c^{<t-1>},x^{<t>}]+b_r)</script><script type="math/tex; mode=display">
+c^{<t>}=\Gamma*\tilde c^{<t>}+(1-\Gamma_u)*c^{<t-1>}</script><script type="math/tex; mode=display">
+a^{<t>}=c^{<t>}</script><h2><span id="10长短期记忆">10.长短期记忆</span></h2><p>LSTM是另一种更强大的解决梯度消失问题的方法。它对应的RNN隐藏层单元结构如下图所示：</p>
+<p><img src="/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210830174622835.png" alt="image-20210830174622835" style="zoom:25%;"></p>
+<p>对应的式子为：</p>
+<script type="math/tex; mode=display">
+\tilde c^{<t>}=tanh(W_c[a^{<t-1>},x^{<t>}]+b_c)</script><script type="math/tex; mode=display">
+\Gamma_u=\sigma(W_u[a^{<t-1>},x^{<t>}]+b_u)</script><script type="math/tex; mode=display">
+\Gamma_f=\sigma(W_f[a^{<t-1>},x^{<t>}]+b_f)</script><script type="math/tex; mode=display">
+\Gamma_o=\sigma(W_o[a^{<t-1>},x^{<t>}]+b_o)</script><script type="math/tex; mode=display">
+c^{<t>}=\Gamma*\tilde a^{<t>}+(1-\Gamma_f)*a^{<t-1>}</script><script type="math/tex; mode=display">
+a^{<t>}=\Gamma_o*c^{<t>}</script><p>其中LSTM一共有三个门，分别对应更新、遗忘、输出。</p>
+<p>此外最常用的版本中，门控部分还考虑了$c^{<t-1>}$​​​​，这叫做peephole connection。只需要在门控部分加上这一项即可。</t-1></p>
+<p>LSTM和GRU各有优劣势，GRU相对简单，更容易用于创建大规模网络且运行较快，但是LSTM更加灵活、功能也更加强大。</p>
+<h2><span id="11双向神经网络">11.双向神经网络</span></h2><p>首先，提出双向神经网络的动机就是对于一个词的预测可能不仅仅取决于上文，还取决于下文，如果我们使用之前的方法只能读取到上文的信息。我们在第3节中简单提过Bidirectional RNN，它的结构如下图所示：</p>
+<p><img src="/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210830174641150.png" alt="image-20210830174641150" style="zoom:25%;"></p>
+<p>图片来源：<a target="_blank" rel="noopener" href="https://blog.csdn.net/red_stone1/article/details/79446105">https://blog.csdn.net/red_stone1/article/details/79446105</a></p>
+<p>BRNN对应的输出$y^{<t>}$​表达式为：</t></p>
+<script type="math/tex; mode=display">
+\hat y^{<t>}=g(W_y(\vec{a}^{<t>},\overleftarrow{a}^{<t>}+b_y)</script><p>双向RNN的缺点就是只有知道了整个序列的所有信息才能预测任意位置，例如构建一个语音识别系统，如果使用双向RNN直接实现那么将会只能获得所有的语音信息之后再进行处理。</p>
+<h2><span id="12深层循环神经网络">12.深层循环神经网络</span></h2><p>目前我们学到的所有RNN版本都可以独当一面，但是要学习非常复杂的函数的时候将会把多个RNN层叠在一起。结构如下：</p>
+<p><img src="/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210830174653524.png" alt="image-20210830174653524" style="zoom:25%;"></p>
+<p>用上标$[l]$表示层数。Deep RNNs中$a^{[l]<t>}$​的表达式为：</t></p>
+<script type="math/tex; mode=display">
+a^{[l]<t>}=g(W_a^{[l]}[a^{[l]<t-1>},a^{[l-1]<t>}]+b_a^{[l]})</script><p>我们知道一些深层的神经网络层数可达100多，而Deep RNNs一般没有那么多层，3层RNNs已经属于比较多了，这是因为由于时间维度的关系，RNN网络容易变得很复杂。</p>
+<p>另外一种Deep RNNs结构是每个输出层上还有一些垂直单元，如下图所示：</p>
+<p><img src="/images/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/image-20210830174711699.png" alt="image-20210830174711699" style="zoom:25%;"></p>
+<p>图片来源：<a target="_blank" rel="noopener" href="https://blog.csdn.net/red_stone1/article/details/79446105">https://blog.csdn.net/red_stone1/article/details/79446105</a></p>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -191,247 +386,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://zz-m-918.github.io/2021/08/30/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/08/25/%E7%89%B9%E6%AE%8A%E5%BA%94%E7%94%A8%EF%BC%9A%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E5%92%8C%E7%A5%9E%E7%BB%8F%E9%A3%8E%E6%A0%BC%E8%BD%AC%E6%8D%A2/" class="archive-article-date">
-  	<time datetime="2021-08-25T14:13:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-25</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2021/08/25/%E7%89%B9%E6%AE%8A%E5%BA%94%E7%94%A8%EF%BC%9A%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E5%92%8C%E7%A5%9E%E7%BB%8F%E9%A3%8E%E6%A0%BC%E8%BD%AC%E6%8D%A2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">特殊应用：人脸识别和神经风格转换</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/25/%E7%89%B9%E6%AE%8A%E5%BA%94%E7%94%A8%EF%BC%9A%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E5%92%8C%E7%A5%9E%E7%BB%8F%E9%A3%8E%E6%A0%BC%E8%BD%AC%E6%8D%A2/">特殊应用：人脸识别和神经风格转换</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">吴恩达深度学习</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/08/24/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/" class="archive-article-date">
-  	<time datetime="2021-08-24T15:17:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-24</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/24/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/">目标检测</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">吴恩达深度学习</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/08/21/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/" class="archive-article-date">
-  	<time datetime="2021-08-21T12:36:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/21/%E5%90%B4%E6%81%A9%E8%BE%BE-%E6%B7%B1%E5%BA%A6%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%EF%BC%9A%E5%AE%9E%E4%BE%8B%E6%8E%A2%E7%A9%B6/">吴恩达-深度卷积网络：实例探究</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">吴恩达深度学习</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/08/15/PyTorch-%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B/" class="archive-article-date">
-  	<time datetime="2021-08-15T13:24:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/15/PyTorch-%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B/">PyTorch-线性模型</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/08/15/PyTorch-Overview/" class="archive-article-date">
-  	<time datetime="2021-08-15T13:23:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/15/PyTorch-Overview/">PyTorch-Overview</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/08/15/%E5%90%B4%E6%81%A9%E8%BE%BE-CNN/" class="archive-article-date">
-  	<time datetime="2021-08-15T12:33:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/15/%E5%90%B4%E6%81%A9%E8%BE%BE-CNN/">吴恩达-卷积神经网络</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">吴恩达深度学习</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -454,8 +508,8 @@
 	var yiliaConfig = {
 		mathjax: [object Object],
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
