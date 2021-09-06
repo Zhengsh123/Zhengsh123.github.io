@@ -8,12 +8,12 @@
   <link rel="dns-prefetch" href="https://zz-m-918.github.io">
   <title>PyTorch-梯度下降算法 | ZSH</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="梯度下降算法课程来源：PyTorch深度学习实践——河北工业大学 《PyTorch深度学习实践》完结合集_哔哩哔哩_bilibili 在线性模型的课程中，在选择参数的时候是使用随机猜测的方式开始的，在上一讲中确定最终权重是确定了一个权重的大致范围之后，对所有的参数都求一个损失，确定损失最小的参数。但是当权重太多的时候使用这种搜索方式会导致搜索量太大。 另外一种算法是使用分治的方式。也就是说假设我们">
+  <meta name="description" content="梯度下降算法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PyTorch-梯度下降算法">
 <meta property="og:url" content="https://zz-m-918.github.io/2021/09/06/PyTorch-%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E7%AE%97%E6%B3%95/index.html">
 <meta property="og:site_name" content="ZSH">
-<meta property="og:description" content="梯度下降算法课程来源：PyTorch深度学习实践——河北工业大学 《PyTorch深度学习实践》完结合集_哔哩哔哩_bilibili 在线性模型的课程中，在选择参数的时候是使用随机猜测的方式开始的，在上一讲中确定最终权重是确定了一个权重的大致范围之后，对所有的参数都求一个损失，确定损失最小的参数。但是当权重太多的时候使用这种搜索方式会导致搜索量太大。 另外一种算法是使用分治的方式。也就是说假设我们">
+<meta property="og:description" content="梯度下降算法">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E7%AE%97%E6%B3%95/image-20210906220406825.png">
 <meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E7%AE%97%E6%B3%95/image-20210906220835015.png">
@@ -24,7 +24,7 @@
 <meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E7%AE%97%E6%B3%95/image-20210906224952760.png">
 <meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E7%AE%97%E6%B3%95/image-20210906225528498.png">
 <meta property="article:published_time" content="2021-09-06T15:05:00.000Z">
-<meta property="article:modified_time" content="2021-09-06T15:06:01.688Z">
+<meta property="article:modified_time" content="2021-09-06T16:06:06.052Z">
 <meta property="article:author" content="ZSH">
 <meta property="article:tag" content="PyTorch">
 <meta name="twitter:card" content="summary">
@@ -184,7 +184,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1><span id="梯度下降算法">梯度下降算法</span></h1><p>课程来源：PyTorch深度学习实践——河北工业大学</p>
+        <h1><span id="梯度下降算法">梯度下降算法</span></h1><span id="more"></span>
+<p>课程来源：PyTorch深度学习实践——河北工业大学</p>
 <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Y7411d7Ys?p=2">《PyTorch深度学习实践》完结合集_哔哩哔哩_bilibili</a></p>
 <p>在线性模型的课程中，在选择参数的时候是使用随机猜测的方式开始的，在上一讲中确定最终权重是确定了一个权重的大致范围之后，对所有的参数都求一个损失，确定损失最小的参数。<strong>但是当权重太多的时候使用这种搜索方式会导致搜索量太大</strong>。</p>
 <p>另外一种算法是使用分治的方式。也就是说假设我们有两个权重为$W_1,W_2$​​​​，在搜索的时候先进行比较稀疏的搜索，也就是说并不是将两个参数都分成很细的区间求值，而是例如分别分为4个点，那么在4x4=16个点中寻找一个比较小的值，在比较小的值附近再进行分点求值。简单图示如下：</p>
@@ -321,6 +322,15 @@ w=w-\alpha \frac{\partial cost}{\partial w}</script><p>其中式子中的$\alpha
 
   
 <nav id="article-nav">
+  
+    <a href="/2021/09/07/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          PyTorch-反向传播
+        
+      </div>
+    </a>
   
   
     <a href="/2021/09/02/%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B%E5%92%8C%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6/" id="article-nav-older" class="article-nav-link-wrap">
