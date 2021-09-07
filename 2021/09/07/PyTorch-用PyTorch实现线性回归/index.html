@@ -6,15 +6,31 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://zz-m-918.github.io">
-  <title>Archives | ZSH</title>
+  <title>PyTorch-用PyTorch实现线性回归 | ZSH</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="ZSH">
-<meta property="og:url" content="https://zz-m-918.github.io/archives/page/2/index.html">
+  <meta name="description" content="用PyTorch实现线性回归">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PyTorch-用PyTorch实现线性回归">
+<meta property="og:url" content="https://zz-m-918.github.io/2021/09/07/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/index.html">
 <meta property="og:site_name" content="ZSH">
+<meta property="og:description" content="用PyTorch实现线性回归">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/image-20210907203528845.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/image-20210907203930905.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/image-20210907205551356.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/image-20210907212745767.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/image-20210907212828266.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/image-20210907212849813.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/image-20210907212957416.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/image-20210907213014218.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/image-20210907213032047.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/image-20210907213117565.png">
+<meta property="article:published_time" content="2021-09-07T13:33:31.000Z">
+<meta property="article:modified_time" content="2021-09-07T13:34:35.878Z">
 <meta property="article:author" content="ZSH">
+<meta property="article:tag" content="PyTorch">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://zz-m-918.github.io/images/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/image-20210907203528845.png">
   
     <link rel="alternative" href="/atom.xml" title="ZSH" type="application/atom+xml">
   
@@ -150,36 +166,119 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-PyTorch-用PyTorch实现线性回归" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/08/15/PyTorch-Overview/" class="archive-article-date">
-  	<time datetime="2021-08-15T13:23:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-15</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/15/PyTorch-Overview/">PyTorch-Overview</a>
+    <h1 class="article-title" itemprop="name">
+      PyTorch-用PyTorch实现线性回归
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2021/09/07/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/" class="archive-article-date">
+  	<time datetime="2021-09-07T13:33:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1><span id="用pytorch实现线性回归">用PyTorch实现线性回归</span></h1><span id="more"></span>
+<!-- toc -->
+<ul>
+<li><a href="#理论">理论</a></li>
+<li><a href="#代码">代码</a></li>
+<li><a href="#作业">作业</a></li>
+</ul>
+<!-- tocstop -->
+<p>课程来源：PyTorch深度学习实践——河北工业大学</p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Y7411d7Ys?p=2">《PyTorch深度学习实践》完结合集_哔哩哔哩_bilibili</a></p>
+<h2><span id="理论">理论</span></h2><p>用PyTorch实现神经网络有四个步骤如下图所示：</p>
+<p><img src="/images/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/image-20210907203528845.png" alt="image-20210907203528845" style="zoom:33%;"></p>
+<p>接下来分步骤介绍：</p>
+<p>1.准备数据：</p>
+<p>在这次的例子中由于需要使用mini-batch，因此x和y都需要是3x1的Tensor。需要注意的是numpy存在广播机制（简单来说就是在维度不同的矩阵运算的时候在特定情况下会扩充矩阵 详细内容可参考：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/jiaxin359/p/9021726.html）">https://www.cnblogs.com/jiaxin359/p/9021726.html）</a></p>
+<p>在计算的时候如下图（图中的点乘表示按位置相乘，不是矩阵相乘）：</p>
+<p><img src="/images/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/image-20210907203930905.png" alt="image-20210907203930905" style="zoom:33%;"></p>
+<p>由于$\hat y$是一个3x1的Tensor，因此计算的时候如所示的计算方法：</p>
+<script type="math/tex; mode=display">
+loss_1=(\hat y_1-y_1)^2</script><script type="math/tex; mode=display">
+loss_2=(\hat y_2-y_2)^2</script><script type="math/tex; mode=display">
+loss_3=(\hat y_3-y_3)^2</script><script type="math/tex; mode=display">
+\begin {bmatrix}
+loss_1\\
+loss_2\\
+loss_3\\
+\end{bmatrix}=
+\begin {pmatrix}
+\hat y_1-y_1\\
+\hat y_2-y_2\\
+\hat y_3-y_3\\
+\end{pmatrix}^2</script><p>之前构建模型的时候重点是计算表达式，而在PyTorch构建神经网络的过程中重点是构造计算图，Pytorch可以自动求梯度并反向传播。</p>
+<p><strong>需要注意的是Loss函数求出来是和$\hat y$​​​维度相同，但是我们要对其反向传播，就需要将其标量化，例如可以求和之后取平均。</strong></p>
+<h2><span id="代码">代码</span></h2><p>使用PyTorch构建神经网络的时候一般需要将神经网络构建为一个类，我们的代码应该继承于nn.Module类，这是所有神经网络模型的一个基类。在构造列的时候最少需要实现两个函数：__init__()和\forward()。</p>
+<p>注：</p>
+<ul>
+<li><p>Module自动生成Backward</p>
+</li>
+<li><p>未定义（比如无法求导，或者你想改进）的两种处理方法：</p>
+<p> 自定义（使用torch的基本方法）封装成Module</p>
+<p> 自定义计算块并继承自Functions类哪个系实例化</p>
+</li>
+</ul>
+<p>详细实例化代码如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">LinearModel</span>(<span class="params">torch.nn.Module</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="built_in">super</span>(LinearModel, self).__init__()<span class="comment">#调用父类的__init__函数</span></span><br><span class="line">        <span class="comment">#构造对象，包含Weight 和 Bias，之后就可以直接用Linear计算Wx+b</span></span><br><span class="line">        self.linear = torch.nn.Linear(<span class="number">1</span>, <span class="number">1</span>)</span><br><span class="line">        </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">forward</span>(<span class="params">self, x</span>):</span><span class="comment">#override，覆盖父类的默认函数</span></span><br><span class="line">        y_pred = self.linear(x)<span class="comment">#实现可调用对象（在初始类中定义一个__call__(self,*args,**kargs)函数)</span></span><br><span class="line">        <span class="keyword">return</span> y_pred</span><br><span class="line">    </span><br><span class="line">model = LinearModel()<span class="comment">#实例化对象</span></span><br></pre></td></tr></table></figure>
+<p>torch.nn.Linear函数文档如下：</p>
+<p><img src="/images/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/image-20210907205551356.png" alt="image-20210907205551356" style="zoom: 50%;"></p>
+<p>网址：<a target="_blank" rel="noopener" href="https://pytorch.org/docs/stable/generated/torch.nn.Linear.html#torch.nn.Linear">https://pytorch.org/docs/stable/generated/torch.nn.Linear.html#torch.nn.Linear</a></p>
+<p>关于nn.Mudule中实现的一些函数的更详细解释可见如下链接：</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/xxboy61/article/details/88101192">https://blog.csdn.net/xxboy61/article/details/88101192</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/dss_dssssd/article/details/82977170">https://blog.csdn.net/dss_dssssd/article/details/82977170</a></p>
+<p>接下来需要构造损失函数，在这里使用MSE损失函数，详细整体代码及注解如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##	1.准备数据</span></span><br><span class="line"><span class="keyword">import</span> torch</span><br><span class="line">x_data = torch.Tensor([[<span class="number">1.0</span>], [<span class="number">2.0</span>], [<span class="number">3.0</span>]])</span><br><span class="line">y_data = torch.Tensor([[<span class="number">2.0</span>], [<span class="number">4.0</span>], [<span class="number">6.0</span>]])</span><br><span class="line"></span><br><span class="line"><span class="comment">##2. 准备模型，实例化对象</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">LinearModel</span>(<span class="params">torch.nn.Module</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="built_in">super</span>(LinearModel, self).__init__()<span class="comment">#调用父类的__init__函数</span></span><br><span class="line">        <span class="comment">#构造对象，包含Weight 和 Bias，之后就可以直接用Linear计算Wx+b</span></span><br><span class="line">        self.linear = torch.nn.Linear(<span class="number">1</span>, <span class="number">1</span>)</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">forward</span>(<span class="params">self, x</span>):</span><span class="comment">#override，覆盖父类的默认函数</span></span><br><span class="line">        y_pred = self.linear(x)<span class="comment">#实现可调用对象（在初始类中定义一个__call__(self,*args,**kargs)函数)</span></span><br><span class="line">        <span class="keyword">return</span> y_pred</span><br><span class="line">model = LinearModel()</span><br><span class="line"></span><br><span class="line"><span class="comment">##3. loss和优化器</span></span><br><span class="line">criterion = torch.nn.MSELoss(size_average=<span class="literal">False</span>)    <span class="comment">##MSE损失函数</span></span><br><span class="line"><span class="comment">##优化器：输入需要优化的参数与优化方式 ， 未来就能够针对性地去优化</span></span><br><span class="line"><span class="comment"># 参数model.parameters()可以递归地找出Module所有需要训练的参数</span></span><br><span class="line"><span class="comment"># 参数lr：学习率，也支持在模型不同位置使用不同的学习率</span></span><br><span class="line">optimizer = torch.optim.SGD(model.parameters(), lr=<span class="number">0.01</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">##4.训练</span></span><br><span class="line"><span class="keyword">for</span> epoch <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">100</span>):</span><br><span class="line">    y_pred = model(x_data)<span class="comment">#预测</span></span><br><span class="line">    loss = criterion(y_pred, y_data)<span class="comment">#损失</span></span><br><span class="line">    <span class="built_in">print</span>(epoch, loss)</span><br><span class="line">    optimizer.zero_grad()  <span class="comment">#清零</span></span><br><span class="line">    loss.backward()    <span class="comment">#反向传播</span></span><br><span class="line">    optimizer.step()  <span class="comment">#更新</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出结果</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;w = &#x27;</span>, model.linear.weight.item())</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;b = &#x27;</span>, model.linear.bias.item())</span><br><span class="line"><span class="comment"># 测试参数是否合适</span></span><br><span class="line">x_test = torch.tensor([[<span class="number">4.0</span>]])</span><br><span class="line">y_test = model(x_test)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;y_pred = &#x27;</span>, y_test.data)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>PyTorch官方文档：<a target="_blank" rel="noopener" href="https://pytorch.org/docs/stable/index.html">https://pytorch.org/docs/stable/index.html</a></p>
+<h2><span id="作业">作业</span></h2><p>比较不同优化器的优化结果并画图。</p>
+<p><img src="/images/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/image-20210907212745767.png" alt="image-20210907212745767" style="zoom: 50%;"></p>
+<p><img src="/images/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/image-20210907212828266.png" alt="image-20210907212828266" style="zoom: 50%;"></p>
+<p><img src="/images/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/image-20210907212849813.png" alt="image-20210907212849813" style="zoom:50%;"></p>
+<p><img src="/images/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/image-20210907212957416.png" alt="image-20210907212957416" style="zoom:50%;"></p>
+<p><img src="/images/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/image-20210907213014218.png" alt="image-20210907213014218" style="zoom:50%;"></p>
+<p><img src="/images/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/image-20210907213032047.png" alt="image-20210907213032047" style="zoom:50%;"></p>
+<p><img src="/images/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/image-20210907213117565.png" alt="image-20210907213117565" style="zoom:50%;"></p>
+<p>各种优化器的比较和选择可参考如下内容：</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/AugustMe/article/details/108635455">https://blog.csdn.net/AugustMe/article/details/108635455</a></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -191,60 +290,105 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://zz-m-918.github.io/2021/09/07/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/08/15/%E5%90%B4%E6%81%A9%E8%BE%BE-CNN/" class="archive-article-date">
-  	<time datetime="2021-08-15T12:33:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-15</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2021/09/07/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">PyTorch-反向传播</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/15/%E5%90%B4%E6%81%A9%E8%BE%BE-CNN/">吴恩达-卷积神经网络</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">吴恩达深度学习</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/">&amp;laquo; Prev</a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
-    </nav>
+  
+
   
 
 
@@ -268,8 +412,8 @@
 	var yiliaConfig = {
 		mathjax: [object Object],
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
