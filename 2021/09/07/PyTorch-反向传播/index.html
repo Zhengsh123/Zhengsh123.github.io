@@ -15,19 +15,23 @@
 <meta property="og:site_name" content="ZSH">
 <meta property="og:description" content="反向传播">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906231554701.png">
-<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906231742743.png">
-<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906232501801.png">
-<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906233016675.png">
-<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906233136001.png">
-<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906233941261.png">
-<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906234555066.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906231554701-16310168157001.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906231742743-16310168157002.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906232501801-16310168157003.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906233016675-16310168157027.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906233136001-16310168157025.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906233941261-16310168157014.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906234555066-16310168157026.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210907200829501.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210907200901711.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210907200950967.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210907201041232.png">
 <meta property="article:published_time" content="2021-09-06T16:05:09.000Z">
-<meta property="article:modified_time" content="2021-09-06T16:06:04.091Z">
+<meta property="article:modified_time" content="2021-09-07T12:14:56.743Z">
 <meta property="article:author" content="ZSH">
 <meta property="article:tag" content="PyTorch">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906231554701.png">
+<meta name="twitter:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906231554701-16310168157001.png">
   
     <link rel="alternative" href="/atom.xml" title="ZSH" type="application/atom+xml">
   
@@ -184,28 +188,44 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1><span id="反向传播">反向传播</span></h1><span id="more"></span>
+<!-- toc -->
+<ul>
+<li><a href="#笔记">笔记</a></li>
+<li><a href="#作业">作业</a></li>
+</ul>
+<!-- tocstop -->
 <p>课程来源：PyTorch深度学习实践——河北工业大学</p>
 <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Y7411d7Ys?p=2">《PyTorch深度学习实践》完结合集_哔哩哔哩_bilibili</a></p>
-<p>在之前课程中介绍的线性模型就是一个最简单的神经网络的结构，其内部参数的更新过程如下：</p>
-<p><img src="/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906231554701.png" alt="image-20210906231554701" style="zoom: 25%;"></p>
+<h2><span id="笔记">笔记</span></h2><p>在之前课程中介绍的线性模型就是一个最简单的神经网络的结构，其内部参数的更新过程如下：</p>
+<p><img src="/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906231554701-16310168157001.png" alt="image-20210906231554701" style="zoom: 25%;"></p>
 <p>对于简单的模型来说可以直接使用表达式的方式来更新权重，但是如果网络结构比较复杂（如下图），直接使用解析式的方式来更新显然有些复杂且不太可能实现。</p>
-<p><img src="/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906231742743.png" alt="image-20210906231742743"></p>
+<p><img src="/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906231742743-16310168157002.png" alt="image-2021090623742743"></p>
 <p>反向传播就是为了解决这种问题。反向传播的基本思想就是将网络看成一张图，在图上传播梯度，从而使用链式传播来计算梯度。首先介绍两层的网络的计算图的方式表示如下图所示：</p>
-<p><img src="/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906232501801.png" alt="image-20210906232501801" style="zoom: 25%;"></p>
+<p><img src="/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906232501801-16310168157003.png" alt="image-20210906232501801" style="zoom: 25%;"></p>
 <p>矩阵求导参考书籍链接如下：<a target="_blank" rel="noopener" href="https://bicmr.pku.edu.cn/~wenzw/bigdata/matrix-cook-book.pdf">https://bicmr.pku.edu.cn/~wenzw/bigdata/matrix-cook-book.pdf</a></p>
 <p>如果把式子展开，将会有如下结果：</p>
-<p><img src="/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906233016675.png" alt="image-20210906233016675" style="zoom:33%;"></p>
+<p><img src="/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906233016675-16310168157027.png" alt="image-20210906233016675" style="zoom:33%;"></p>
 <p>也就是多层线性模型的叠加是可以用一个线性模型来实现的。因此为了提高模型的复杂程度，对于每一层的输出增加一个非线性的变化函数，如sigmoid等函数，如下图所示：</p>
-<p><img src="/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906233136001.png" alt="image-20210906233136001" style="zoom:33%;"></p>
+<p><img src="/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906233136001-16310168157025.png" alt="image-20210906233136001" style="zoom:33%;"></p>
 <p>反向传播的链式求导的过程一个实例如下图所示：</p>
-<p><img src="/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906233941261.png" alt="image-20210906233941261" style="zoom:33%;"></p>
+<p><img src="/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906233941261-16310168157014.png" alt="image-20210906233941261" style="zoom:33%;"></p>
 <p>得到相应导数之后就可以对于权重进行更新，如果x也只是一个中间结果，则可以继续向前传导。</p>
 <p>接下来可以看一个完整的线性模型的计算图示例，过程就是先进行前馈过程，在前馈到loss之后进行反向传播，从而完成计算：</p>
-<p><img src="/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906234555066.png" alt="image-20210906234555066" style="zoom:33%;"></p>
+<p><img src="/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210906234555066-16310168157026.png" alt="image-20210906234555066" style="zoom:33%;"></p>
 <p>接下来介绍在PyTorch中如何进行前馈和反馈计算。</p>
 <p>首先需要介绍的是Tensor，这是PyTorch中构建动态图的一个重要组成部分，Tensor中主要元素的是Data（数据）和Grad（导数），分别用于保存权重值和损失函数对权重的导数。</p>
 <p>使用PyTorch实现上述的线性模型的代码如下：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line">x_data = [<span class="number">1.0</span>, <span class="number">2.0</span>, <span class="number">3.0</span>]</span><br><span class="line">y_data = [<span class="number">2.0</span>, <span class="number">4.0</span>, <span class="number">6.0</span>]</span><br><span class="line"> </span><br><span class="line">w = torch.tensor([<span class="number">1.0</span>]) <span class="comment">#初值为1.0</span></span><br><span class="line">w.requires_grad = <span class="literal">True</span> <span class="comment"># 需要计算梯度</span></span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">forward</span>(<span class="params">x</span>):</span></span><br><span class="line">    <span class="keyword">return</span> x*w  <span class="comment"># 返回tensor</span></span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">loss</span>(<span class="params">x, y</span>):</span></span><br><span class="line">    y_pred = forward(x)</span><br><span class="line">    <span class="keyword">return</span> (y_pred - y)**<span class="number">2</span></span><br><span class="line"> </span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;predict (before training)&quot;</span>, <span class="number">4</span>, forward(<span class="number">4</span>).item())</span><br><span class="line"> </span><br><span class="line"><span class="keyword">for</span> epoch <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">100</span>):</span><br><span class="line">    <span class="keyword">for</span> x, y <span class="keyword">in</span> <span class="built_in">zip</span>(x_data, y_data):</span><br><span class="line">        l =loss(x,y) <span class="comment">#l是一个张量</span></span><br><span class="line">        l.backward() <span class="comment">#将计算链路上需要梯度的地方计算出梯度，这一步之后计算图释放，每一次更新都创建新的计算图</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;\tgrad:&#x27;</span>, x, y, w.grad.item())<span class="comment">#item是为了把梯度中的数值取出为标量</span></span><br><span class="line">        w.data = w.data - <span class="number">0.01</span> * w.grad.data   <span class="comment"># 权重更新时，使用标量，使用data的时候不会建立新的计算图，注意grad也是一个tensor</span></span><br><span class="line">        w.grad.data.zero_() <span class="comment"># 更新之后将梯度数据清零</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;progress:&#x27;</span>, epoch, l.item()) </span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;predict (after training)&quot;</span>, <span class="number">4</span>, forward(<span class="number">4</span>).item())</span><br></pre></td></tr></table></figure>
+<h2><span id="作业">作业</span></h2><p>1、手动推导线性模型y=w*x，损失函数loss=(ŷ-y)²下，当数据集x=2,y=4的时候，反向传播的过程。</p>
+<p><img src="/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210907200829501.png" alt="image-20210907200829501" style="zoom:25%;"></p>
+<p>2、手动推导线性模型 y=w*x+b，损失函数loss=(ŷ-y)²下，当数据集x=1,y=2的时候，反向传播的过程。</p>
+<p><img src="/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210907200901711.png" alt="image-20210907200901711" style="zoom:25%;"></p>
+<p>3、画出二次模型y=w1<em>x²+w2</em>x+b，损失函数loss=(ŷ-y)²的计算图，并且手动推导反向传播的过程，最后用pytorch的代码实现。</p>
+<p><img src="/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210907200950967.png" alt="image-20210907200950967" style="zoom:25%;"></p>
+<p>代码如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">x_data=[<span class="number">1.0</span>,<span class="number">2.0</span>,<span class="number">3.0</span>]</span><br><span class="line">y_data=[<span class="number">2.0</span>,<span class="number">4.0</span>,<span class="number">6.0</span>]</span><br><span class="line">w1=torch.tensor([<span class="number">1.0</span>],requires_grad=<span class="literal">True</span>)</span><br><span class="line">w2=torch.tensor([<span class="number">1.0</span>],requires_grad=<span class="literal">True</span>)</span><br><span class="line">b=torch.tensor([<span class="number">1.0</span>],requires_grad=<span class="literal">True</span>)</span><br><span class="line">epoch_list=[]</span><br><span class="line">loss_list=[]</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">forward</span>(<span class="params">x</span>):</span></span><br><span class="line">    <span class="keyword">return</span> w1*x**<span class="number">2</span>+w2*x+b</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">loss</span>(<span class="params">x,y</span>):</span></span><br><span class="line">    y_pred=forward(x)</span><br><span class="line">    <span class="keyword">return</span> (y_pred-y)**<span class="number">2</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;Predict (befortraining)&#x27;</span>,<span class="number">4</span>,forward(<span class="number">4</span>))</span><br><span class="line"><span class="keyword">for</span> epoch <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">100</span>):</span><br><span class="line">    <span class="keyword">for</span> x,y <span class="keyword">in</span> <span class="built_in">zip</span>(x_data,y_data):</span><br><span class="line">        l=loss(x,y)</span><br><span class="line">        l.backward()</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;\tgrad:&#x27;</span>,x,y,w1.grad.item(),w2.grad.item(),b.grad.item())</span><br><span class="line">        w1.data=w1.data-<span class="number">0.01</span>*w1.grad.data</span><br><span class="line">        w2.data = w2.data - <span class="number">0.01</span> * w2.grad.data</span><br><span class="line">        b.data = b.data - <span class="number">0.01</span> * b.grad.data</span><br><span class="line">        w1.grad.data.zero_()</span><br><span class="line">        w2.grad.data.zero_()</span><br><span class="line">        b.grad.data.zero_()</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;Epoch:&#x27;</span>, epoch, l.item())</span><br><span class="line">        epoch_list.append(epoch)</span><br><span class="line">        loss_list.append(l.data)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;Predict(after training)&#x27;</span>, <span class="number">4</span>, forward(<span class="number">4</span>).item())</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;predict (after training)&#x27;</span>, <span class="number">4</span>, forward(<span class="number">4</span>))</span><br><span class="line">plt.plot(epoch_list, loss_list)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;loss&#x27;</span>)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;epoch&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p>可视化loss如下：</p>
+<p><img src="/images/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/image-20210907201041232.png" alt="image-20210907201041232" style="zoom: 50%;"></p>
 
       
 
