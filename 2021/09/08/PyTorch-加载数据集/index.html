@@ -6,15 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://zz-m-918.github.io">
-  <title>Archives: 2021 | ZSH</title>
+  <title>PyTorch-加载数据集 | ZSH</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="ZSH">
-<meta property="og:url" content="https://zz-m-918.github.io/archives/2021/index.html">
+  <meta name="description" content="加载数据集">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PyTorch-加载数据集">
+<meta property="og:url" content="https://zz-m-918.github.io/2021/09/08/PyTorch-%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E9%9B%86/index.html">
 <meta property="og:site_name" content="ZSH">
+<meta property="og:description" content="加载数据集">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E9%9B%86/image-20210907233654766.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E9%9B%86/image-20210907235835974.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E9%9B%86/image-20210907235947090.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E9%9B%86/image-20210908151141713.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E9%9B%86/image-20210908151216221.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E9%9B%86/image-20210908162514975.png">
+<meta property="article:published_time" content="2021-09-08T08:27:06.000Z">
+<meta property="article:modified_time" content="2021-09-08T08:27:52.480Z">
 <meta property="article:author" content="ZSH">
+<meta property="article:tag" content="PyTorch">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E9%9B%86/image-20210907233654766.png">
   
     <link rel="alternative" href="/atom.xml" title="ZSH" type="application/atom+xml">
   
@@ -150,36 +162,103 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-PyTorch-加载数据集" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      PyTorch-加载数据集
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/08/PyTorch-%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E9%9B%86/" class="archive-article-date">
+
+        
+        <a href="/2021/09/08/PyTorch-%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E9%9B%86/" class="archive-article-date">
   	<time datetime="2021-09-08T08:27:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-08</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/08/PyTorch-%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E9%9B%86/">PyTorch-加载数据集</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1><span id="加载数据集">加载数据集</span></h1><span id="more"></span>
+<!-- toc -->
+<ul>
+<li><a href="#基本概念">基本概念</a></li>
+<li><a href="#dataloader">DataLoader</a></li>
+<li><a href="#课程代码">课程代码</a></li>
+<li><a href="#可用数据集">可用数据集</a></li>
+<li><a href="#作业">作业</a><ul>
+<li><a href="#linear-module不使用mini-batch">Linear module，不使用mini-batch</a></li>
+<li><a href="#linear-modulemini-batch">Linear Module，Mini-batch</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+<p>课程来源：PyTorch深度学习实践——河北工业大学</p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Y7411d7Ys?p=2">《PyTorch深度学习实践》完结合集_哔哩哔哩_bilibili</a></p>
+<p>为了加载数据集和支持索引，单位数据集是Mini-batch</p>
+<h2><span id="基本概念">基本概念</span></h2><p>在进行梯度下降的时，使用Batch的方式（也就是所有的数据）可以最大化利用向量的优势，使用并行计算提高计算速度。</p>
+<p>而随机梯度下降，每次只用一个样本：有好的随机性，克服“鞍点”问题。但是每次用一个样本，无法使用GPU/CPU的并行能力，导致优化的速度很慢</p>
+<p>Mini-Batch的产生就是为了均衡训练时间和训练效果的需求</p>
+<p>名词解释：</p>
+<ul>
+<li>epoch：当所有的训练样本都进行了一次前馈和反向传播，叫一次epoch</li>
+<li>Batch-size：每次训练中使用的样本大小</li>
+<li>Iteration：All_size / Batch_size</li>
+</ul>
+<h2><span id="dataloader">DataLoader</span></h2><p><img src="/images/PyTorch-%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E9%9B%86/image-20210907233654766.png" alt="image-20210907233654766" style="zoom: 25%;"></p>
+<p>Shuffle: 打乱数据集顺序(在训练数据时，要打乱顺序保证随机性；在测试时一般不用，便于观察结果)</p>
+<p>Loader：分组成Batch1， Batch2…，每一组大小根据batch_size参数确定。</p>
+<p>注：<strong>1.DataSet 是抽象类，不能实例化对象，主要是用于构造我们的数据集</strong></p>
+<p><strong>2.DataLoader 可以实例化</strong></p>
+<p><strong>3.__getitem<strong>()目的是为支持下标(索引)操作，\</strong>len__()是为了返回数据集长度</strong></p>
+<p>构造数据集的时候有两种选择：1.数据容量不大，直接在init函数中全部读入；2.数据容量很大，无法或者难以一次全部读取，使用动态读取</p>
+<p>注：如果由于调用DataLoader中的num_workers不为0，使用多进程的时候报错，这是因为因为Windows下创建进程与Linux不同，会出现RunTimeError,解决方法是使用如下代码即可：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br></pre></td></tr></table></figure>
+<h2><span id="课程代码">课程代码</span></h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">from</span> torch.utils.data <span class="keyword">import</span> Dataset, DataLoader  <span class="comment"># 这里的Dataset是抽象类</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">##1. 准备数据集</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">DiabetesDataset</span>(<span class="params">Dataset</span>):</span><span class="comment"># 继承抽象类DataSet</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">##初始化读数据</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self, filepath</span>):</span></span><br><span class="line">        xy = np.loadtxt(filepath, delimiter=<span class="string">&#x27;,&#x27;</span>, dtype=np.float32)</span><br><span class="line">        self.<span class="built_in">len</span> = xy.shape[<span class="number">0</span>]      <span class="comment">##shape : [N* M]矩阵，则shape[0]=N； shape[0]就是样本数目</span></span><br><span class="line">        self.x_data = torch.from_numpy(xy[:, :-<span class="number">1</span>])</span><br><span class="line">        self.y_data = torch.from_numpy(xy[:, [-<span class="number">1</span>]])</span><br><span class="line"></span><br><span class="line">    <span class="comment">## 按索引取数据</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__getitem__</span>(<span class="params">self, index</span>):</span></span><br><span class="line">        <span class="keyword">return</span> self.x_data[index], self.y_data[index]</span><br><span class="line"></span><br><span class="line">    <span class="comment">## 得到数据的数量</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__len__</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="keyword">return</span> self.<span class="built_in">len</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">dataset = DiabetesDataset(<span class="string">&#x27;diabetes.csv.gz&#x27;</span>)</span><br><span class="line">train_loader = DataLoader(dataset=dataset,      <span class="comment">#数据集</span></span><br><span class="line">                          batch_size=<span class="number">32</span>,        <span class="comment">#batch_size</span></span><br><span class="line">                          shuffle=<span class="literal">True</span>,         <span class="comment">#是否要打乱</span></span><br><span class="line">                          num_workers=<span class="number">2</span>)        <span class="comment">#读数据时，并行进程的数量</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##2. 实例化模型</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Model</span>(<span class="params">torch.nn.Module</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="built_in">super</span>(Model, self).__init__()</span><br><span class="line">        self.linear1 = torch.nn.Linear(<span class="number">8</span>, <span class="number">6</span>)</span><br><span class="line">        self.linear2 = torch.nn.Linear(<span class="number">6</span>, <span class="number">4</span>)</span><br><span class="line">        self.linear3 = torch.nn.Linear(<span class="number">4</span>, <span class="number">1</span>)</span><br><span class="line">        self.sigmoid = torch.nn.Sigmoid()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">forward</span>(<span class="params">self, x</span>):</span></span><br><span class="line">        x = self.sigmoid(self.linear1(x))</span><br><span class="line">        x = self.sigmoid(self.linear2(x))</span><br><span class="line">        x = self.sigmoid(self.linear3(x))</span><br><span class="line">        <span class="keyword">return</span> x</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    model = Model()</span><br><span class="line"></span><br><span class="line">    <span class="comment">## 3.损失函数和优化器</span></span><br><span class="line">    criterion = torch.nn.BCELoss(size_average=<span class="literal">True</span>)</span><br><span class="line">    optimizer = torch.optim.SGD(model.parameters(), lr=<span class="number">0.01</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">##4. 训练</span></span><br><span class="line">    <span class="keyword">for</span> epoch <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">100</span>):</span><br><span class="line">        <span class="keyword">for</span> i, data <span class="keyword">in</span> <span class="built_in">enumerate</span>(train_loader, <span class="number">0</span>):</span><br><span class="line">            <span class="comment"># 1. Prepare data</span></span><br><span class="line">            inputs, labels = data  <span class="comment">## 这里的data 是一个（x,y)的向量</span></span><br><span class="line">            <span class="comment"># 2. Forward</span></span><br><span class="line">            y_pred = model(inputs)</span><br><span class="line">            loss = criterion(y_pred, labels)</span><br><span class="line">            <span class="built_in">print</span>(epoch, i, loss.item())</span><br><span class="line">            <span class="comment"># 3. Backward</span></span><br><span class="line">            optimizer.zero_grad()</span><br><span class="line">            loss.backward()</span><br><span class="line">            <span class="comment"># 4. Update</span></span><br><span class="line">            optimizer.step()</span><br></pre></td></tr></table></figure>
+<h2><span id="可用数据集">可用数据集</span></h2><p><img src="/images/PyTorch-%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E9%9B%86/image-20210907235835974.png" alt="image-20210907235835974" style="zoom: 25%;"></p>
+<p>使用方法：</p>
+<p><img src="/images/PyTorch-%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E9%9B%86/image-20210907235947090.png" alt="image-20210907235947090" style="zoom: 50%;"></p>
+<h2><span id="作业">作业</span></h2><p>对Kaggle中Titanic的数据进行预测。</p>
+<h3><span id="linear-module不使用mini-batch">Linear module，不使用mini-batch</span></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">import</span> torch.nn <span class="keyword">as</span> nn</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> torch.utils.data <span class="keyword">import</span> Dataset</span><br><span class="line"><span class="keyword">from</span> torch.utils.data <span class="keyword">import</span> DataLoader</span><br><span class="line"></span><br><span class="line"><span class="comment">##从直觉上来说，ticket和name参数影响应该不大</span></span><br><span class="line"><span class="comment">##而cabin数据缺失太多，考虑删除这三个参数</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Model</span>(<span class="params">nn.Module</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="built_in">super</span>(Model,self).__init__()</span><br><span class="line">        self.linear1=nn.Linear(<span class="number">7</span>,<span class="number">5</span>)</span><br><span class="line">        self.linear2=nn.Linear(<span class="number">5</span>,<span class="number">3</span>)</span><br><span class="line">        self.linear3=nn.Linear(<span class="number">3</span>,<span class="number">1</span>)</span><br><span class="line">        self.activate=nn.ReLU()</span><br><span class="line">        self.sigmoid=nn.Sigmoid()</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">forward</span>(<span class="params">self,x</span>):</span></span><br><span class="line">        x=self.activate(self.linear1(x))</span><br><span class="line">        x=self.activate(self.linear2(x))</span><br><span class="line">        x=self.sigmoid(self.linear3(x))</span><br><span class="line">        <span class="keyword">return</span> x</span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    model=Model()</span><br><span class="line">    train_data=pd.read_csv(<span class="string">&#x27;train.csv&#x27;</span>)</span><br><span class="line">    test_data=pd.read_csv(<span class="string">&#x27;test.csv&#x27;</span>)</span><br><span class="line">    <span class="comment">##对数据进行处理，删除cabin，ticket，name和</span></span><br><span class="line">    <span class="comment">##train数据集中的ID</span></span><br><span class="line">    <span class="keyword">del</span> train_data[<span class="string">&#x27;PassengerId&#x27;</span>]</span><br><span class="line">    <span class="keyword">del</span> train_data[<span class="string">&#x27;Cabin&#x27;</span>]</span><br><span class="line">    <span class="keyword">del</span> train_data[<span class="string">&#x27;Name&#x27;</span>]</span><br><span class="line">    <span class="keyword">del</span> train_data[<span class="string">&#x27;Ticket&#x27;</span>]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">del</span> test_data[<span class="string">&#x27;Cabin&#x27;</span>]</span><br><span class="line">    <span class="keyword">del</span> test_data[<span class="string">&#x27;Name&#x27;</span>]</span><br><span class="line">    <span class="keyword">del</span> test_data[<span class="string">&#x27;Ticket&#x27;</span>]</span><br><span class="line"></span><br><span class="line">    <span class="comment">##填充age数据，使用平均数</span></span><br><span class="line">    train_data[<span class="string">&#x27;Age&#x27;</span>]=train_data[<span class="string">&#x27;Age&#x27;</span>].fillna(train_data[<span class="string">&#x27;Age&#x27;</span>].median())</span><br><span class="line">    test_data[<span class="string">&#x27;Age&#x27;</span>] = test_data[<span class="string">&#x27;Age&#x27;</span>].fillna(test_data[<span class="string">&#x27;Age&#x27;</span>].median())</span><br><span class="line"></span><br><span class="line">    <span class="comment">##填充Embarked字段，使用最常出现的str填充</span></span><br><span class="line">    train_ans=train_data[<span class="string">&#x27;Embarked&#x27;</span>].value_counts()</span><br><span class="line">    train_fillstr=train_ans.idxmax()</span><br><span class="line">    train_data[<span class="string">&#x27;Embarked&#x27;</span>]=train_data[<span class="string">&#x27;Embarked&#x27;</span>].fillna(train_fillstr)</span><br><span class="line"></span><br><span class="line">    test_ans = test_data[<span class="string">&#x27;Embarked&#x27;</span>].value_counts()</span><br><span class="line">    test_fillstr = test_ans.idxmax()</span><br><span class="line">    test_data[<span class="string">&#x27;Embarked&#x27;</span>] = test_data[<span class="string">&#x27;Embarked&#x27;</span>].fillna(test_fillstr)</span><br><span class="line"></span><br><span class="line">    <span class="comment">##将训练数据集中的所有分类数据都改为数字形式</span></span><br><span class="line">    train_data.replace([<span class="string">&quot;female&quot;</span>,<span class="string">&quot;male&quot;</span>],[<span class="number">0</span>,<span class="number">1</span>],inplace=<span class="literal">True</span>)</span><br><span class="line">    train_data.replace([<span class="string">&#x27;Q&#x27;</span>,<span class="string">&#x27;C&#x27;</span>,<span class="string">&#x27;S&#x27;</span>],[<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>],inplace=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">    test_data.replace([<span class="string">&quot;female&quot;</span>, <span class="string">&quot;male&quot;</span>], [<span class="number">0</span>, <span class="number">1</span>], inplace=<span class="literal">True</span>)</span><br><span class="line">    test_data.replace([<span class="string">&#x27;Q&#x27;</span>, <span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;S&#x27;</span>], [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>], inplace=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">##将float数据改成float32</span></span><br><span class="line">    train_data=train_data.astype(np.float32)</span><br><span class="line">    test_data=test_data.astype(np.float32)</span><br><span class="line"></span><br><span class="line">    <span class="comment">##生成训练集</span></span><br><span class="line">    train_data=np.array(train_data)</span><br><span class="line">    x_train=torch.from_numpy(train_data[:,<span class="number">1</span>:<span class="number">8</span>])</span><br><span class="line">    y_train=torch.from_numpy(train_data[:,[<span class="number">0</span>]])</span><br><span class="line"></span><br><span class="line">    <span class="comment">##生成测试集</span></span><br><span class="line">    test=np.array(test_data)</span><br><span class="line">    x_test=torch.from_numpy(test[:,<span class="number">1</span>:<span class="number">8</span>])</span><br><span class="line"></span><br><span class="line">    criterion=torch.nn.BCELoss(reduction=<span class="string">&#x27;mean&#x27;</span>)</span><br><span class="line">    optimizer=torch.optim.Adam(model.parameters(),lr=<span class="number">0.01</span>)</span><br><span class="line">    epoch_list=[]</span><br><span class="line">    loss_list=[]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> epoch <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10000</span>):</span><br><span class="line">        y_pred=model(x_train)</span><br><span class="line">        train_ans=y_pred.detach().numpy()<span class="comment">#消除梯度</span></span><br><span class="line">        loss=criterion(y_pred,y_train)</span><br><span class="line">        optimizer.zero_grad()</span><br><span class="line">        loss.backward()</span><br><span class="line">        optimizer.step()</span><br><span class="line">        <span class="keyword">if</span> epoch%<span class="number">500</span>==<span class="number">0</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;Epoch = &#x27;</span> + <span class="built_in">str</span>(epoch) + <span class="string">&#x27;\t&#x27;</span> + <span class="string">&#x27;Loss = &#x27;</span> + <span class="built_in">str</span>(<span class="built_in">format</span>(loss.item(), <span class="string">&#x27;.4f&#x27;</span>)))</span><br><span class="line">        epoch_list.append(epoch)</span><br><span class="line">        loss_list.append(loss.item())</span><br><span class="line">    plt.plot(epoch_list, loss_list)</span><br><span class="line">    plt.xlabel(<span class="string">&#x27;epoch&#x27;</span>)</span><br><span class="line">    plt.ylabel(<span class="string">&#x27;loss&#x27;</span>)</span><br><span class="line">    plt.title(<span class="string">&#x27;Result of the Predicting of Titanic Dataset&#x27;</span>)</span><br><span class="line">    plt.show()</span><br><span class="line"></span><br><span class="line">    <span class="comment">##查看训练集上的正确率</span></span><br><span class="line">    train_ans[train_ans&gt;=<span class="number">0.5</span>]=<span class="number">1</span></span><br><span class="line">    train_ans[train_ans &lt; <span class="number">0.5</span>] = <span class="number">0</span></span><br><span class="line">    train_size=x_train.shape[<span class="number">0</span>]</span><br><span class="line">    cnt=<span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(train_size):</span><br><span class="line">        cnt+=(train_ans[i].item()==y_train[i])</span><br><span class="line">    accuracy=cnt/train_size</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;准确率为: &quot;</span>, accuracy)</span><br><span class="line">    <span class="comment">##使用测试集测试结果</span></span><br><span class="line">    y_test = model(x_test)</span><br><span class="line">    y = y_test.data.numpy()</span><br><span class="line">    y[y&gt;=<span class="number">0.5</span>]=<span class="number">1</span></span><br><span class="line">    y[y&lt;<span class="number">0.5</span>]=<span class="number">0.5</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 导出结果</span></span><br><span class="line">    pIds = pd.DataFrame(data=test_data[<span class="string">&#x27;PassengerId&#x27;</span>].astype(<span class="built_in">int</span>), columns=[<span class="string">&#x27;PassengerId&#x27;</span>], dtype=<span class="built_in">int</span>)</span><br><span class="line">    preds = pd.DataFrame(data=y, columns=[<span class="string">&#x27;Survived&#x27;</span>], dtype=<span class="built_in">int</span>)</span><br><span class="line">    result = pd.concat([pIds, preds], axis=<span class="number">1</span>)</span><br><span class="line">    result.to_csv(<span class="string">&#x27;titanic_survival_predictions.csv&#x27;</span>, index=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>Loss可视化：</p>
+<p><img src="/images/PyTorch-%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E9%9B%86/image-20210908151141713.png" alt="image-20210908151141713" style="zoom: 50%;"></p>
+<p>测试集正确率：</p>
+<p><img src="/images/PyTorch-%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E9%9B%86/image-20210908151216221.png" alt="image-20210908151216221" style="zoom:25%;"></p>
+<h3><span id="linear-modulemini-batch">Linear Module，Mini-batch</span></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">import</span> torch.nn <span class="keyword">as</span> nn</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> torch.utils.data <span class="keyword">import</span> Dataset</span><br><span class="line"><span class="keyword">from</span> torch.utils.data <span class="keyword">import</span> DataLoader</span><br><span class="line"></span><br><span class="line"><span class="comment">##从直觉上来说，ticket和name参数影响应该不大</span></span><br><span class="line"><span class="comment">##而cabin数据缺失太多，考虑删除这三个参数</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Model</span>(<span class="params">nn.Module</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="built_in">super</span>(Model,self).__init__()</span><br><span class="line">        self.linear1=nn.Linear(<span class="number">7</span>,<span class="number">5</span>)</span><br><span class="line">        self.linear2=nn.Linear(<span class="number">5</span>,<span class="number">3</span>)</span><br><span class="line">        self.linear3=nn.Linear(<span class="number">3</span>,<span class="number">1</span>)</span><br><span class="line">        self.activate=nn.ReLU()</span><br><span class="line">        self.sigmoid=nn.Sigmoid()</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">forward</span>(<span class="params">self,x</span>):</span></span><br><span class="line">        x=self.activate(self.linear1(x))</span><br><span class="line">        x=self.activate(self.linear2(x))</span><br><span class="line">        x=self.sigmoid(self.linear3(x))</span><br><span class="line">        <span class="keyword">return</span> x</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyDataset</span>(<span class="params">Dataset</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self,filepath</span>):</span></span><br><span class="line">        train_data = pd.read_csv(<span class="string">&#x27;train.csv&#x27;</span>)</span><br><span class="line">        <span class="comment"># 可以发现cabin有大量缺失，age有20%的缺失率</span></span><br><span class="line">        <span class="comment"># embarked只有两条缺失</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 考虑删除id,cabin，name,ticket</span></span><br><span class="line">        <span class="keyword">del</span> train_data[<span class="string">&#x27;PassengerId&#x27;</span>]</span><br><span class="line">        <span class="keyword">del</span> train_data[<span class="string">&#x27;Cabin&#x27;</span>]</span><br><span class="line">        <span class="keyword">del</span> train_data[<span class="string">&#x27;Name&#x27;</span>]</span><br><span class="line">        <span class="keyword">del</span> train_data[<span class="string">&#x27;Ticket&#x27;</span>]</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 由于age缺失很少，我们使用年龄的平均值进行填充</span></span><br><span class="line">        train_data[<span class="string">&#x27;Age&#x27;</span>] = train_data[<span class="string">&#x27;Age&#x27;</span>].fillna(train_data[<span class="string">&#x27;Age&#x27;</span>].median())</span><br><span class="line"></span><br><span class="line">        <span class="comment">## 统计出Embarked列各个元素出现次数</span></span><br><span class="line">        ans = train_data[<span class="string">&#x27;Embarked&#x27;</span>].value_counts()</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 返回最大值索引</span></span><br><span class="line">        fillstr = ans.idxmax()</span><br><span class="line"></span><br><span class="line">        train_data[<span class="string">&#x27;Embarked&#x27;</span>] = train_data[<span class="string">&#x27;Embarked&#x27;</span>].fillna(fillstr)</span><br><span class="line">        <span class="comment"># 可以发现embarked无缺失了</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 修改Sex和Embarked</span></span><br><span class="line">        train_data.replace([<span class="string">&quot;female&quot;</span>, <span class="string">&quot;male&quot;</span>], [<span class="number">0</span>, <span class="number">1</span>], inplace=<span class="literal">True</span>)</span><br><span class="line">        train_data.replace([<span class="string">&quot;Q&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;S&quot;</span>], [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>], inplace=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 改变age和fare的数据类型</span></span><br><span class="line">        train_data = train_data.astype(np.float32)</span><br><span class="line">        train_data = np.array(train_data)</span><br><span class="line">        self.x_data=torch.from_numpy(np.array(train_data[:, <span class="number">1</span>:<span class="number">8</span>]))</span><br><span class="line">        self.y_data=torch.from_numpy(np.array(train_data[:, [<span class="number">0</span>]]))</span><br><span class="line">        self.<span class="built_in">len</span> = train_data.shape[<span class="number">0</span>]</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__getitem__</span>(<span class="params">self,index</span>):</span></span><br><span class="line">        <span class="keyword">return</span> self.x_data[index],self.y_data[index]</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__len__</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="keyword">return</span> self.<span class="built_in">len</span></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    dataset = MyDataset(<span class="string">&#x27;train.csv&#x27;</span>)</span><br><span class="line">    train_loader = DataLoader(dataset=dataset, batch_size=<span class="number">2</span>, shuffle=<span class="literal">False</span>, num_workers=<span class="number">4</span>)</span><br><span class="line">    model=Model()</span><br><span class="line">    criterion=torch.nn.BCELoss(reduction=<span class="string">&#x27;mean&#x27;</span>)</span><br><span class="line">    optimizer=torch.optim.SGD(model.parameters(),lr=<span class="number">0.005</span>)</span><br><span class="line">    epoch_list=[]</span><br><span class="line">    loss_list=[]</span><br><span class="line">    <span class="keyword">for</span> epoch <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">100</span>):</span><br><span class="line">        loss_float=<span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> i,data <span class="keyword">in</span> <span class="built_in">enumerate</span>(train_loader,<span class="number">0</span>):</span><br><span class="line">            inputs,labels=data</span><br><span class="line">            labels = labels.<span class="built_in">float</span>()</span><br><span class="line">            y_pred = model(inputs)</span><br><span class="line"></span><br><span class="line">            loss=criterion(y_pred,labels)</span><br><span class="line">            loss_float=loss.item()</span><br><span class="line">            optimizer.zero_grad()</span><br><span class="line">            loss.backward()</span><br><span class="line">            optimizer.step()</span><br><span class="line"></span><br><span class="line">        epoch_list.append(epoch)</span><br><span class="line">        loss_list.append(loss_float)</span><br><span class="line">        <span class="built_in">print</span>(<span class="built_in">str</span>(epoch)+<span class="string">&quot;:&quot;</span>+<span class="built_in">str</span>(loss_float))</span><br><span class="line">    plt.plot(epoch_list, loss_list)</span><br><span class="line">    plt.xlabel(<span class="string">&#x27;epoch&#x27;</span>)</span><br><span class="line">    plt.ylabel(<span class="string">&#x27;loss&#x27;</span>)</span><br><span class="line">    plt.title(<span class="string">&#x27;Result of the Predicting of Titanic Dataset&#x27;</span>)</span><br><span class="line">    plt.show()</span><br><span class="line">    <span class="comment"># 读取test文件</span></span><br><span class="line">    test_data = pd.read_csv(<span class="string">&quot;./test.csv&quot;</span>)</span><br><span class="line">    features = [<span class="string">&quot;Pclass&quot;</span>,<span class="string">&quot;Sex&quot;</span>,<span class="string">&quot;Age&quot;</span>,<span class="string">&quot;SibSp&quot;</span>,<span class="string">&quot;Parch&quot;</span>,<span class="string">&quot;Fare&quot;</span>,<span class="string">&quot;Embarked&quot;</span>]</span><br><span class="line">    test_data[<span class="string">&#x27;Age&#x27;</span>] = test_data[<span class="string">&#x27;Age&#x27;</span>].fillna(test_data[<span class="string">&#x27;Age&#x27;</span>].median())</span><br><span class="line">    test_ans = test_data[<span class="string">&#x27;Embarked&#x27;</span>].value_counts()</span><br><span class="line">    test_fillstr = test_ans.idxmax()</span><br><span class="line">    test_data[<span class="string">&#x27;Embarked&#x27;</span>] = test_data[<span class="string">&#x27;Embarked&#x27;</span>].fillna(test_fillstr)</span><br><span class="line">    test_data.replace([<span class="string">&quot;female&quot;</span>, <span class="string">&quot;male&quot;</span>], [<span class="number">0</span>, <span class="number">1</span>], inplace=<span class="literal">True</span>)</span><br><span class="line">    test_data.replace([<span class="string">&#x27;Q&#x27;</span>, <span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;S&#x27;</span>], [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>], inplace=<span class="literal">True</span>)</span><br><span class="line">    test = torch.from_numpy(np.array(test_data[features]))</span><br><span class="line">    <span class="comment"># 进行预测</span></span><br><span class="line">    y = model(test.<span class="built_in">float</span>())</span><br><span class="line">    y = y.data.numpy()</span><br><span class="line">    y[y&gt;=<span class="number">0.5</span>]=<span class="number">1</span></span><br><span class="line">    y[y&lt;<span class="number">0.5</span>]=<span class="number">0.5</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 输出预测结果到文件</span></span><br><span class="line">    pIds = pd.DataFrame(data=test_data[<span class="string">&#x27;PassengerId&#x27;</span>].astype(<span class="built_in">int</span>), columns=[<span class="string">&#x27;PassengerId&#x27;</span>], dtype=<span class="built_in">int</span>)</span><br><span class="line">    preds = pd.DataFrame(data=y, columns=[<span class="string">&#x27;Survived&#x27;</span>], dtype=<span class="built_in">int</span>)</span><br><span class="line">    result = pd.concat([pIds, preds], axis=<span class="number">1</span>)</span><br><span class="line">    result.to_csv(<span class="string">&#x27;titanic_survival_predictions.csv&#x27;</span>, index=<span class="literal">False</span>)</span><br></pre></td></tr></table></figure>
+<p>正确率：（由于训练次数减少，因此比batch的形式略有下降）</p>
+<p><img src="/images/PyTorch-%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E9%9B%86/image-20210908162514975.png" alt="image-20210908162514975"></p>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -191,364 +270,105 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://zz-m-918.github.io/2021/09/08/PyTorch-%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E9%9B%86/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/07/PyTorch-%E5%A4%84%E7%90%86%E5%A4%9A%E7%BB%B4%E7%89%B9%E5%BE%81%E7%9A%84%E8%BE%93%E5%85%A5/" class="archive-article-date">
-  	<time datetime="2021-09-07T15:22:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-07</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2021/09/07/PyTorch-%E5%A4%84%E7%90%86%E5%A4%9A%E7%BB%B4%E7%89%B9%E5%BE%81%E7%9A%84%E8%BE%93%E5%85%A5/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">PyTorch-处理多维特征的输入</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/07/PyTorch-%E5%A4%84%E7%90%86%E5%A4%9A%E7%BB%B4%E7%89%B9%E5%BE%81%E7%9A%84%E8%BE%93%E5%85%A5/">PyTorch-处理多维特征的输入</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/07/PyTorch-%E9%80%BB%E8%BE%91%E6%96%AF%E8%92%82%E5%9B%9E%E5%BD%92/" class="archive-article-date">
-  	<time datetime="2021-09-07T14:34:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/07/PyTorch-%E9%80%BB%E8%BE%91%E6%96%AF%E8%92%82%E5%9B%9E%E5%BD%92/">PyTorch-逻辑斯蒂回归</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/07/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/" class="archive-article-date">
-  	<time datetime="2021-09-07T13:33:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/07/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/">PyTorch-用PyTorch实现线性回归</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/07/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/" class="archive-article-date">
-  	<time datetime="2021-09-06T16:05:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/07/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/">PyTorch-反向传播</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/06/PyTorch-%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E7%AE%97%E6%B3%95/" class="archive-article-date">
-  	<time datetime="2021-09-06T15:05:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/06/PyTorch-%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E7%AE%97%E6%B3%95/">PyTorch-梯度下降算法</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/02/%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B%E5%92%8C%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6/" class="archive-article-date">
-  	<time datetime="2021-09-02T15:31:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-02</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/02/%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B%E5%92%8C%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6/">序列模型和注意力机制</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">吴恩达深度学习</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/01/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E4%B8%8E%E8%AF%8D%E5%B5%8C%E5%85%A5/" class="archive-article-date">
-  	<time datetime="2021-09-01T09:12:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/01/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E4%B8%8E%E8%AF%8D%E5%B5%8C%E5%85%A5/">自然语言处理与词嵌入</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">吴恩达深度学习</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/08/30/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/" class="archive-article-date">
-  	<time datetime="2021-08-30T09:42:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/30/%E5%BE%AA%E7%8E%AF%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B/">循环序列模型</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">吴恩达深度学习</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/08/25/%E7%89%B9%E6%AE%8A%E5%BA%94%E7%94%A8%EF%BC%9A%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E5%92%8C%E7%A5%9E%E7%BB%8F%E9%A3%8E%E6%A0%BC%E8%BD%AC%E6%8D%A2/" class="archive-article-date">
-  	<time datetime="2021-08-25T14:13:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/25/%E7%89%B9%E6%AE%8A%E5%BA%94%E7%94%A8%EF%BC%9A%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E5%92%8C%E7%A5%9E%E7%BB%8F%E9%A3%8E%E6%A0%BC%E8%BD%AC%E6%8D%A2/">特殊应用：人脸识别和神经风格转换</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">吴恩达深度学习</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2021/page/2/">2</a><a class="extend next" rel="next" href="/archives/2021/page/2/">Next &amp;raquo;</a>
-    </nav>
   
 
 
@@ -572,8 +392,8 @@
 	var yiliaConfig = {
 		mathjax: [object Object],
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
