@@ -6,15 +6,32 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://zz-m-918.github.io">
-  <title>Archives: 2021/9 | ZSH</title>
+  <title>PyTorch-卷积神经网络基础篇 | ZSH</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="ZSH">
-<meta property="og:url" content="https://zz-m-918.github.io/archives/2021/09/index.html">
+  <meta name="description" content="卷积神经网络基础篇">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PyTorch-卷积神经网络基础篇">
+<meta property="og:url" content="https://zz-m-918.github.io/2021/09/08/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/index.html">
 <meta property="og:site_name" content="ZSH">
+<meta property="og:description" content="卷积神经网络基础篇">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/image-20210908212351955.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/image-20210908213255263.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/image-20210908213505101.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/image-20210908213702876.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/image-20210908213936527.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/image-20210908214446403.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/image-20210908214703186.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/image-20210908214826667.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/image-20210908215333599.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/image-20210908220545924.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/image-20210908220621695.png">
+<meta property="article:published_time" content="2021-09-08T14:08:18.000Z">
+<meta property="article:modified_time" content="2021-09-08T14:08:56.406Z">
 <meta property="article:author" content="ZSH">
+<meta property="article:tag" content="PyTorch">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/image-20210908212351955.png">
   
     <link rel="alternative" href="/atom.xml" title="ZSH" type="application/atom+xml">
   
@@ -150,36 +167,105 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-PyTorch-卷积神经网络基础篇" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      PyTorch-卷积神经网络基础篇
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/08/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/" class="archive-article-date">
+
+        
+        <a href="/2021/09/08/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/" class="archive-article-date">
   	<time datetime="2021-09-08T14:08:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-08</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/08/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/">PyTorch-卷积神经网络基础篇</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1><span id="卷积神经网络基础篇">卷积神经网络基础篇</span></h1><span id="more"></span>
+<!-- toc -->
+<ul>
+<li><a href="#卷积神经网络基本结构">卷积神经网络基本结构</a></li>
+<li><a href="#卷积运算过程">卷积运算过程</a></li>
+<li><a href="#padding">Padding</a></li>
+<li><a href="#下采样">下采样</a></li>
+<li><a href="#代码实现">代码实现</a></li>
+<li><a href="#作业">作业</a></li>
+</ul>
+<!-- tocstop -->
+<p>课程来源：PyTorch深度学习实践——河北工业大学</p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Y7411d7Ys?p=2">《PyTorch深度学习实践》完结合集_哔哩哔哩_bilibili</a></p>
+<p>理论部分可以参考吴恩达老师卷积网络课程，由于基本一致，本笔记中不再过多赘述，详细内容可见本人笔记：<a href="https://zz-m-918.github.io/2021/08/15/%E5%90%B4%E6%81%A9%E8%BE%BE-CNN/#more">https://zz-m-918.github.io/2021/08/15/%E5%90%B4%E6%81%A9%E8%BE%BE-CNN/#more</a></p>
+<p>首先回忆之前学习的线性层也叫作全连接层，这一讲探讨在处理图像时经常使用的二维卷积网络。</p>
+<p>首先，明确为什么全连接在某些时候可能不是很合适：全连接可能会使得图像中的一些空间信息丧失，因此处理图像时可能不是很合适。</p>
+<h2><span id="卷积神经网络基本结构">卷积神经网络基本结构</span></h2><p>卷积神经网络基本结构如下图所示。即特征提取器+分类器</p>
+<p><img src="/images/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/image-20210908212351955.png" alt="image-20210908212351955" style="zoom: 33%;"></p>
+<p>首先简单讨论图像，RGB\栅格图：按照像素格保存图像，每个像素格里面保存度值，如果是彩色图，每个格子里就是RGB三个通道的灰度，（在栅格图中放大图就是像素），简单示例如下图所示</p>
+<p>矢量图：根据一些具体的描述来绘制（放大不失真）</p>
+<p><img src="/images/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/image-20210908213255263.png" alt="image-20210908213255263" style="zoom:25%;"></p>
+<h2><span id="卷积运算过程">卷积运算过程</span></h2><p>单通道卷积运算的一个简单示例如下图所示：</p>
+<p><img src="/images/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/image-20210908213505101.png" alt="image-20210908213505101" style="zoom: 25%;"></p>
+<ul>
+<li>卷积核数量=最终输出的通道数</li>
+</ul>
+<p>多通道卷积运算简单示例如下：</p>
+<p><img src="/images/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/image-20210908213702876.png" alt="image-20210908213702876" style="zoom: 33%;"></p>
+<p><strong>注：每一个卷积核它的通道数量要求和输入通道是一样的。这种卷积核的总数有多少个和你输出通道的数量是一样的。（共享权重机制）示例如下：</strong></p>
+<p><img src="/images/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/image-20210908213936527.png" alt="image-20210908213936527" style="zoom:33%;"></p>
+<h2><span id="padding">Padding</span></h2><p>由于卷积之后图像输出维度大小变小，因此如果需要维持输入输出维度不变，可以在输入矩阵外圈填充一定数量的特定数值之后进行卷积，如下图所示：</p>
+<p><img src="/images/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/image-20210908214446403.png" alt="image-20210908214446403"></p>
+<h2><span id="下采样">下采样</span></h2><p>常用池化层：最大池化。简单示例如下图所示：</p>
+<p><img src="/images/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/image-20210908214703186.png" alt="image-20210908214703186" style="zoom:33%;"></p>
+<h2><span id="代码实现">代码实现</span></h2><p>1.torch.nn.Conv2d(1,10,kernel_size=3,stride=2,bias=False)</p>
+<p> 形参解释：1表示指输入的Channel，灰色图像是1个通道的；10表示需要10个卷积核；kernel_size=3,卷积核大小是3x3；stride=2进行卷积运算时的步长，默认为1；bias=False卷积运算是否需要偏置bias，默认为False。padding = 0，卷积操作是否补0。</p>
+<p>卷积网络架构实例：</p>
+<p><img src="/images/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/image-20210908214826667.png" alt="image-20210908214826667" style="zoom:33%;"></p>
+<p>CPU代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">from</span> torchvision <span class="keyword">import</span> transforms</span><br><span class="line"><span class="keyword">from</span> torchvision <span class="keyword">import</span> datasets</span><br><span class="line"><span class="keyword">from</span> torch.utils.data <span class="keyword">import</span> DataLoader</span><br><span class="line"><span class="keyword">import</span> torch.nn.functional <span class="keyword">as</span> F</span><br><span class="line"><span class="keyword">import</span> torch.optim <span class="keyword">as</span> optim</span><br><span class="line"> </span><br><span class="line"><span class="comment"># 准备数据集</span></span><br><span class="line"> </span><br><span class="line">batch_size = <span class="number">64</span></span><br><span class="line">transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((<span class="number">0.1307</span>,), (<span class="number">0.3081</span>,))])</span><br><span class="line"> </span><br><span class="line">train_dataset = datasets.MNIST(root=<span class="string">&#x27;../dataset/mnist/&#x27;</span>, train=<span class="literal">True</span>, download=<span class="literal">True</span>, transform=transform)</span><br><span class="line">train_loader = DataLoader(train_dataset, shuffle=<span class="literal">True</span>, batch_size=batch_size)</span><br><span class="line">test_dataset = datasets.MNIST(root=<span class="string">&#x27;../dataset/mnist/&#x27;</span>, train=<span class="literal">False</span>, download=<span class="literal">True</span>, transform=transform)</span><br><span class="line">test_loader = DataLoader(test_dataset, shuffle=<span class="literal">False</span>, batch_size=batch_size)</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Net</span>(<span class="params">torch.nn.Module</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="built_in">super</span>(Net, self).__init__()</span><br><span class="line">        self.conv1 = torch.nn.Conv2d(<span class="number">1</span>, <span class="number">10</span>, kernel_size=<span class="number">5</span>)<span class="comment">#卷积层</span></span><br><span class="line">        self.conv2 = torch.nn.Conv2d(<span class="number">10</span>, <span class="number">20</span>, kernel_size=<span class="number">5</span>)<span class="comment">#卷积层</span></span><br><span class="line">        self.pooling = torch.nn.MaxPool2d(<span class="number">2</span>)<span class="comment">#池化层</span></span><br><span class="line">        self.fc = torch.nn.Linear(<span class="number">320</span>, <span class="number">10</span>)<span class="comment">#全连接层</span></span><br><span class="line"> </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">forward</span>(<span class="params">self, x</span>):</span></span><br><span class="line">        <span class="comment"># flatten data from (n,1,28,28) to (n, 784)</span></span><br><span class="line">        batch_size = x.size(<span class="number">0</span>)</span><br><span class="line">        x = F.relu(self.pooling(self.conv1(x)))</span><br><span class="line">        x = F.relu(self.pooling(self.conv2(x)))</span><br><span class="line">        x = x.view(batch_size, -<span class="number">1</span>) <span class="comment"># -1 此处自动算出的是320</span></span><br><span class="line">        x = self.fc(x)</span><br><span class="line"> </span><br><span class="line">        <span class="keyword">return</span> x</span><br><span class="line"> </span><br><span class="line">model = Net()</span><br><span class="line"> </span><br><span class="line">criterion = torch.nn.CrossEntropyLoss()</span><br><span class="line">optimizer = optim.SGD(model.parameters(), lr=<span class="number">0.01</span>, momentum=<span class="number">0.5</span>)</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">train</span>(<span class="params">epoch</span>):</span></span><br><span class="line">    running_loss = <span class="number">0.0</span></span><br><span class="line">    <span class="keyword">for</span> batch_idx, data <span class="keyword">in</span> <span class="built_in">enumerate</span>(train_loader, <span class="number">0</span>):</span><br><span class="line">        inputs, target = data</span><br><span class="line">        optimizer.zero_grad()</span><br><span class="line"> </span><br><span class="line">        outputs = model(inputs)</span><br><span class="line">        loss = criterion(outputs, target)</span><br><span class="line">        loss.backward()</span><br><span class="line">        optimizer.step()</span><br><span class="line"> </span><br><span class="line">        running_loss += loss.item()</span><br><span class="line">        <span class="keyword">if</span> batch_idx % <span class="number">300</span> == <span class="number">299</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;[%d, %5d] loss: %.3f&#x27;</span> % (epoch+<span class="number">1</span>, batch_idx+<span class="number">1</span>, running_loss/<span class="number">300</span>))</span><br><span class="line">            running_loss = <span class="number">0.0</span></span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test</span>():</span></span><br><span class="line">    correct = <span class="number">0</span></span><br><span class="line">    total = <span class="number">0</span></span><br><span class="line">    <span class="keyword">with</span> torch.no_grad():</span><br><span class="line">        <span class="keyword">for</span> data <span class="keyword">in</span> test_loader:</span><br><span class="line">            images, labels = data</span><br><span class="line">            outputs = model(images)</span><br><span class="line">            _, predicted = torch.<span class="built_in">max</span>(outputs.data, dim=<span class="number">1</span>)</span><br><span class="line">            total += labels.size(<span class="number">0</span>)</span><br><span class="line">            correct += (predicted == labels).<span class="built_in">sum</span>().item()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;accuracy on test set: %d %% &#x27;</span> % (<span class="number">100</span>*correct/total))</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="keyword">for</span> epoch <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10</span>):</span><br><span class="line">        train(epoch)</span><br><span class="line">        test()</span><br></pre></td></tr></table></figure>
+<p>GPU加速：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">from</span> torchvision <span class="keyword">import</span> transforms</span><br><span class="line"><span class="keyword">from</span> torchvision <span class="keyword">import</span> datasets</span><br><span class="line"><span class="keyword">from</span> torch.utils.data <span class="keyword">import</span> DataLoader</span><br><span class="line"><span class="keyword">import</span> torch.nn.functional <span class="keyword">as</span> F</span><br><span class="line"><span class="keyword">import</span> torch.optim <span class="keyword">as</span> optim</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"> </span><br><span class="line"><span class="comment"># prepare dataset</span></span><br><span class="line"> </span><br><span class="line">batch_size = <span class="number">64</span></span><br><span class="line">transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((<span class="number">0.1307</span>,), (<span class="number">0.3081</span>,))])</span><br><span class="line"> </span><br><span class="line">train_dataset = datasets.MNIST(root=<span class="string">&#x27;../dataset/mnist/&#x27;</span>, train=<span class="literal">True</span>, download=<span class="literal">True</span>, transform=transform)</span><br><span class="line">train_loader = DataLoader(train_dataset, shuffle=<span class="literal">True</span>, batch_size=batch_size)</span><br><span class="line">test_dataset = datasets.MNIST(root=<span class="string">&#x27;../dataset/mnist/&#x27;</span>, train=<span class="literal">False</span>, download=<span class="literal">True</span>, transform=transform)</span><br><span class="line">test_loader = DataLoader(test_dataset, shuffle=<span class="literal">False</span>, batch_size=batch_size)</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Net</span>(<span class="params">torch.nn.Module</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="built_in">super</span>(Net, self).__init__()</span><br><span class="line">        self.conv1 = torch.nn.Conv2d(<span class="number">1</span>, <span class="number">10</span>, kernel_size=<span class="number">5</span>)</span><br><span class="line">        self.conv2 = torch.nn.Conv2d(<span class="number">10</span>, <span class="number">20</span>, kernel_size=<span class="number">5</span>)</span><br><span class="line">        self.pooling = torch.nn.MaxPool2d(<span class="number">2</span>)</span><br><span class="line">        self.fc = torch.nn.Linear(<span class="number">320</span>, <span class="number">10</span>)</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">forward</span>(<span class="params">self, x</span>):</span>  </span><br><span class="line">        batch_size = x.size(<span class="number">0</span>)</span><br><span class="line">        x = F.relu(self.pooling(self.conv1(x)))</span><br><span class="line">        x = F.relu(self.pooling(self.conv2(x)))</span><br><span class="line">        x = x.view(batch_size, -<span class="number">1</span>) <span class="comment"># -1 此处自动算出的是320</span></span><br><span class="line">        <span class="comment"># print(&quot;x.shape&quot;,x.shape)</span></span><br><span class="line">        x = self.fc(x)</span><br><span class="line"> </span><br><span class="line">        <span class="keyword">return</span> x</span><br><span class="line"> </span><br><span class="line">model = Net()</span><br><span class="line">device = torch.device(<span class="string">&quot;cuda&quot;</span> <span class="keyword">if</span> torch.cuda.is_available() <span class="keyword">else</span> <span class="string">&quot;cpu&quot;</span>)</span><br><span class="line">model.to(device)<span class="comment">#模型迁移到GPU</span></span><br><span class="line"> </span><br><span class="line">criterion = torch.nn.CrossEntropyLoss()</span><br><span class="line">optimizer = optim.SGD(model.parameters(), lr=<span class="number">0.01</span>, momentum=<span class="number">0.5</span>)</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">train</span>(<span class="params">epoch</span>):</span></span><br><span class="line">    running_loss = <span class="number">0.0</span></span><br><span class="line">    <span class="keyword">for</span> batch_idx, data <span class="keyword">in</span> <span class="built_in">enumerate</span>(train_loader, <span class="number">0</span>):</span><br><span class="line">        inputs, target = data</span><br><span class="line">        inputs, target = inputs.to(device), target.to(device)</span><br><span class="line">        optimizer.zero_grad()</span><br><span class="line"> </span><br><span class="line">        outputs = model(inputs)</span><br><span class="line">        loss = criterion(outputs, target)</span><br><span class="line">        loss.backward()</span><br><span class="line">        optimizer.step()</span><br><span class="line"> </span><br><span class="line">        running_loss += loss.item()</span><br><span class="line">        <span class="keyword">if</span> batch_idx % <span class="number">300</span> == <span class="number">299</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;[%d, %5d] loss: %.3f&#x27;</span> % (epoch+<span class="number">1</span>, batch_idx+<span class="number">1</span>, running_loss/<span class="number">300</span>))</span><br><span class="line">            running_loss = <span class="number">0.0</span></span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test</span>():</span></span><br><span class="line">    correct = <span class="number">0</span></span><br><span class="line">    total = <span class="number">0</span></span><br><span class="line">    <span class="keyword">with</span> torch.no_grad():</span><br><span class="line">        <span class="keyword">for</span> data <span class="keyword">in</span> test_loader:</span><br><span class="line">            images, labels = data</span><br><span class="line">            images, labels = images.to(device), labels.to(device)<span class="comment">#数据迁移到GPU</span></span><br><span class="line">            outputs = model(images)</span><br><span class="line">            _, predicted = torch.<span class="built_in">max</span>(outputs.data, dim=<span class="number">1</span>)</span><br><span class="line">            total += labels.size(<span class="number">0</span>)</span><br><span class="line">            correct += (predicted == labels).<span class="built_in">sum</span>().item()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;accuracy on test set: %d %% &#x27;</span> % (<span class="number">100</span>*correct/total))</span><br><span class="line">    <span class="keyword">return</span> correct/total</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    epoch_list = []</span><br><span class="line">    acc_list = []</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> epoch <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10</span>):</span><br><span class="line">        train(epoch)</span><br><span class="line">        acc = test()</span><br><span class="line">        epoch_list.append(epoch)</span><br><span class="line">        acc_list.append(acc)</span><br><span class="line">    </span><br><span class="line">    plt.plot(epoch_list,acc_list)</span><br><span class="line">    plt.ylabel(<span class="string">&#x27;accuracy&#x27;</span>)</span><br><span class="line">    plt.xlabel(<span class="string">&#x27;epoch&#x27;</span>)</span><br><span class="line">    plt.show()</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
+<p>Loss可视化：</p>
+<p><img src="/images/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/image-20210908215333599.png" alt="image-20210908215333599" style="zoom: 50%;"></p>
+<h2><span id="作业">作业</span></h2><p>定义三层卷积，三层池化的代码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">from</span> torchvision <span class="keyword">import</span> transforms</span><br><span class="line"><span class="keyword">from</span> torchvision <span class="keyword">import</span> datasets</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> torch.utils.data <span class="keyword">import</span> DataLoader</span><br><span class="line"><span class="keyword">import</span> torch.nn.functional <span class="keyword">as</span> F</span><br><span class="line"><span class="keyword">import</span> torch.optim <span class="keyword">as</span> optim</span><br><span class="line"></span><br><span class="line">batch_size = <span class="number">64</span></span><br><span class="line"></span><br><span class="line">transform = transforms.Compose([</span><br><span class="line">    transforms.ToTensor(),</span><br><span class="line">    transforms.Normalize((<span class="number">0.1307</span>,), (<span class="number">0.3081</span>,))</span><br><span class="line">])</span><br><span class="line">train_dataset = datasets.MNIST(root=<span class="string">&quot;../dataset/mnist/&quot;</span>,</span><br><span class="line">                               train=<span class="literal">True</span>,</span><br><span class="line">                               download=<span class="literal">True</span>,</span><br><span class="line">                               transform=transform)</span><br><span class="line">train_loader = DataLoader(train_dataset,</span><br><span class="line">                          shuffle=<span class="literal">True</span>,</span><br><span class="line">                          batch_size=batch_size)</span><br><span class="line"></span><br><span class="line">test_dataset = datasets.MNIST(root=<span class="string">&quot;../dataset/mnist/&quot;</span>,</span><br><span class="line">                              train=<span class="literal">False</span>,</span><br><span class="line">                              download=<span class="literal">True</span>,</span><br><span class="line">                              transform=transform)</span><br><span class="line">test_loader = DataLoader(test_dataset,</span><br><span class="line">                         shuffle=<span class="literal">False</span>,</span><br><span class="line">                         batch_size=batch_size)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Net</span>(<span class="params">torch.nn.Module</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="built_in">super</span>(Net, self).__init__()</span><br><span class="line">        self.conv1 = torch.nn.Conv2d(<span class="number">1</span>, <span class="number">10</span>, kernel_size=<span class="number">3</span>)</span><br><span class="line">        self.conv2 = torch.nn.Conv2d(<span class="number">10</span>, <span class="number">20</span>, kernel_size=<span class="number">5</span>)</span><br><span class="line">        self.conv3 = torch.nn.Conv2d(<span class="number">20</span>, <span class="number">30</span>, kernel_size=<span class="number">3</span>)</span><br><span class="line">        self.pooling1 = torch.nn.MaxPool2d(kernel_size=<span class="number">5</span>, stride=<span class="number">2</span>)</span><br><span class="line">        self.pooling2 = torch.nn.MaxPool2d(kernel_size=<span class="number">3</span>, stride=<span class="number">1</span>)</span><br><span class="line">        self.pooling3 = torch.nn.MaxPool2d(kernel_size=<span class="number">3</span>, stride=<span class="number">2</span>)</span><br><span class="line">        self.fc = torch.nn.Linear(<span class="number">120</span>, <span class="number">10</span>)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">forward</span>(<span class="params">self, x</span>):</span></span><br><span class="line">        batch_size = x.size(<span class="number">0</span>)</span><br><span class="line">        x = F.relu(self.pooling2(self.conv1(x)))</span><br><span class="line">        <span class="comment"># print(x.size())</span></span><br><span class="line">        x = F.relu(self.pooling1(self.conv2(x)))</span><br><span class="line">        <span class="comment"># print(x.size())</span></span><br><span class="line">        x = F.relu(self.pooling3(self.conv3(x)))</span><br><span class="line">        <span class="comment"># print(x.size())</span></span><br><span class="line">        x = x.view(batch_size, -<span class="number">1</span>)</span><br><span class="line">        x = self.fc(x)</span><br><span class="line">        <span class="comment"># print(x.size())</span></span><br><span class="line">        <span class="keyword">return</span> x</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">model = Net()</span><br><span class="line">device = torch.device(<span class="string">&quot;cuda:0&quot;</span> <span class="keyword">if</span> torch.cuda.is_available() <span class="keyword">else</span> <span class="string">&quot;cpu&quot;</span>)</span><br><span class="line">model.to(device)</span><br><span class="line"></span><br><span class="line">criterion = torch.nn.CrossEntropyLoss()</span><br><span class="line">optimizer = optim.SGD(model.parameters(), lr=<span class="number">0.1</span>, momentum=<span class="number">0.5</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">train</span>(<span class="params">enpoch</span>):</span></span><br><span class="line">    running_loss = <span class="number">0.0</span></span><br><span class="line">    <span class="keyword">for</span> batch_idx, data <span class="keyword">in</span> <span class="built_in">enumerate</span>(train_loader, <span class="number">0</span>):</span><br><span class="line">        inputs, target = data</span><br><span class="line">        inputs, target = inputs.to(device), target.to(device)</span><br><span class="line">        optimizer.zero_grad()</span><br><span class="line"></span><br><span class="line">        outputs = model(inputs)</span><br><span class="line">        loss = criterion(outputs, target)</span><br><span class="line">        loss.backward()</span><br><span class="line">        optimizer.step()</span><br><span class="line">        loss_list.append(loss.item())</span><br><span class="line">        running_loss += loss.item()</span><br><span class="line">        <span class="keyword">if</span> batch_idx % <span class="number">300</span> == <span class="number">299</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;[%d, %5d] loss: %.3f&#x27;</span> % (epoch + <span class="number">1</span>, batch_idx + <span class="number">1</span>, running_loss / <span class="number">300</span>))</span><br><span class="line">            running_loss = <span class="number">0.0</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test</span>(<span class="params">epoch</span>):</span></span><br><span class="line">    correct = <span class="number">0</span></span><br><span class="line">    total = <span class="number">0</span></span><br><span class="line">    <span class="keyword">with</span> torch.no_grad():</span><br><span class="line">        <span class="keyword">for</span> data <span class="keyword">in</span> test_loader:</span><br><span class="line">            images, labels = data</span><br><span class="line">            images, labels = images.to(device), labels.to(device)</span><br><span class="line">            outputs = model(images)</span><br><span class="line">            _, predicted = torch.<span class="built_in">max</span>(outputs.data, dim=<span class="number">1</span>)</span><br><span class="line">            total += labels.size(<span class="number">0</span>)</span><br><span class="line">            correct += (predicted == labels).<span class="built_in">sum</span>().item()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;第&#123;&#125;轮训练后正确率为：&quot;</span>.<span class="built_in">format</span>(epoch + <span class="number">1</span>), correct / total)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    loss_list=[]</span><br><span class="line">    <span class="keyword">for</span> epoch <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">20</span>):</span><br><span class="line">        train(epoch)</span><br><span class="line">        <span class="keyword">if</span> epoch % <span class="number">10</span> == <span class="number">9</span>:</span><br><span class="line">            test(epoch)</span><br><span class="line">    plt.plot(<span class="built_in">range</span>(<span class="built_in">len</span>(loss_list)), loss_list)</span><br><span class="line">    plt.xlabel(<span class="string">&#x27;step&#x27;</span>)</span><br><span class="line">    plt.ylabel(<span class="string">&#x27;loss&#x27;</span>)</span><br><span class="line">    plt.show()</span><br></pre></td></tr></table></figure>
+<p>Loss可视化：</p>
+<p><img src="/images/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/image-20210908220545924.png" alt="image-20210908220545924" style="zoom:33%;"></p>
+<p>test结果：</p>
+<p><img src="/images/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/image-20210908220621695.png" alt="image-20210908220621695" style="zoom:50%;"></p>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -191,361 +277,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://zz-m-918.github.io/2021/09/08/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/08/PyTorch-%E5%A4%9A%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2021-09-08T12:45:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-08</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2021/09/08/PyTorch-%E5%A4%9A%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">PyTorch-多分类问题</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/08/PyTorch-%E5%A4%9A%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98/">PyTorch-多分类问题</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/08/PyTorch-%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E9%9B%86/" class="archive-article-date">
-  	<time datetime="2021-09-08T08:27:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-08</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/08/PyTorch-%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E9%9B%86/">PyTorch-加载数据集</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/07/PyTorch-%E5%A4%84%E7%90%86%E5%A4%9A%E7%BB%B4%E7%89%B9%E5%BE%81%E7%9A%84%E8%BE%93%E5%85%A5/" class="archive-article-date">
-  	<time datetime="2021-09-07T15:22:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/07/PyTorch-%E5%A4%84%E7%90%86%E5%A4%9A%E7%BB%B4%E7%89%B9%E5%BE%81%E7%9A%84%E8%BE%93%E5%85%A5/">PyTorch-处理多维特征的输入</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/07/PyTorch-%E9%80%BB%E8%BE%91%E6%96%AF%E8%92%82%E5%9B%9E%E5%BD%92/" class="archive-article-date">
-  	<time datetime="2021-09-07T14:34:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/07/PyTorch-%E9%80%BB%E8%BE%91%E6%96%AF%E8%92%82%E5%9B%9E%E5%BD%92/">PyTorch-逻辑斯蒂回归</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/07/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/" class="archive-article-date">
-  	<time datetime="2021-09-07T13:33:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/07/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/">PyTorch-用PyTorch实现线性回归</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/07/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/" class="archive-article-date">
-  	<time datetime="2021-09-06T16:05:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/07/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/">PyTorch-反向传播</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/06/PyTorch-%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E7%AE%97%E6%B3%95/" class="archive-article-date">
-  	<time datetime="2021-09-06T15:05:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/06/PyTorch-%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E7%AE%97%E6%B3%95/">PyTorch-梯度下降算法</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/02/%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B%E5%92%8C%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6/" class="archive-article-date">
-  	<time datetime="2021-09-02T15:31:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-02</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/02/%E5%BA%8F%E5%88%97%E6%A8%A1%E5%9E%8B%E5%92%8C%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6/">序列模型和注意力机制</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">吴恩达深度学习</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/01/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E4%B8%8E%E8%AF%8D%E5%B5%8C%E5%85%A5/" class="archive-article-date">
-  	<time datetime="2021-09-01T09:12:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/01/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E4%B8%8E%E8%AF%8D%E5%B5%8C%E5%85%A5/">自然语言处理与词嵌入</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">吴恩达深度学习</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -568,8 +399,8 @@
 	var yiliaConfig = {
 		mathjax: [object Object],
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
