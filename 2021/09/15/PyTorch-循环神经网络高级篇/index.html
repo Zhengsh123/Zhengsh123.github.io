@@ -6,15 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://zz-m-918.github.io">
-  <title>Archives: 2021/9 | ZSH</title>
+  <title>PyTorch-循环神经网络高级篇 | ZSH</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="ZSH">
-<meta property="og:url" content="https://zz-m-918.github.io/archives/2021/09/index.html">
+  <meta name="description" content="循环神经网络高级篇">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PyTorch-循环神经网络高级篇">
+<meta property="og:url" content="https://zz-m-918.github.io/2021/09/15/PyTorch-%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%AB%98%E7%BA%A7%E7%AF%87/index.html">
 <meta property="og:site_name" content="ZSH">
+<meta property="og:description" content="循环神经网络高级篇">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%AB%98%E7%BA%A7%E7%AF%87/image-20210915104814664.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%AB%98%E7%BA%A7%E7%AF%87/image-20210915104857297.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%AB%98%E7%BA%A7%E7%AF%87/image-20210915221508606.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%AB%98%E7%BA%A7%E7%AF%87/image-20210915221601212.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%AB%98%E7%BA%A7%E7%AF%87/image-20210915222343489.png">
+<meta property="og:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%AB%98%E7%BA%A7%E7%AF%87/image-20210915223300923.png">
+<meta property="article:published_time" content="2021-09-15T14:54:48.000Z">
+<meta property="article:modified_time" content="2021-09-15T14:55:32.183Z">
 <meta property="article:author" content="ZSH">
+<meta property="article:tag" content="PyTorch">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://zz-m-918.github.io/images/PyTorch-%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%AB%98%E7%BA%A7%E7%AF%87/image-20210915104814664.png">
   
     <link rel="alternative" href="/atom.xml" title="ZSH" type="application/atom+xml">
   
@@ -150,36 +162,76 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-PyTorch-循环神经网络高级篇" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      PyTorch-循环神经网络高级篇
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/15/PyTorch-%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%AB%98%E7%BA%A7%E7%AF%87/" class="archive-article-date">
+
+        
+        <a href="/2021/09/15/PyTorch-%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%AB%98%E7%BA%A7%E7%AF%87/" class="archive-article-date">
   	<time datetime="2021-09-15T14:54:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-15</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/15/PyTorch-%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%AB%98%E7%BA%A7%E7%AF%87/">PyTorch-循环神经网络高级篇</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1><span id="循环神经网络高级篇">循环神经网络高级篇</span></h1><span id="more"></span>
+<!-- toc -->
+<!-- tocstop -->
+<p>课程来源：PyTorch深度学习实践——河北工业大学</p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Y7411d7Ys?p=2">《PyTorch深度学习实践》完结合集_哔哩哔哩_bilibili</a></p>
+<p>这一讲主要介绍如何实现一个循环神经网络的分类器。</p>
+<p>实现的分类器就是将人名与人名可能所在的国籍相匹配。国家一共来自于18个语言地区，这一分类器能基于拼写预测名字属于哪一种语言。</p>
+<p>首先复习一下上述RNN结构：</p>
+<p><img src="/images/PyTorch-%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%AB%98%E7%BA%A7%E7%AF%87/image-20210915104814664.png" alt="image-20210915104814664" style="zoom:33%;"></p>
+<p>由于中间的隐层输出的含义可能并不明确，因此可以去除隐层输出，将RNN结构变换为如下结构：</p>
+<p><img src="/images/PyTorch-%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%AB%98%E7%BA%A7%E7%AF%87/image-20210915104857297.png" alt="image-20210915104857297" style="zoom:33%;"></p>
+<p>第一步：准备数据，将名字分为单个字母的组成，后将其转换为ASCII，如下：</p>
+<p><img src="/images/PyTorch-%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%AB%98%E7%BA%A7%E7%AF%87/image-20210915221508606.png" alt="image-20210915221508606" style="zoom: 25%;"></p>
+<p>接着将序列进行一个padding（也就是将长度补齐），如下图所示：</p>
+<p><img src="/images/PyTorch-%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%AB%98%E7%BA%A7%E7%AF%87/image-20210915221601212.png" alt="image-20210915221601212" style="zoom:25%;"></p>
+<p>接着将国家名称转化为索引。</p>
+<p>注：双向RNN：</p>
+<p><img src="/images/PyTorch-%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%AB%98%E7%BA%A7%E7%AF%87/image-20210915222343489.png" alt="image-20210915222343489"></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#-------------0 Import Package-------------------------#</span></span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="comment"># 绘图</span></span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="comment"># 读取数据</span></span><br><span class="line"><span class="keyword">import</span> gzip</span><br><span class="line"><span class="keyword">import</span> csv</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> torch.nn.utils.rnn <span class="keyword">import</span> pack_padded_sequence</span><br><span class="line"><span class="keyword">from</span> torch.utils.data <span class="keyword">import</span> Dataset, DataLoader</span><br><span class="line"></span><br><span class="line"><span class="comment"># ------------0 parameters-------------#</span></span><br><span class="line">HIDDEN_SIZE = <span class="number">100</span></span><br><span class="line">BATCH_SIZE = <span class="number">256</span></span><br><span class="line">N_LAYER = <span class="number">2</span></span><br><span class="line">N_EPOCHS = <span class="number">100</span></span><br><span class="line">N_CHARS = <span class="number">128</span>  <span class="comment"># 字典长度</span></span><br><span class="line">USE_GPU = <span class="literal">False</span>  <span class="comment"># 不用GPU</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># ---------------------1 Preparing Data and DataLoad-------------------------------#</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">NameDataset</span>(<span class="params">Dataset</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self, is_train_set=<span class="literal">True</span></span>):</span></span><br><span class="line">        filename = <span class="string">&#x27;data/names_train.csv.gz&#x27;</span> <span class="keyword">if</span> is_train_set <span class="keyword">else</span> <span class="string">&#x27;data/names_test.csv.gz&#x27;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 访问数据集，使用gzip和csv包</span></span><br><span class="line">        <span class="keyword">with</span> gzip.<span class="built_in">open</span>(filename, <span class="string">&#x27;rt&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">            reader = csv.reader(f)</span><br><span class="line">            rows = <span class="built_in">list</span>(reader)  <span class="comment"># 按行读取（names，countries）</span></span><br><span class="line"></span><br><span class="line">        self.names = [row[<span class="number">0</span>] <span class="keyword">for</span> row <span class="keyword">in</span> rows]</span><br><span class="line">        self.<span class="built_in">len</span> = <span class="built_in">len</span>(self.names)</span><br><span class="line">        self.countries = [row[<span class="number">1</span>] <span class="keyword">for</span> row <span class="keyword">in</span> rows]</span><br><span class="line">        self.country_list = <span class="built_in">list</span>(<span class="built_in">sorted</span>(<span class="built_in">set</span>(self.countries)))  <span class="comment"># set:去除重复，sorted：排序，list：转换为列表</span></span><br><span class="line">        self.country_dict = self.getCountryDict()</span><br><span class="line">        self.country_num = <span class="built_in">len</span>(self.country_list)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__getitem__</span>(<span class="params">self, index</span>):</span></span><br><span class="line">        <span class="keyword">return</span> self.names[index], self.country_dict[self.countries[index]]</span><br><span class="line">        <span class="comment"># 取出的names是字符串，country_dict是索引</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__len__</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="keyword">return</span> self.<span class="built_in">len</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">getCountryDict</span>(<span class="params">self</span>):</span>  <span class="comment"># Convert list into dictionary.</span></span><br><span class="line">        country_dict = <span class="built_in">dict</span>()</span><br><span class="line">        <span class="keyword">for</span> idx, country_name <span class="keyword">in</span> <span class="built_in">enumerate</span>(self.country_list, <span class="number">0</span>):</span><br><span class="line">            country_dict[country_name] = idx</span><br><span class="line">        <span class="keyword">return</span> country_dict</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">idx2country</span>(<span class="params">self, index</span>):</span>  <span class="comment"># Return country name giving index.</span></span><br><span class="line">        <span class="keyword">return</span> self.country_list[index]</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">getCountriesNum</span>(<span class="params">self</span>):</span>  <span class="comment"># Return the number of countries.</span></span><br><span class="line">        <span class="keyword">return</span> self.country_num</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># DataLoade</span></span><br><span class="line">trainset = NameDataset(is_train_set=<span class="literal">True</span>)</span><br><span class="line">trainloader = DataLoader(trainset, batch_size=BATCH_SIZE, shuffle=<span class="literal">True</span>)</span><br><span class="line">testset = NameDataset(is_train_set=<span class="literal">False</span>)</span><br><span class="line">testloader = DataLoader(testset, batch_size=BATCH_SIZE, shuffle=<span class="literal">False</span>)</span><br><span class="line">N_COUNTRY = trainset.getCountriesNum()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># ------------------------------Design  Model-----------------------------------#</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">create_tensor</span>(<span class="params">tensor</span>):</span></span><br><span class="line">    <span class="keyword">if</span> USE_GPU:</span><br><span class="line">        device = torch.device(<span class="string">&quot;cuda:0&quot;</span>)</span><br><span class="line">        tensor = tensor.to(device)</span><br><span class="line">    <span class="keyword">return</span> tensor</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">RNNClassifier</span>(<span class="params">torch.nn.Module</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self, input_size, hidden_size, output_size, n_layers=<span class="number">1</span>, bidirectional=<span class="literal">True</span></span>):</span></span><br><span class="line">        <span class="built_in">super</span>(RNNClassifier, self).__init__()</span><br><span class="line">        self.hidden_size = hidden_size</span><br><span class="line">        self.n_layers = n_layers</span><br><span class="line">        self.n_directions = <span class="number">2</span> <span class="keyword">if</span> bidirectional <span class="keyword">else</span> <span class="number">1</span>  <span class="comment"># bidirectional，双向循环神经网络</span></span><br><span class="line">        self.embedding = torch.nn.Embedding(input_size, hidden_size)</span><br><span class="line">        self.gru = torch.nn.GRU(hidden_size, hidden_size, n_layers, bidirectional=bidirectional)</span><br><span class="line">        self.fc = torch.nn.Linear(hidden_size * self.n_directions, output_size)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">_init_hidden</span>(<span class="params">self, batch_size</span>):</span></span><br><span class="line">        hidden = torch.zeros(self.n_layers * self.n_directions, batch_size, self.hidden_size)</span><br><span class="line">        <span class="keyword">return</span> create_tensor(hidden)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">forward</span>(<span class="params">self, <span class="built_in">input</span>, seq_lengths</span>):</span></span><br><span class="line">        <span class="built_in">input</span> = <span class="built_in">input</span>.t()  <span class="comment"># 转置 t -&gt; transpose: input shape : B x S -&gt; S x B</span></span><br><span class="line">        batch_size = <span class="built_in">input</span>.size(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">        hidden = self._init_hidden(batch_size)  <span class="comment"># h0</span></span><br><span class="line">        embedding = self.embedding(<span class="built_in">input</span>)  <span class="comment"># （seqLen,batchSize,hiddenSize)</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># PackedSquence：把为0的填充量去除，把每个样本的长度记录下来，按长度排序后拼接在一起</span></span><br><span class="line">        gru_input = pack_padded_sequence(embedding, seq_lengths)</span><br><span class="line"></span><br><span class="line">        output, hidden = self.gru(gru_input, hidden)</span><br><span class="line">        <span class="keyword">if</span> self.n_directions == <span class="number">2</span>:  <span class="comment"># 双向循环神经网络有两个hidden</span></span><br><span class="line">            hidden_cat = torch.cat([hidden[-<span class="number">1</span>], hidden[-<span class="number">2</span>]], dim=<span class="number">1</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            hidden_cat = hidden[-<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line">        fc_output = self.fc(hidden_cat)</span><br><span class="line">        <span class="keyword">return</span> fc_output</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">classifier = RNNClassifier(N_CHARS, HIDDEN_SIZE, N_COUNTRY, N_LAYER)</span><br><span class="line"></span><br><span class="line"><span class="comment">#----------------------3 Construct Loss and Optimizer------------------------------------#</span></span><br><span class="line">criterion = torch.nn.CrossEntropyLoss()</span><br><span class="line">optimizer = torch.optim.Adam(classifier.parameters(), lr=<span class="number">0.001</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#-----------------------------------4 Train and Test----------------------------------------------------#</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">time_since</span>(<span class="params">since</span>):</span></span><br><span class="line">    s = time.time() - since</span><br><span class="line">    m = math.floor(s / <span class="number">60</span>)</span><br><span class="line">    s -= m * <span class="number">60</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">&#x27;%dm %ds&#x27;</span> % (m, s)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">name2list</span>(<span class="params">name</span>):</span></span><br><span class="line">    arr = [<span class="built_in">ord</span>(c) <span class="keyword">for</span> c <span class="keyword">in</span> name]  <span class="comment"># 返回对应字符的 ASCII 数值</span></span><br><span class="line">    <span class="keyword">return</span> arr, <span class="built_in">len</span>(arr)  <span class="comment"># 返回元组，列表本身和列表长度</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">make_tensors</span>(<span class="params">names, countries</span>):</span></span><br><span class="line">    sequences_and_lengths = [name2list(name) <span class="keyword">for</span> name <span class="keyword">in</span> names]</span><br><span class="line">    name_sequences = [sl[<span class="number">0</span>] <span class="keyword">for</span> sl <span class="keyword">in</span> sequences_and_lengths]</span><br><span class="line">    seq_lengths = torch.LongTensor([sl[<span class="number">1</span>] <span class="keyword">for</span> sl <span class="keyword">in</span> sequences_and_lengths])</span><br><span class="line">    countries = countries.long()  <span class="comment"># countries：国家索引</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># make tensor of name, BatchSize x SeqLen</span></span><br><span class="line">    seq_tensor = torch.zeros(<span class="built_in">len</span>(name_sequences), seq_lengths.<span class="built_in">max</span>()).long()</span><br><span class="line">    <span class="keyword">for</span> idx, (seq, seq_len) <span class="keyword">in</span> <span class="built_in">enumerate</span>(<span class="built_in">zip</span>(name_sequences, seq_lengths), <span class="number">0</span>):</span><br><span class="line">        seq_tensor[idx, :seq_len] = torch.LongTensor(seq)</span><br><span class="line">    <span class="comment"># 先制作一个全0的tensor，然后将名字贴在上面</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 排序，sort by length to use pack_padded_sequence</span></span><br><span class="line">    seq_lengths, perm_idx = seq_lengths.sort(dim=<span class="number">0</span>, descending=<span class="literal">True</span>)</span><br><span class="line">    <span class="comment"># sort返回两个值，seq_lengths：排完序后的序列（未padding），perm_idx：排完序后对应元素的索引</span></span><br><span class="line">    seq_tensor = seq_tensor[perm_idx]  <span class="comment"># 排序（已padding）</span></span><br><span class="line">    countries = countries[perm_idx]  <span class="comment"># 排序（标签）</span></span><br><span class="line">    <span class="keyword">return</span> create_tensor(seq_tensor), create_tensor(seq_lengths), create_tensor(countries)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">trainModel</span>():</span></span><br><span class="line">    total_loss = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i, (names, countries) <span class="keyword">in</span> <span class="built_in">enumerate</span>(trainloader, <span class="number">1</span>):</span><br><span class="line">        inputs, seq_lengths, target = make_tensors(names, countries)  <span class="comment"># make_tensors</span></span><br><span class="line">        output = classifier(inputs, seq_lengths)</span><br><span class="line">        loss = criterion(output, target)</span><br><span class="line">        optimizer.zero_grad()</span><br><span class="line">        loss.backward()</span><br><span class="line">        optimizer.step()</span><br><span class="line"></span><br><span class="line">        total_loss += loss.item()</span><br><span class="line">        <span class="keyword">if</span> i % <span class="number">10</span> == <span class="number">0</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">f&#x27;[<span class="subst">&#123;time_since(start)&#125;</span>] Epoch <span class="subst">&#123;epoch&#125;</span> &#x27;</span>, end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">f&#x27;[<span class="subst">&#123;i * <span class="built_in">len</span>(inputs)&#125;</span>/<span class="subst">&#123;<span class="built_in">len</span>(trainset)&#125;</span>] &#x27;</span>, end=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">f&#x27;loss=<span class="subst">&#123;total_loss / (i * <span class="built_in">len</span>(inputs))&#125;</span>&#x27;</span>)</span><br><span class="line">    <span class="keyword">return</span> total_loss</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">testModel</span>():</span></span><br><span class="line">    correct = <span class="number">0</span></span><br><span class="line">    total = <span class="built_in">len</span>(testset)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;evaluating trained model ...&quot;</span>)</span><br><span class="line">    <span class="keyword">with</span> torch.no_grad():</span><br><span class="line">        <span class="keyword">for</span> i, (names, countries) <span class="keyword">in</span> <span class="built_in">enumerate</span>(testloader, <span class="number">1</span>):</span><br><span class="line">            inputs, seq_lengths, target = make_tensors(names, countries)  <span class="comment"># make_tensors</span></span><br><span class="line">            output = classifier(inputs, seq_lengths)</span><br><span class="line">            pred = output.<span class="built_in">max</span>(dim=<span class="number">1</span>, keepdim=<span class="literal">True</span>)[<span class="number">1</span>]</span><br><span class="line">            correct += pred.eq(target.view_as(pred)).<span class="built_in">sum</span>().item()</span><br><span class="line">        percent = <span class="string">&#x27;%.2f&#x27;</span> % (<span class="number">100</span> * correct / total)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&#x27;Test set: Accuracy <span class="subst">&#123;correct&#125;</span>/<span class="subst">&#123;total&#125;</span> <span class="subst">&#123;percent&#125;</span>%&#x27;</span>)</span><br><span class="line">    <span class="keyword">return</span> correct / total</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="keyword">if</span> USE_GPU:</span><br><span class="line">        device = torch.device(<span class="string">&quot;cuda:0&quot;</span>)</span><br><span class="line">        classifier.to(device)</span><br><span class="line">    start = time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Training for %d epochs...&quot;</span> % N_EPOCHS)</span><br><span class="line">    acc_list = []</span><br><span class="line">    <span class="comment"># Train cycle，In every epoch, training and testing the model once.</span></span><br><span class="line">    <span class="keyword">for</span> epoch <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, N_EPOCHS + <span class="number">1</span>):</span><br><span class="line">        trainModel()</span><br><span class="line">        acc = testModel()</span><br><span class="line">        acc_list.append(acc)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 绘图</span></span><br><span class="line">epoch = np.arange(<span class="number">1</span>, <span class="built_in">len</span>(acc_list) + <span class="number">1</span>, <span class="number">1</span>)</span><br><span class="line">acc_list = np.array(acc_list)</span><br><span class="line">plt.plot(epoch, acc_list)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;Epoch&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;Accuracy&#x27;</span>)</span><br><span class="line">plt.grid()</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p>结果：</p>
+<p><img src="/images/PyTorch-%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%AB%98%E7%BA%A7%E7%AF%87/image-20210915223300923.png" alt="image-20210915223300923" style="zoom:25%;"></p>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -191,364 +243,105 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://zz-m-918.github.io/2021/09/15/PyTorch-%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%AB%98%E7%BA%A7%E7%AF%87/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/14/PyTorch-%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/" class="archive-article-date">
-  	<time datetime="2021-09-14T15:47:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-14</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2021/09/14/PyTorch-%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">PyTorch-循环神经网络基础篇</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/14/PyTorch-%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/">PyTorch-循环神经网络基础篇</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/08/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%AB%98%E7%BA%A7%E7%AF%87/" class="archive-article-date">
-  	<time datetime="2021-09-08T14:55:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-08</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/08/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E9%AB%98%E7%BA%A7%E7%AF%87/">PyTorch-卷积神经网络高级篇</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/08/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/" class="archive-article-date">
-  	<time datetime="2021-09-08T14:08:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-08</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/08/PyTorch-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%AF%87/">PyTorch-卷积神经网络基础篇</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/08/PyTorch-%E5%A4%9A%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2021-09-08T12:45:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-08</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/08/PyTorch-%E5%A4%9A%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98/">PyTorch-多分类问题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/08/PyTorch-%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E9%9B%86/" class="archive-article-date">
-  	<time datetime="2021-09-08T08:27:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-08</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/08/PyTorch-%E5%8A%A0%E8%BD%BD%E6%95%B0%E6%8D%AE%E9%9B%86/">PyTorch-加载数据集</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/07/PyTorch-%E5%A4%84%E7%90%86%E5%A4%9A%E7%BB%B4%E7%89%B9%E5%BE%81%E7%9A%84%E8%BE%93%E5%85%A5/" class="archive-article-date">
-  	<time datetime="2021-09-07T15:22:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/07/PyTorch-%E5%A4%84%E7%90%86%E5%A4%9A%E7%BB%B4%E7%89%B9%E5%BE%81%E7%9A%84%E8%BE%93%E5%85%A5/">PyTorch-处理多维特征的输入</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/07/PyTorch-%E9%80%BB%E8%BE%91%E6%96%AF%E8%92%82%E5%9B%9E%E5%BD%92/" class="archive-article-date">
-  	<time datetime="2021-09-07T14:34:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/07/PyTorch-%E9%80%BB%E8%BE%91%E6%96%AF%E8%92%82%E5%9B%9E%E5%BD%92/">PyTorch-逻辑斯蒂回归</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/07/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/" class="archive-article-date">
-  	<time datetime="2021-09-07T13:33:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/07/PyTorch-%E7%94%A8PyTorch%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/">PyTorch-用PyTorch实现线性回归</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/07/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/" class="archive-article-date">
-  	<time datetime="2021-09-06T16:05:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/07/PyTorch-%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/">PyTorch-反向传播</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PyTorch</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2021/09/page/2/">2</a><a class="extend next" rel="next" href="/archives/2021/09/page/2/">Next &amp;raquo;</a>
-    </nav>
   
 
 
@@ -572,8 +365,8 @@
 	var yiliaConfig = {
 		mathjax: [object Object],
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
