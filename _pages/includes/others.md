@@ -1,4 +1,4 @@
-# Patent Applications
+# ✒️ Patent Applications
 
 - 预训练对偶注意力神经网络语义推断对话检索方法及系统、检索设备、存储介质。
 

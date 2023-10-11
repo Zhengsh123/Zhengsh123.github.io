@@ -2,11 +2,11 @@
  * @Author: Qiguang Chen
  * @LastEditors: Qiguang Chen
  * @Date: 2023-10-10 21:30:10
- * @LastEditTime: 2023-10-10 21:43:59
+ * @LastEditTime: 2023-10-12 02:44:35
  * @Description: 
  * 
 -->
-# 🎖 Honors and Awards
+# 🎖️ Honors and Awards
 - **Bachelor of Engineering (B.E.)**
 	- Outstanding Graduates, 2023.
 	- CCF Excellent College Students Price (Only 100 CS students in China were invited), 2022.
