@@ -2,14 +2,15 @@
  * @Author: Qiguang Chen
  * @LastEditors: Qiguang Chen
  * @Date: 2023-10-11 00:50:08
- * @LastEditTime: 2023-11-09 12:07:00
+ * @LastEditTime: 2024-01-17 21:03:21
  * @Description: 
  * 
 -->
 
 # 📝 Publications
-- ``EMNLP 2023`` <span style="color:red">(Oral)</span> [Cross-lingual Prompting: Improving Zero-shot Chain-of-Thought Reasoning across Languages](https://xxx), Libo Qin\*, **Qiguang Chen**\*, Fuxuan Wei, Shijue Huang, Wanxiang Che.
-- ``EMNLP 2023`` [End-to-end Task-oriented Dialogue: A Survey of Tasks, Methods, and Future Directions](https://xxx), Libo Qin, Wenbo Pan, **Qiguang Chen**, Lizi Liao, Zhou Yu, Yue Zhang, Wanxiang Che, Min Li.
+- ``ICLR 2024`` [Tree-Planner: Efficient Close-loop Task Planning with Large Language Models](https://arxiv.org/abs/2310.08582), Mengkang Hu, Yao Mu, Xinmiao Yu, Mingyu Ding, Shiguang Wu, Wenqi Shao, **Qiguang Chen**, Bin Wang, Yu Qiao, Ping Luo.
+- ``EMNLP 2023`` <span style="color:red">(Oral)</span> [Cross-lingual Prompting: Improving Zero-shot Chain-of-Thought Reasoning across Languages](https://arxiv.org/abs/2310.14799), Libo Qin\*, **Qiguang Chen**\*, Fuxuan Wei, Shijue Huang, Wanxiang Che.
+- ``EMNLP 2023`` [End-to-end Task-oriented Dialogue: A Survey of Tasks, Methods, and Future Directions](https://arxiv.org/abs/2311.09008), Libo Qin, Wenbo Pan, **Qiguang Chen**, Lizi Liao, Zhou Yu, Yue Zhang, Wanxiang Che, Min Li.
 - ``CCL 2023`` [Through the Lens of Core Competency: Survey on Evaluation of Large Language Models](https://aclanthology.org/2023.ccl-2.pdf#page=93), Ziyu Zhuang, **Qiguang Chen**, Longxuan Ma, Mingda Li, Yi Han, Yushan Qian, Haopeng Bai, Weinan Zhang, Ting Liu.
 - ``ACL 2023 (Demo)`` [OpenSLU: A Unified, Modularized, and Extensible Toolkit for Spoken Language Understanding](https://aclanthology.org/2023.acl-demo.9/), Libo Qin\*, **Qiguang Chen**\*, Xiao Xu, Yunlong Feng, Wanxiang Che.
 - ``ACL 2023 (Findings)`` [CLIPText: A New Paradigm for Zero-shot Text Classification](https://aclanthology.org/2023.findings-acl.69/), Libo Qin, Weiyun Wang, **Qiguang Chen**, Wanxiang Che.
@@ -23,4 +24,5 @@
 - ``MLNLP`` [SimBiber: A tool for simplifying bibtex with official info](https://github.com/MLNLP-World/SimBiber), ![](https://img.shields.io/github/stars/MLNLP-World/SimBiber).
 - ``MLNLP`` [Top-AI-Conferences-Paper-with-Code](https://github.com/MLNLP-World/Top-AI-Conferences-Paper-with-Code), ![](https://img.shields.io/github/stars/MLNLP-World/Top-AI-Conferences-Paper-with-Code).
 - ``MLNLP`` [AI-Paper-Collector](https://github.com/MLNLP-World/AI-Paper-Collector), ![](https://img.shields.io/github/stars/MLNLP-World/AI-Paper-collector).
+- ``SCIR`` [HuoZi](https://github.com/HIT-SCIR/huozi), ![](https://img.shields.io/github/stars/HIT-SCIR/huozi).
 - ``Baidu`` [Trust-AI](https://github.com/PaddlePaddle/TrustAI), ![](https://img.shields.io/github/stars/PaddlePaddle/TrustAI).
