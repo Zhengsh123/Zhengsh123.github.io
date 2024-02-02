@@ -34,10 +34,11 @@ His current research interest lies in Neural Architecture Search(NAS), and Graph
 - ``VLDB 2021`` [Assassin: an automatic classification system based on algorithm selection](https://dl.acm.org/doi/abs/10.14778/3476311.3476336), Tianyu Mu, Hongzhi Wang, **Shenghe Zheng** 
 
 # 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-
-
+- Outstanding Graduate of Harbin Institute of Technology, *2023*
+- Second Prize at the 14th Undergraduate Academic Forum, Harbin Institute of Technology, *2021*
+- Honorable Award in American Mathematics Modelling Contest for College Students, *2021*
+- Outstanding Student at Harbin Institute of Technology, *2019-2022*
+- Renmin Scholarship, *2019-2022*
 
 # 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
