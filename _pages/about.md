@@ -22,8 +22,9 @@ Shenghe Zheng is a first-year master degree candidate at the Department of Compu
 His current research interest lies in Neural Architecture Search(NAS), and Graph Neural Network(GNN). If you are seeking any form of academic cooperation, please feel free to email at [shenghez.zheng@gmail.com](shenghez.zheng@gmail.com).
 
 # 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.
+- *2023.08 - now*, Master Candidate in Computer Science, **Harbin Institute of Technology**.
+  - Supervisor: Prof. Hongzhi wang
+- *2019.08 - 2023.06*, B.Eng. in Computer Science, **Harbin Institute of Technology**.
 - 
 # 🔥 News
 - *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
