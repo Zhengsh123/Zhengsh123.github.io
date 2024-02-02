@@ -28,7 +28,7 @@ His current research interest lies in Neural Architecture Search(NAS), and Graph
 
 # 📝 Publications 
 
-``AAAI 2024`` [DCLP: Neural Architecture Predictor with Curriculum Contrastive Learning](https://arxiv.org/abs/2302.13020), **Shenghe Zheng**, Hongzhi Wang, Tianyu Mu,[code](https://github.com/Zhengsh123/DCLP)
+``AAAI 2024`` [DCLP: Neural Architecture Predictor with Curriculum Contrastive Learning](https://arxiv.org/abs/2302.13020), **Shenghe Zheng**, Hongzhi Wang, Tianyu Mu, [\[code\]](https://github.com/Zhengsh123/DCLP)
 
 # 🎖 Honors and Awards
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
