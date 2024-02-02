@@ -40,5 +40,4 @@ His current research interest lies in Neural Architecture Search(NAS), and Graph
 - Outstanding Student at Harbin Institute of Technology, *2019-2022*
 - Renmin Scholarship, *2019-2022*
 
-# 💻 CV
 
