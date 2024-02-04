@@ -8,7 +8,7 @@
 # Site Settings
 title                    : "Shenghe Zheng"
 name                     : &name "Shenghe Zheng"
-description              : &description "Master Candidate in MDC"
+description              : "Master Candidate in MDC, Harbin Institution of Technology"
 repository               : "Zhengsh123/Zhengsh123.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -24,7 +24,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Shenghe Zheng(郑晟赫)"
   avatar           : "images/profile.png"
-  bio              : "Master Candidate in MDC, Harbin Institution of Technology"
+  bio              : #"Master Candidate in MDC, Harbin Institution of Technology"
   location         : "Harbin, China"
   employer         :
   pubmed           : 
