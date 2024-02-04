@@ -7,7 +7,8 @@
 
 # Site Settings
 title                    : "Shenghe Zheng"
-description              : ""
+name                     : &name "Shenghe Zheng"
+description              : &description "Master Candidate in MDC"
 repository               : "Zhengsh123/Zhengsh123.github.io"
 google_scholar_stats_use_cdn : true
 
