@@ -19,12 +19,15 @@ redirect_from:
 
 Shenghe Zheng is a first-year master degree candidate at the Department of Computer Science, Harbin Institute of Technology, fortunately advised by [Prof.Hongzhi Wang]( http://homepage.hit.edu.cn/wang). Previously, Shenghe Zheng obtained his Bachelor’s degree from Harbin Institute of Technology in June 2023.
 
-His current research interest lies in Neural Architecture Search(NAS), and Graph Neural Network(GNN). If you are seeking any form of academic cooperation, please feel free to email at [shenghez.zheng@gmail.com](shenghez.zheng@gmail.com).
+His current research interests lie in Efficient AI, Neural Architecture Search(NAS), and Graph Neural Network(GNN). If you are seeking any form of academic cooperation, please feel free to email at [shenghez.zheng@gmail.com](shenghez.zheng@gmail.com).
 
 # 📖 Educations
 - *2023.08 - now*, Master Candidate in Computer Science, **Harbin Institute of Technology**.
   - Supervisor: Prof. Hongzhi wang
 - *2019.08 - 2023.06*, B.Eng. in Computer Science, **Harbin Institute of Technology**.
+
+# 🔥 News
+- *2024.09*: 🎉 Our [IntraMix](https://arxiv.org/abs/2405.00957) is accepted by NeurIPS 2024.
 
 # 📝 Publications 
 - ``AAAI 2024`` [DCLP: Neural Architecture Predictor with Curriculum Contrastive Learning](https://arxiv.org/abs/2302.13020), **Shenghe Zheng**, Hongzhi Wang, Tianyu Mu, [\[code\]](https://github.com/Zhengsh123/DCLP)
