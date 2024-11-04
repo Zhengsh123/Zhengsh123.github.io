@@ -30,6 +30,8 @@ His current research interests lie in Efficient AI, Neural Architecture Search(N
 - *2024.09*: 🎉 Our [IntraMix](https://arxiv.org/abs/2405.00957) is accepted by NeurIPS 2024.
 
 # 📝 Publications 
+- ``NeurIPS 2024`` [IntraMix: Intra-Class Mixup Generation for Accurate Labels and Neighbors](https://arxiv.org/abs/2405.00957), **Shenghe Zheng**, Hongzhi Wang, Xianglong Liu
+
 - ``AAAI 2024`` [DCLP: Neural Architecture Predictor with Curriculum Contrastive Learning](https://arxiv.org/abs/2302.13020), **Shenghe Zheng**, Hongzhi Wang, Tianyu Mu, [\[code\]](https://github.com/Zhengsh123/DCLP)
 
 - ``ICDE 2023`` [AutoTSC: Optimization Algorithm to Automatically Solve the Time Series Classification Problem](https://ieeexplore.ieee.org/document/9643158), Tianyu Mu, Hongzhi Wang, **Shenghe Zheng** 
