@@ -17,13 +17,13 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Shenghe Zheng is a first-year master degree candidate at the Department of Computer Science, Harbin Institute of Technology, fortunately advised by [Prof.Hongzhi Wang]( http://homepage.hit.edu.cn/wang). Previously, Shenghe Zheng obtained his Bachelor’s degree from Harbin Institute of Technology in June 2023.
+Shenghe Zheng is a second-year master degree candidate at the Department of Computer Science, Harbin Institute of Technology, fortunately advised by [Prof.Hongzhi Wang]( http://homepage.hit.edu.cn/wang). Previously, Shenghe Zheng obtained his Bachelor’s degree from Harbin Institute of Technology in June 2023.
 
 His current research interests lie in Efficient AI, Neural Architecture Search(NAS), and Graph Neural Network(GNN). If you are seeking any form of academic cooperation, please feel free to email at [shenghez.zheng@gmail.com](shenghez.zheng@gmail.com).
 
 # 📖 Educations
 - *2023.08 - now*, Master Candidate in Computer Science, **Harbin Institute of Technology**.
-  - Supervisor: Prof. Hongzhi wang
+  - Supervisor: Prof. Hongzhi wang, Rank: 1/129.
 - *2019.08 - 2023.06*, B.Eng. in Computer Science, **Harbin Institute of Technology**.
 
 # 🔥 News
@@ -36,9 +36,13 @@ His current research interests lie in Efficient AI, Neural Architecture Search(N
 
 - ``ICDE 2023`` [AutoTSC: Optimization Algorithm to Automatically Solve the Time Series Classification Problem](https://ieeexplore.ieee.org/document/9643158), Tianyu Mu, Hongzhi Wang, **Shenghe Zheng** 
 
-- ``VLDB 2021`` [Assassin: an automatic classification system based on algorithm selection](https://dl.acm.org/doi/abs/10.14778/3476311.3476336), Tianyu Mu, Hongzhi Wang, **Shenghe Zheng** 
+- ``VLDB 2021`` [Assassin: an automatic classification system based on algorithm selection](https://dl.acm.org/doi/abs/10.14778/3476311.3476336), Tianyu Mu, Hongzhi Wang, **Shenghe Zheng**
+
+# 📝 Preprints 
+- [FREE-Merging: Fourier Transform for Model Merging with Lightweight Experts](https://arxiv.org/abs/2411.16815), **Shenghe Zheng**, Hongzhi Wang
 
 # 🎖 Honors and Awards
+- National Scholarship, *2024*
 - Tencent Scholarship, *2024*
 - Outstanding Graduate of Harbin Institute of Technology, *2023*
 - Second Prize at the 14th Undergraduate Academic Forum, Harbin Institute of Technology, *2021*
