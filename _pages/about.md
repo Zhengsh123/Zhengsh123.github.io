@@ -52,8 +52,17 @@ His current research interests lie in Efficient AI, Neural Architecture Search(N
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICDE 2023</div><img src='images/DCLP.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
-- ``AAAI 2024`` [DCLP: Neural Architecture Predictor with Curriculum Contrastive Learning](https://arxiv.org/abs/2302.13020), **Shenghe Zheng**, Hongzhi Wang, Tianyu Mu, [\[code\]](https://github.com/Zhengsh123/DCLP)
+[AutoTSC: Optimization Algorithm to Automatically Solve the Time Series Classification Problem](https://ieeexplore.ieee.org/document/9643158)
+
+Tianyu Mu, Hongzhi Wang, **Shenghe Zheng** 
+
+- This paper introduces contrastive and curriculum learning for neural predictors, greatly reducing the performance evaluation cost in NAS.
+</div>
+</div>
+
 
 - ``ICDE 2023`` [AutoTSC: Optimization Algorithm to Automatically Solve the Time Series Classification Problem](https://ieeexplore.ieee.org/document/9643158), Tianyu Mu, Hongzhi Wang, **Shenghe Zheng** 
 
