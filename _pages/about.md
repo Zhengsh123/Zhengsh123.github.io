@@ -38,6 +38,7 @@ His current research interests lie in Efficient AI, Neural Architecture Search(N
 **Shenghe Zheng**, Hongzhi Wang, Xianglong Liu
 
 [**Code**](https://github.com/Zhengsh123/IntraMix)
+- This paper introduces IntraMix, seamlessly applying Mixup to graph augmentation, enhancing model effectiveness in data-scarce scenarios.
 </div>
 </div>
 
