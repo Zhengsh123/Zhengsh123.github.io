@@ -35,14 +35,23 @@ His current research interests lie in Efficient AI, Neural Architecture Search(N
 
 [IntraMix: Intra-Class Mixup Generation for Accurate Labels and Neighbors](https://arxiv.org/abs/2405.00957)
 
-**Shenghe Zheng**, Hongzhi Wang, Xianglong Liu
+**Shenghe Zheng**, Hongzhi Wang, Xianglong Liu. [**Code**](https://github.com/Zhengsh123/IntraMix)
 
-[**Code**](https://github.com/Zhengsh123/IntraMix)
 - This paper introduces IntraMix, seamlessly applying Mixup to graph augmentation, enhancing model effectiveness in data-scarce scenarios.
 </div>
 </div>
 
-- ``NeurIPS 2024`` [IntraMix: Intra-Class Mixup Generation for Accurate Labels and Neighbors](https://arxiv.org/abs/2405.00957), **Shenghe Zheng**, Hongzhi Wang, Xianglong Liu
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2024</div><img src='images/DCLP.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[DCLP: Neural Architecture Predictor with Curriculum Contrastive Learning](https://arxiv.org/abs/2302.13020)
+
+**Shenghe Zheng**, Hongzhi Wang, Tianyu Mu. [**Code**](https://github.com/Zhengsh123/DCLP)
+
+- This paper introduces contrastive and curriculum learning for neural predictors, greatly reducing the performance evaluation cost in NAS.
+</div>
+</div>
+
 
 - ``AAAI 2024`` [DCLP: Neural Architecture Predictor with Curriculum Contrastive Learning](https://arxiv.org/abs/2302.13020), **Shenghe Zheng**, Hongzhi Wang, Tianyu Mu, [\[code\]](https://github.com/Zhengsh123/DCLP)
 
