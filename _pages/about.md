@@ -52,21 +52,28 @@ His current research interests lie in Efficient AI, Neural Architecture Search(N
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICDE 2023</div><img src='images/DCLP.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICDE 2023</div><img src='images/TSC_AutoML.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [AutoTSC: Optimization Algorithm to Automatically Solve the Time Series Classification Problem](https://ieeexplore.ieee.org/document/9643158)
 
 Tianyu Mu, Hongzhi Wang, **Shenghe Zheng** 
 
-- This paper introduces contrastive and curriculum learning for neural predictors, greatly reducing the performance evaluation cost in NAS.
+- 
+This paper introduces AutoML to time series classification, using dataset similarity to recommend algorithms for new datasets automatically.
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">VLDB 2021</div><img src='images/Assassin.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
-- ``ICDE 2023`` [AutoTSC: Optimization Algorithm to Automatically Solve the Time Series Classification Problem](https://ieeexplore.ieee.org/document/9643158), Tianyu Mu, Hongzhi Wang, **Shenghe Zheng** 
+[Assassin: an automatic classification system based on algorithm selection](https://dl.acm.org/doi/abs/10.14778/3476311.3476336)
 
-- ``VLDB 2021`` [Assassin: an automatic classification system based on algorithm selection](https://dl.acm.org/doi/abs/10.14778/3476311.3476336), Tianyu Mu, Hongzhi Wang, **Shenghe Zheng**
+Tianyu Mu, Hongzhi Wang, **Shenghe Zheng** 
+
+- This paper uses reinforcement learning to select meta-features and recommend algorithms with hyperparameters for new datasets automatically.
+</div>
+</div>
 
 # 📝 Preprints 
 - [FREE-Merging: Fourier Transform for Model Merging with Lightweight Experts](https://arxiv.org/abs/2411.16815), **Shenghe Zheng**, Hongzhi Wang
