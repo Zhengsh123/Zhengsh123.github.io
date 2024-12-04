@@ -30,6 +30,15 @@ His current research interests lie in Efficient AI, Neural Architecture Search(N
 - *2024.09*: 🎉 Our [IntraMix](https://arxiv.org/abs/2405.00957) is accepted by NeurIPS 2024.
 
 # 📝 Publications 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 20024</div><img src='images/IntraMix.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[IntraMix: Intra-Class Mixup Generation for Accurate Labels and Neighbors](https://arxiv.org/abs/2405.00957)
+
+**Shenghe Zheng**, Hongzhi Wang, Xianglong Liu
+
+[**Code**](https://github.com/Zhengsh123/IntraMix)
+
 - ``NeurIPS 2024`` [IntraMix: Intra-Class Mixup Generation for Accurate Labels and Neighbors](https://arxiv.org/abs/2405.00957), **Shenghe Zheng**, Hongzhi Wang, Xianglong Liu
 
 - ``AAAI 2024`` [DCLP: Neural Architecture Predictor with Curriculum Contrastive Learning](https://arxiv.org/abs/2302.13020), **Shenghe Zheng**, Hongzhi Wang, Tianyu Mu, [\[code\]](https://github.com/Zhengsh123/DCLP)
