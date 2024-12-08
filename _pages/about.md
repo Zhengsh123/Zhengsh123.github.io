@@ -83,7 +83,7 @@ Tianyu Mu, Hongzhi Wang, **Shenghe Zheng**
 
 **Shenghe Zheng**, Hongzhi Wang, 
 
--  We find that task-specific information from fine-tuning harms Model Merging, so we use frequency-domain filtering to reduce conflicts and introduce lightweight task-specific experts to compensate for information loss during Model Merging.
+-  We find that task-specific information from fine-tuning harms Model Merging, so we use frequency-domain filtering to reduce conflicts and utilize lightweight experts to compensate for information loss during model merging.
 </div>
 </div>
 
