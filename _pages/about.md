@@ -75,8 +75,18 @@ Tianyu Mu, Hongzhi Wang, **Shenghe Zheng**
 </div>
 </div>
 
-# 📝 Preprints 
-- [FREE-Merging: Fourier Transform for Model Merging with Lightweight Experts](https://arxiv.org/abs/2411.16815), **Shenghe Zheng**, Hongzhi Wang
+# 📝 Preprint 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2024</div><img src='images/FREE-Merging.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[FREE-Merging: Fourier Transform for Model Merging with Lightweight Experts](https://arxiv.org/abs/2411.16815)
+
+**Shenghe Zheng**, Hongzhi Wang, 
+
+-  We find that task-specific information from fine-tuning harms Model Merging, so we use frequency-domain filtering to reduce conflicts and introduce lightweight task-specific experts to compensate for information loss during Model Merging.
+</div>
+</div>
+
 
 # 🎖 Honors and Awards
 - National Scholarship, *2024*
