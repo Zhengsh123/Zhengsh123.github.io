@@ -87,6 +87,39 @@ Tianyu Mu, Hongzhi Wang, **Shenghe Zheng**
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2025</div><img src='images/DO-Merging.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Decouple and Orthogonalize: A Data-Free Framework for LoRA Merging](https://arxiv.org/abs/2505.15875)
+
+**Shenghe Zheng**, Hongzhi Wang, Chenyu Huang, Xiaohui Wang, Tao Chen, Jiayuan Fan, Shuyue Hu, Peng Ye
+
+-  We find that existing model merging methods are ineffective for LoRA due to large parameter magnitude differences. We propose a decoupling approach and optimize it via data-free orthogonalization.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2025</div><img src='images/PHYSICS.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Scaling Physical Reasoning with the PHYSICS Dataset](https://arxiv.org/abs/2506.00022)
+
+**Shenghe Zheng***, Qianjia Cheng*, Junchi Yao*, Mengsong Wu, Haonan He, Ning Ding, Yu Cheng, Shuyue Hu, Lei Bai, Dongzhan Zhou, Ganqu Cui, Peng Ye
+
+-  To address the lack of training and testing datasets for evaluating the physical reasoning capabilities of large language models, we collected a high-quality, widely varied set of physics data and designed a physics-specific evaluation framework.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2025</div><img src='images/MoE-Gyro.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[MoE-Gyro: Self-Supervised Over-Range Reconstruction and Denoising for MEMS Gyroscopes](https://arxiv.org/abs/2506.06318)
+
+Feiyang Pan*, **Shenghe Zheng***, Chunyan Yin, Guangbin Dou
+
+-  To address the issue of low noise performance and limited range in low-cost gyroscopes, we propose a generative approach for noise reduction and peak compensation. Additionally, due to the lack of data in this domain, we constructed a targeted dataset.
+
+</div>
+</div>
 
 # 🎖 Honors and Awards
 - National Scholarship, *2024*
