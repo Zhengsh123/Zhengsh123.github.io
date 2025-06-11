@@ -97,4 +97,6 @@ Tianyu Mu, Hongzhi Wang, **Shenghe Zheng**
 - Outstanding Student of Harbin Institute of Technology, *2019-2024*
 - Renmin Scholarship, *2019-2022*
 
+# Professional Activities
+Reviewer: NeurIPS2025, ECAI2025
 
