@@ -104,7 +104,7 @@ Tianyu Mu, Hongzhi Wang, **Shenghe Zheng**
 
 [Scaling Physical Reasoning with the PHYSICS Dataset](https://arxiv.org/abs/2506.00022)
 
-**Shenghe Zheng†**, Qianjia Cheng†, Junchi Yao†, Mengsong Wu, Haonan He, Ning Ding, Yu Cheng, Shuyue Hu, Lei Bai, Dongzhan Zhou, Ganqu Cui, Peng Ye
+**Shenghe Zheng<sup>†</sup>**, Qianjia Cheng<sup>†</sup>, Junchi Yao<sup>†</sup>, Mengsong Wu, Haonan He, Ning Ding, Yu Cheng, Shuyue Hu, Lei Bai, Dongzhan Zhou, Ganqu Cui, Peng Ye
 
 -  To address the lack of training and testing datasets for evaluating the physical reasoning capabilities of large language models, we collected a high-quality, widely varied set of physics data and designed a physics-specific evaluation framework.
 </div>
@@ -115,7 +115,7 @@ Tianyu Mu, Hongzhi Wang, **Shenghe Zheng**
 
 [MoE-Gyro: Self-Supervised Over-Range Reconstruction and Denoising for MEMS Gyroscopes](https://arxiv.org/abs/2506.06318)
 
-Feiyang Pan†, **Shenghe Zheng†**, Chunyan Yin, Guangbin Dou
+Feiyang Pan<sup>†</sup>, **Shenghe Zheng<sup>†</sup>**, Chunyan Yin, Guangbin Dou
 
 -  To address the issue of low noise performance and limited range in low-cost gyroscopes, we propose a generative approach for noise reduction and peak compensation. Additionally, due to the lack of data in this domain, we constructed a targeted dataset.
 
