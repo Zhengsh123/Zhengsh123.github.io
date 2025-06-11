@@ -30,6 +30,7 @@ His current research interests lie in Large Language Models, Multimodal Models, 
 - *2024.09*: 🎉 Our [IntraMix](https://arxiv.org/abs/2405.00957) is accepted by NeurIPS 2024.
 
 # 📝 Publications 
+† indicates equal contribution
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='images/IntraMix.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -103,7 +104,7 @@ Tianyu Mu, Hongzhi Wang, **Shenghe Zheng**
 
 [Scaling Physical Reasoning with the PHYSICS Dataset](https://arxiv.org/abs/2506.00022)
 
-**Shenghe Zheng***, Qianjia Cheng*, Junchi Yao*, Mengsong Wu, Haonan He, Ning Ding, Yu Cheng, Shuyue Hu, Lei Bai, Dongzhan Zhou, Ganqu Cui, Peng Ye
+**Shenghe Zheng†**, Qianjia Cheng†, Junchi Yao†, Mengsong Wu, Haonan He, Ning Ding, Yu Cheng, Shuyue Hu, Lei Bai, Dongzhan Zhou, Ganqu Cui, Peng Ye
 
 -  To address the lack of training and testing datasets for evaluating the physical reasoning capabilities of large language models, we collected a high-quality, widely varied set of physics data and designed a physics-specific evaluation framework.
 </div>
@@ -114,7 +115,7 @@ Tianyu Mu, Hongzhi Wang, **Shenghe Zheng**
 
 [MoE-Gyro: Self-Supervised Over-Range Reconstruction and Denoising for MEMS Gyroscopes](https://arxiv.org/abs/2506.06318)
 
-Feiyang Pan*, **Shenghe Zheng***, Chunyan Yin, Guangbin Dou
+Feiyang Pan†, **Shenghe Zheng†**, Chunyan Yin, Guangbin Dou
 
 -  To address the issue of low noise performance and limited range in low-cost gyroscopes, we propose a generative approach for noise reduction and peak compensation. Additionally, due to the lack of data in this domain, we constructed a targeted dataset.
 
