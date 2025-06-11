@@ -19,7 +19,7 @@ redirect_from:
 
 Shenghe Zheng is a second-year master degree candidate at the Department of Computer Science, Harbin Institute of Technology, fortunately advised by [Prof.Hongzhi Wang]( http://homepage.hit.edu.cn/wang). Previously, Shenghe Zheng obtained his Bachelor’s degree from Harbin Institute of Technology in June 2023.
 
-His current research interests lie in Efficient AI, Neural Architecture Search(NAS), and Graph Neural Network(GNN). If you are seeking any form of academic cooperation, please feel free to email at [shenghez.zheng@gmail.com](shenghez.zheng@gmail.com).
+His current research interests lie in Large Language Models, Multimodal Models, Efficient AI, and Neural Architecture Search(NAS). Currently, he is interning at the Shanghai AI Lab, conducting research related to large language models under the guidance of Dr. Peng Ye, and collaborating closely with [Dr. Ganqu Cui](https://cgq15.github.io/). If you are seeking any form of academic cooperation, please feel free to email at [shenghez.zheng@gmail.com](shenghez.zheng@gmail.com).
 
 # 📖 Educations
 - *2023.08 - now*, Master Candidate in Computer Science, **Harbin Institute of Technology**.
