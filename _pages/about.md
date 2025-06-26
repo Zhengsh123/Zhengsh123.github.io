@@ -38,7 +38,7 @@ His current research interests lie in Large Language Models, Multimodal Models, 
 
 [FREE-Merging: Fourier Transform for Model Merging with Lightweight Experts](https://arxiv.org/abs/2411.16815)
 
-**Shenghe Zheng**, Hongzhi Wang, 
+**Shenghe Zheng**, Hongzhi Wang. [**Code**](https://github.com/Zhengsh123/FREE-Merging)
 
 -  We find that task-specific information from fine-tuning harms Model Merging, so we use frequency-domain filtering to reduce conflicts and utilize lightweight experts to compensate for information loss during model merging.
 </div>
