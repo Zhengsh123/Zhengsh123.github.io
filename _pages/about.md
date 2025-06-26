@@ -27,10 +27,23 @@ His current research interests lie in Large Language Models, Multimodal Models, 
 - *2019.08 - 2023.06*, B.Eng. in Computer Science, **Harbin Institute of Technology**.
 
 # 🔥 News
+- *2025.06*: 🎉 Our [FREE-Merging](https://arxiv.org/abs/2411.16815) is accepted by ICCV 2025.
 - *2024.09*: 🎉 Our [IntraMix](https://arxiv.org/abs/2405.00957) is accepted by NeurIPS 2024.
 
 # 📝 Publications 
 † indicates equal contribution
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='images/FREE-Merging.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[FREE-Merging: Fourier Transform for Model Merging with Lightweight Experts](https://arxiv.org/abs/2411.16815)
+
+**Shenghe Zheng**, Hongzhi Wang, 
+
+-  We find that task-specific information from fine-tuning harms Model Merging, so we use frequency-domain filtering to reduce conflicts and utilize lightweight experts to compensate for information loss during model merging.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='images/IntraMix.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -77,16 +90,6 @@ Tianyu Mu, Hongzhi Wang, **Shenghe Zheng**
 </div>
 
 # 📝 Preprint 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2024</div><img src='images/FREE-Merging.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[FREE-Merging: Fourier Transform for Model Merging with Lightweight Experts](https://arxiv.org/abs/2411.16815)
-
-**Shenghe Zheng**, Hongzhi Wang, 
-
--  We find that task-specific information from fine-tuning harms Model Merging, so we use frequency-domain filtering to reduce conflicts and utilize lightweight experts to compensate for information loss during model merging.
-</div>
-</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2025</div><img src='images/DO-Merging.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
