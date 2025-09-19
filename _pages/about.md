@@ -27,11 +27,35 @@ His current research interests lie in Large Language Models, Multimodal Models, 
 - *2019.08 - 2023.06*, B.Eng. in Computer Science, **Harbin Institute of Technology**.
 
 # 🔥 News
+- *2025.09*: 🎉 Our [PHYSICS](https://arxiv.org/abs/2506.00022), [MoE-Gyro](https://arxiv.org/abs/2506.06318), [UltraDelta](https://arxiv.org/abs/2505.13563) are accepted by NeurIPS 2025.
 - *2025.06*: 🎉 Our [FREE-Merging](https://arxiv.org/abs/2411.16815) is accepted by ICCV 2025.
 - *2024.09*: 🎉 Our [IntraMix](https://arxiv.org/abs/2405.00957) is accepted by NeurIPS 2024.
 
 # 📝 Publications 
 † indicates equal contribution
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025</div><img src='images/PHYSICS.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Scaling Physical Reasoning with the PHYSICS Dataset](https://arxiv.org/abs/2506.00022)
+
+**Shenghe Zheng<sup>†</sup>**, Qianjia Cheng<sup>†</sup>, Junchi Yao<sup>†</sup>, Mengsong Wu, Haonan He, Ning Ding, Yu Cheng, Shuyue Hu, Lei Bai, Dongzhan Zhou, Ganqu Cui, Peng Ye
+
+-  To address the lack of training and testing datasets for evaluating the physical reasoning capabilities of large language models, we collected a high-quality, widely varied set of physics data and designed a physics-specific evaluation framework.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025</div><img src='images/MoE-Gyro.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[MoE-Gyro: Self-Supervised Over-Range Reconstruction and Denoising for MEMS Gyroscopes](https://arxiv.org/abs/2506.06318)
+
+Feiyang Pan<sup>†</sup>, **Shenghe Zheng<sup>†</sup>**, Chunyan Yin, Guangbin Dou
+
+-  To address the issue of low noise performance and limited range in low-cost gyroscopes, we propose a generative approach for noise reduction and peak compensation. Additionally, due to the lack of data in this domain, we constructed a targeted dataset.
+
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='images/FREE-Merging.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -99,29 +123,6 @@ Tianyu Mu, Hongzhi Wang, **Shenghe Zheng**
 **Shenghe Zheng**, Hongzhi Wang, Chenyu Huang, Xiaohui Wang, Tao Chen, Jiayuan Fan, Shuyue Hu, Peng Ye
 
 -  We find that existing model merging methods are ineffective for LoRA due to large parameter magnitude differences. We propose a decoupling approach and optimize it via data-free orthogonalization.
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2025</div><img src='images/PHYSICS.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Scaling Physical Reasoning with the PHYSICS Dataset](https://arxiv.org/abs/2506.00022)
-
-**Shenghe Zheng<sup>†</sup>**, Qianjia Cheng<sup>†</sup>, Junchi Yao<sup>†</sup>, Mengsong Wu, Haonan He, Ning Ding, Yu Cheng, Shuyue Hu, Lei Bai, Dongzhan Zhou, Ganqu Cui, Peng Ye
-
--  To address the lack of training and testing datasets for evaluating the physical reasoning capabilities of large language models, we collected a high-quality, widely varied set of physics data and designed a physics-specific evaluation framework.
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2025</div><img src='images/MoE-Gyro.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[MoE-Gyro: Self-Supervised Over-Range Reconstruction and Denoising for MEMS Gyroscopes](https://arxiv.org/abs/2506.06318)
-
-Feiyang Pan<sup>†</sup>, **Shenghe Zheng<sup>†</sup>**, Chunyan Yin, Guangbin Dou
-
--  To address the issue of low noise performance and limited range in low-cost gyroscopes, we propose a generative approach for noise reduction and peak compensation. Additionally, due to the lack of data in this domain, we constructed a targeted dataset.
-
 </div>
 </div>
 
