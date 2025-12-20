@@ -37,9 +37,9 @@ His current research interests lie in Large Language Models, Multimodal Models, 
 ## 🎯Post-training
 <span class="conf accepted">NeurIPS 2025</span> [Scaling Physical Reasoning with the PHYSICS Dataset](https://arxiv.org/abs/2506.00022) **Shenghe Zheng<sup>†</sup>**, Qianjia Cheng<sup>†</sup>, Junchi Yao<sup>†</sup>, Mengsong Wu, Haonan He, Ning Ding, Yu Cheng, Shuyue Hu, Lei Bai, Dongzhan Zhou, Ganqu Cui, Peng Ye.
 
-<span class="conf under-reviewd">Arxiv 2025</span> [SCI-Verifier: Scientific Verifier with Thinking](https://arxiv.org/abs/2509.24285) **Shenghe Zheng<sup>†</sup>**, Chenyu Huang<sup>†</sup>, Fangchen Yu, Junchi Yao, Jingqi Ye, Tao Chen, Yun Luo, Ning Ding, Lei Bai, Ganqu Cui, Peng Ye.
+<span class="conf under-review">Arxiv 2025</span> [SCI-Verifier: Scientific Verifier with Thinking](https://arxiv.org/abs/2509.24285) **Shenghe Zheng<sup>†</sup>**, Chenyu Huang<sup>†</sup>, Fangchen Yu, Junchi Yao, Jingqi Ye, Tao Chen, Yun Luo, Ning Ding, Lei Bai, Ganqu Cui, Peng Ye.
 
-<span class="conf under-reviewd">Tech Report</span> [P1: Mastering Physics Olympiads with Reinforcement Learning](https://arxiv.org/abs/2511.13612) Jiacheng Chen, Qianjia Cheng, Fangchen Yu, Haiyuan Wan, Yuchen Zhang, **Shenghe Zheng**, Junchi Yao, Qingyang Zhang, Haonan He, Yun Luo, Yufeng Zhao, Futing Wang, Li Sheng, Chengxing Xie, Yuxin Zuo, Yizhuo Li, Wenxauan Zeng, Yulun Wu, Rui Huang, Dongzhan Zhou, Kai Chen, Yu Qiao, Lei Bai, Yu Cheng, Ning Ding, Bowen Zhou, Peng Ye, Ganqu Cui.
+<span class="conf under-review">Tech Report</span> [P1: Mastering Physics Olympiads with Reinforcement Learning](https://arxiv.org/abs/2511.13612) Jiacheng Chen, Qianjia Cheng, Fangchen Yu, Haiyuan Wan, Yuchen Zhang, **Shenghe Zheng**, Junchi Yao, Qingyang Zhang, Haonan He, Yun Luo, Yufeng Zhao, Futing Wang, Li Sheng, Chengxing Xie, Yuxin Zuo, Yizhuo Li, Wenxauan Zeng, Yulun Wu, Rui Huang, Dongzhan Zhou, Kai Chen, Yu Qiao, Lei Bai, Yu Cheng, Ning Ding, Bowen Zhou, Peng Ye, Ganqu Cui.
 
 ## 🎯Efficient AI
 
@@ -49,7 +49,7 @@ His current research interests lie in Large Language Models, Multimodal Models, 
 
 <span class="conf accepted">AAAI 2024</span> [DCLP: Neural Architecture Predictor with Curriculum Contrastive Learning](https://arxiv.org/abs/2302.13020) **Shenghe Zheng**, Hongzhi Wang, Tianyu Mu.
 
-<span class="conf under-reviewd">Arxiv 2025</span> [Decouple and Orthogonalize: A Data-Free Framework for LoRA Merging](https://arxiv.org/abs/2505.15875) **Shenghe Zheng**, Hongzhi Wang, Chenyu Huang, Xiaohui Wang, Tao Chen, Jiayuan Fan, Shuyue Hu, Peng Ye
+<span class="conf under-review">Arxiv 2025</span> [Decouple and Orthogonalize: A Data-Free Framework for LoRA Merging](https://arxiv.org/abs/2505.15875) **Shenghe Zheng**, Hongzhi Wang, Chenyu Huang, Xiaohui Wang, Tao Chen, Jiayuan Fan, Shuyue Hu, Peng Ye
 
 <span class="conf accepted">ICDE 2023</span> [AutoTSC: Optimization Algorithm to Automatically Solve the Time Series Classification Problem](https://ieeexplore.ieee.org/document/9643158) Tianyu Mu, Hongzhi Wang, **Shenghe Zheng**.
 
