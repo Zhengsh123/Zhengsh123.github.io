@@ -17,9 +17,9 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Shenghe Zheng is a second-year master degree candidate at the Department of Computer Science, Harbin Institute of Technology, fortunately advised by [Prof.Hongzhi Wang]( http://homepage.hit.edu.cn/wang). Previously, Shenghe Zheng obtained his Bachelor’s degree from Harbin Institute of Technology in June 2023.
+Shenghe Zheng is a third-year master degree candidate at the Department of Computer Science, Harbin Institute of Technology, fortunately advised by [Prof.Hongzhi Wang]( http://homepage.hit.edu.cn/wang). Previously, Shenghe Zheng obtained his Bachelor’s degree from Harbin Institute of Technology in June 2023.
 
-His current research interests lie in Large Language Models, Multimodal Models, Efficient AI, and Neural Architecture Search(NAS). Currently, he is interning at the Shanghai AI Lab, conducting research related to large language models under the guidance of Dr. Peng Ye, and collaborating closely with [Dr. Ganqu Cui](https://cgq15.github.io/). If you are seeking any form of academic cooperation, please feel free to email at [shenghez.zheng@gmail.com](shenghez.zheng@gmail.com).
+His current research interests lie in Large Language Models, Multimodal Models, Efficient AI, and AI4Science. Currently, he is interning at the Shanghai AI Lab, conducting research related to large language models under the guidance of Dr. Peng Ye, and collaborating closely with [Dr. Ganqu Cui](https://cgq15.github.io/). If you are seeking any form of academic cooperation, please feel free to email at [shenghez.zheng@gmail.com](shenghez.zheng@gmail.com).
 
 # 📖 Educations
 - *2023.08 - now*, Master Candidate in Computer Science, **Harbin Institute of Technology**.
@@ -35,93 +35,30 @@ His current research interests lie in Large Language Models, Multimodal Models, 
 † indicates equal contribution
 
 ## 🎯Post-training
-<span class="conf accepted">NeurIPS 2025</span> [Scaling Physical Reasoning with the PHYSICS Dataset](https://arxiv.org/abs/2506.00022) **Shenghe Zheng<sup>†</sup>**, Qianjia Cheng<sup>†</sup>, Junchi Yao<sup>†</sup>, Mengsong Wu, Haonan He, Ning Ding, Yu Cheng, Shuyue Hu, Lei Bai, Dongzhan Zhou, Ganqu Cui, Peng Ye
+<span class="conf accepted">NeurIPS 2025</span> [Scaling Physical Reasoning with the PHYSICS Dataset](https://arxiv.org/abs/2506.00022) **Shenghe Zheng<sup>†</sup>**, Qianjia Cheng<sup>†</sup>, Junchi Yao<sup>†</sup>, Mengsong Wu, Haonan He, Ning Ding, Yu Cheng, Shuyue Hu, Lei Bai, Dongzhan Zhou, Ganqu Cui, Peng Ye.
+
+<span class="conf under-reviewd">Arxiv 2025</span> [SCI-Verifier: Scientific Verifier with Thinking](https://arxiv.org/abs/2509.24285) **Shenghe Zheng<sup>†</sup>**, Chenyu Huang<sup>†</sup>, Fangchen Yu, Junchi Yao, Jingqi Ye, Tao Chen, Yun Luo, Ning Ding, Lei Bai, Ganqu Cui, Peng Ye.
+
+<span class="conf under-reviewd">Tech Report</span> [P1: Mastering Physics Olympiads with Reinforcement Learning](https://arxiv.org/abs/2511.13612) Jiacheng Chen, Qianjia Cheng, Fangchen Yu, Haiyuan Wan, Yuchen Zhang, **Shenghe Zheng**, Junchi Yao, Qingyang Zhang, Haonan He, Yun Luo, Yufeng Zhao, Futing Wang, Li Sheng, Chengxing Xie, Yuxin Zuo, Yizhuo Li, Wenxauan Zeng, Yulun Wu, Rui Huang, Dongzhan Zhou, Kai Chen, Yu Qiao, Lei Bai, Yu Cheng, Ning Ding, Bowen Zhou, Peng Ye, Ganqu Cui.
 
 ## 🎯Efficient AI
+
+<span class="conf accepted">ICCV 2025</span> [FREE-Merging: Fourier Transform for Model Merging with Lightweight Experts](https://arxiv.org/abs/2411.16815) **Shenghe Zheng**, Hongzhi Wang.
+
+<span class="conf accepted">NeurIPS 2024</span> [IntraMix: Intra-Class Mixup Generation for Accurate Labels and Neighbors](https://arxiv.org/abs/2405.00957) **Shenghe Zheng**, Hongzhi Wang, Xianglong Liu.
+
+<span class="conf accepted">AAAI 2024</span> [DCLP: Neural Architecture Predictor with Curriculum Contrastive Learning](https://arxiv.org/abs/2302.13020) **Shenghe Zheng**, Hongzhi Wang, Tianyu Mu.
+
+<span class="conf under-reviewd">Arxiv 2025</span> [Decouple and Orthogonalize: A Data-Free Framework for LoRA Merging](https://arxiv.org/abs/2505.15875) **Shenghe Zheng**, Hongzhi Wang, Chenyu Huang, Xiaohui Wang, Tao Chen, Jiayuan Fan, Shuyue Hu, Peng Ye
+
+<span class="conf accepted">ICDE 2023</span> [AutoTSC: Optimization Algorithm to Automatically Solve the Time Series Classification Problem](https://ieeexplore.ieee.org/document/9643158) Tianyu Mu, Hongzhi Wang, **Shenghe Zheng**.
+
+<span class="conf accepted">VLDB 2021</span> [Assassin: an automatic classification system based on algorithm selection](https://dl.acm.org/doi/abs/10.14778/3476311.3476336) Tianyu Mu, Hongzhi Wang, **Shenghe Zheng**.
 
 
 ## 🎯AI4Science
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025</div><img src='images/MoE-Gyro.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[MoE-Gyro: Self-Supervised Over-Range Reconstruction and Denoising for MEMS Gyroscopes](https://arxiv.org/abs/2506.06318)
-
-Feiyang Pan<sup>†</sup>, **Shenghe Zheng<sup>†</sup>**, Chunyan Yin, Guangbin Dou
-
--  To address the issue of low noise performance and limited range in low-cost gyroscopes, we propose a generative approach for noise reduction and peak compensation. Additionally, due to the lack of data in this domain, we constructed a targeted dataset.
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='images/FREE-Merging.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[FREE-Merging: Fourier Transform for Model Merging with Lightweight Experts](https://arxiv.org/abs/2411.16815)
-
-**Shenghe Zheng**, Hongzhi Wang. [**Code**](https://github.com/Zhengsh123/FREE-Merging)
-
--  We find that task-specific information from fine-tuning harms Model Merging, so we use frequency-domain filtering to reduce conflicts and utilize lightweight experts to compensate for information loss during model merging.
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='images/IntraMix.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[IntraMix: Intra-Class Mixup Generation for Accurate Labels and Neighbors](https://arxiv.org/abs/2405.00957)
-
-**Shenghe Zheng**, Hongzhi Wang, Xianglong Liu. [**Code**](https://github.com/Zhengsh123/IntraMix)
-
-- This paper introduces IntraMix, seamlessly applying Mixup to graph augmentation, enhancing model effectiveness in data-scarce scenarios.
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2024</div><img src='images/DCLP.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[DCLP: Neural Architecture Predictor with Curriculum Contrastive Learning](https://arxiv.org/abs/2302.13020)
-
-**Shenghe Zheng**, Hongzhi Wang, Tianyu Mu. [**Code**](https://github.com/Zhengsh123/DCLP)
-
-- This paper introduces contrastive and curriculum learning for neural predictors, greatly reducing the performance evaluation cost in NAS.
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICDE 2023</div><img src='images/TSC_AutoML.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[AutoTSC: Optimization Algorithm to Automatically Solve the Time Series Classification Problem](https://ieeexplore.ieee.org/document/9643158)
-
-Tianyu Mu, Hongzhi Wang, **Shenghe Zheng** 
-
-- 
-This paper introduces AutoML to time series classification, using dataset similarity to recommend algorithms for new datasets automatically.
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">VLDB 2021</div><img src='images/Assassin.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Assassin: an automatic classification system based on algorithm selection](https://dl.acm.org/doi/abs/10.14778/3476311.3476336)
-
-Tianyu Mu, Hongzhi Wang, **Shenghe Zheng** 
-
-- This paper uses reinforcement learning to select meta-features and recommend algorithms with hyperparameters for new datasets automatically.
-</div>
-</div>
-
-# 📝 Preprint 
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2025</div><img src='images/DO-Merging.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Decouple and Orthogonalize: A Data-Free Framework for LoRA Merging](https://arxiv.org/abs/2505.15875)
-
-**Shenghe Zheng**, Hongzhi Wang, Chenyu Huang, Xiaohui Wang, Tao Chen, Jiayuan Fan, Shuyue Hu, Peng Ye
-
--  We find that existing model merging methods are ineffective for LoRA due to large parameter magnitude differences. We propose a decoupling approach and optimize it via data-free orthogonalization.
-</div>
-</div>
+<span class="conf accepted">NeurIPS 2025</span> [MoE-Gyro: Self-Supervised Over-Range Reconstruction and Denoising for MEMS Gyroscopes](https://arxiv.org/abs/2506.06318) Feiyang Pan<sup>†</sup>, **Shenghe Zheng<sup>†</sup>**, Chunyan Yin, Guangbin Dou
 
 # 🎖 Honors and Awards
 - National Scholarship, *2024*
@@ -133,5 +70,5 @@ Tianyu Mu, Hongzhi Wang, **Shenghe Zheng**
 - Renmin Scholarship, *2019-2022*
 
 # Professional Activities
-Reviewer: NeurIPS2025, ECAI2025
+Reviewer: ICLR 2026, AAAI 2026, NeurIPS2025, ECAI2025
 
