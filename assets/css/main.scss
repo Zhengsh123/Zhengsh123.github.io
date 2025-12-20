@@ -121,24 +121,23 @@ h1:before, .anchor:before {
   white-space: nowrap;
 }
 
-/* 在投：中性灰蓝*/
 .under-review {
-  background-color: #eef2f7;
-  color: #374151;
+ background-color: #eef2f7;
+  color: #1f2937;
   border: 1px solid #d1d5db;
 }
 
 /* 已中稿：偏绿 / 蓝绿（明确区分于在投） */
 .accepted {
-  background-color: #e6f6ee;
-  color: #065f46;
-  border: 1px solid #b7e4c7;
+  background-color: #e6f0ff;
+  color: #1e40af;
+  border: 1px solid #c7d7ff;
 }
 
-/* 重点展示：更醒目的蓝 */
+/* 重点展示：饱和蓝（最突出） */
 .highlight {
-  background-color: #e6f0ff;
-  color: #1a4fd8;
-  border: 1px solid #c7d7ff;
-  box-shadow: 0 1px 2px rgba(26,79,216,0.15);
+  background-color: #dbeafe;
+  color: #1d4ed8;
+  border: 1px solid #93c5fd;
+  box-shadow: 0 1px 2px rgba(29,78,216,0.2);
 }
