@@ -31,19 +31,26 @@ His current research interests lie in Large Language Models, Multimodal Models, 
 - *2025.06*: 🎉 Our [FREE-Merging](https://arxiv.org/abs/2411.16815) is accepted by ICCV 2025.
 - *2024.09*: 🎉 Our [IntraMix](https://arxiv.org/abs/2405.00957) is accepted by NeurIPS 2024.
 
-# 📝 Publications 
+# 📝 Selected Publications 
 † indicates equal contribution
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025</div><img src='images/PHYSICS.png' alt="sym" width="100%"></div></div>
+## 🎯Post-training
+<span class="conference-tag">NeurIPS 2025</span> [Scaling Physical Reasoning with the PHYSICS Dataset] (https://arxiv.org/abs/2506.00022) **Shenghe Zheng<sup>†</sup>**, Qianjia Cheng<sup>†</sup>, Junchi Yao<sup>†</sup>, Mengsong Wu, Haonan He, Ning Ding, Yu Cheng, Shuyue Hu, Lei Bai, Dongzhan Zhou, Ganqu Cui, Peng Ye
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025</div><img src='images/PHYSICS.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Scaling Physical Reasoning with the PHYSICS Dataset](https://arxiv.org/abs/2506.00022)
 
-**Shenghe Zheng<sup>†</sup>**, Qianjia Cheng<sup>†</sup>, Junchi Yao<sup>†</sup>, Mengsong Wu, Haonan He, Ning Ding, Yu Cheng, Shuyue Hu, Lei Bai, Dongzhan Zhou, Ganqu Cui, Peng Ye
+
+
 
 -  To address the lack of training and testing datasets for evaluating the physical reasoning capabilities of large language models, we collected a high-quality, widely varied set of physics data and designed a physics-specific evaluation framework.
 </div>
-</div>
+</div> -->
+
+## 🎯Efficient AI
+
+
+## 🎯AI4Science
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025</div><img src='images/MoE-Gyro.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
