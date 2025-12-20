@@ -35,7 +35,7 @@ His current research interests lie in Large Language Models, Multimodal Models, 
 † indicates equal contribution
 
 ## 🎯Post-training
-NeurIPS 2025 [Scaling Physical Reasoning with the PHYSICS Dataset](https://arxiv.org/abs/2506.00022) **Shenghe Zheng<sup>†</sup>**, Qianjia Cheng<sup>†</sup>, Junchi Yao<sup>†</sup>, Mengsong Wu, Haonan He, Ning Ding, Yu Cheng, Shuyue Hu, Lei Bai, Dongzhan Zhou, Ganqu Cui, Peng Ye
+<span class="conf accepted">NeurIPS 2025</span> [Scaling Physical Reasoning with the PHYSICS Dataset](https://arxiv.org/abs/2506.00022) **Shenghe Zheng<sup>†</sup>**, Qianjia Cheng<sup>†</sup>, Junchi Yao<sup>†</sup>, Mengsong Wu, Haonan He, Ning Ding, Yu Cheng, Shuyue Hu, Lei Bai, Dongzhan Zhou, Ganqu Cui, Peng Ye
 
 ## 🎯Efficient AI
 
