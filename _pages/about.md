@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Shenghe Zheng is a third-year master degree candidate at the Department of Computer Science, Harbin Institute of Technology, fortunately advised by [Prof.Hongzhi Wang]( http://homepage.hit.edu.cn/wang). Previously, Shenghe Zheng obtained his Bachelor’s degree from Harbin Institute of Technology in June 2023.
+Shenghe Zheng is a third-year master degree candidate at the Department of Computer Science, Harbin Institute of Technology, fortunately advised by [Prof.Hongzhi Wang](http://homepage.hit.edu.cn/wang). Previously, Shenghe Zheng obtained his Bachelor’s degree from Harbin Institute of Technology in June 2023.
 
 His current research interests lie in Large Language Models, Multimodal Models, Efficient AI, and AI4Science. Currently, he is interning at the Shanghai AI Lab, conducting research related to large language models under the guidance of Dr. Peng Ye, and collaborating closely with [Dr. Ganqu Cui](https://cgq15.github.io/). If you are seeking any form of academic cooperation, please feel free to email at [shenghez.zheng@gmail.com](shenghez.zheng@gmail.com).
 
@@ -27,6 +27,7 @@ His current research interests lie in Large Language Models, Multimodal Models, 
 - *2019.08 - 2023.06*, B.Eng. in Computer Science, **Harbin Institute of Technology**.
 
 # 🔥 News
+- *2026.01*: 🎉 Our [SCI-Verifier](https://arxiv.org/abs/2509.24285) is accepted by ICLR 2026.
 - *2025.09*: 🎉 Our [PHYSICS](https://arxiv.org/abs/2506.00022), [MoE-Gyro](https://arxiv.org/abs/2506.06318), [UltraDelta](https://arxiv.org/abs/2505.13563) are accepted by NeurIPS 2025.
 - *2025.06*: 🎉 Our [FREE-Merging](https://arxiv.org/abs/2411.16815) is accepted by ICCV 2025.
 - *2024.09*: 🎉 Our [IntraMix](https://arxiv.org/abs/2405.00957) is accepted by NeurIPS 2024.
@@ -37,7 +38,7 @@ His current research interests lie in Large Language Models, Multimodal Models, 
 ## 🎯Post-training
 <span class="conf accepted">NeurIPS 2025</span> [Scaling Physical Reasoning with the PHYSICS Dataset](https://arxiv.org/abs/2506.00022) **Shenghe Zheng<sup>†</sup>**, Qianjia Cheng<sup>†</sup>, Junchi Yao<sup>†</sup>, Mengsong Wu, Haonan He, Ning Ding, Yu Cheng, Shuyue Hu, Lei Bai, Dongzhan Zhou, Ganqu Cui, Peng Ye.
 
-<span class="conf under-review">Arxiv 2025</span> [SCI-Verifier: Scientific Verifier with Thinking](https://arxiv.org/abs/2509.24285) **Shenghe Zheng<sup>†</sup>**, Chenyu Huang<sup>†</sup>, Fangchen Yu, Junchi Yao, Jingqi Ye, Tao Chen, Yun Luo, Ning Ding, Lei Bai, Ganqu Cui, Peng Ye.
+<span class="conf accepted">ICLR 2026</span> [SCI-Verifier: Scientific Verifier with Thinking](https://arxiv.org/abs/2509.24285) **Shenghe Zheng<sup>†</sup>**, Chenyu Huang<sup>†</sup>, Fangchen Yu, Junchi Yao, Jingqi Ye, Tao Chen, Yun Luo, Ning Ding, Lei Bai, Ganqu Cui, Peng Ye.
 
 <span class="conf under-review">Tech Report</span> [P1: Mastering Physics Olympiads with Reinforcement Learning](https://arxiv.org/abs/2511.13612) Jiacheng Chen, Qianjia Cheng, Fangchen Yu, Haiyuan Wan, Yuchen Zhang, **Shenghe Zheng**, Junchi Yao, Qingyang Zhang, Haonan He, Yun Luo, Yufeng Zhao, Futing Wang, Li Sheng, Chengxing Xie, Yuxin Zuo, Yizhuo Li, Wenxauan Zeng, Yulun Wu, Rui Huang, Dongzhan Zhou, Kai Chen, Yu Qiao, Lei Bai, Yu Cheng, Ning Ding, Bowen Zhou, Peng Ye, Ganqu Cui.
 
