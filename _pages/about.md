@@ -53,15 +53,15 @@ His current research interests lie in Large Language/Multimodal Models, Video Ge
 
 ## 🎯Efficient AI
 
+<span class="conf accepted">CVPR 2026 findings</span> FREE-Switch: Frequency-based Dynamic LoRA Switch for Style Transfer **Shenghe Zheng**, Minyu Zhang, Tianhao Liu, Hongzhi Wang.
+
 <span class="conf accepted">ICCV 2025</span> [FREE-Merging: Fourier Transform for Model Merging with Lightweight Experts](https://arxiv.org/abs/2411.16815) **Shenghe Zheng**, Hongzhi Wang.
+
+<span class="conf under-review">Arxiv 2025</span> [Decouple and Orthogonalize: A Data-Free Framework for LoRA Merging](https://arxiv.org/abs/2505.15875) **Shenghe Zheng**, Hongzhi Wang, Chenyu Huang, Xiaohui Wang, Tao Chen, Jiayuan Fan, Shuyue Hu, Peng Ye.
 
 <span class="conf accepted">NeurIPS 2024</span> [IntraMix: Intra-Class Mixup Generation for Accurate Labels and Neighbors](https://arxiv.org/abs/2405.00957) **Shenghe Zheng**, Hongzhi Wang, Xianglong Liu.
 
 <span class="conf accepted">AAAI 2024</span> [DCLP: Neural Architecture Predictor with Curriculum Contrastive Learning](https://arxiv.org/abs/2302.13020) **Shenghe Zheng**, Hongzhi Wang, Tianyu Mu.
-
-<span class="conf accepted">CVPR 2026 findings</span> FREE-Switch: Frequency-based Dynamic LoRA Switch for Style Transfer **Shenghe Zheng**, Minyu Zhang, Tianhao Liu, Hongzhi Wang.
-
-<span class="conf under-review">Arxiv 2025</span> [Decouple and Orthogonalize: A Data-Free Framework for LoRA Merging](https://arxiv.org/abs/2505.15875) **Shenghe Zheng**, Hongzhi Wang, Chenyu Huang, Xiaohui Wang, Tao Chen, Jiayuan Fan, Shuyue Hu, Peng Ye.
 
 <span class="conf accepted">ICDE 2023</span> [AutoTSC: Optimization Algorithm to Automatically Solve the Time Series Classification Problem](https://ieeexplore.ieee.org/document/9643158) Tianyu Mu, Hongzhi Wang, **Shenghe Zheng**.
 
@@ -75,14 +75,15 @@ His current research interests lie in Large Language/Multimodal Models, Video Ge
 <span class="conf accepted">NeurIPS 2025</span> [MoE-Gyro: Self-Supervised Over-Range Reconstruction and Denoising for MEMS Gyroscopes](https://arxiv.org/abs/2506.06318) Feiyang Pan<sup>†</sup>, **Shenghe Zheng<sup>†</sup>**, Chunyan Yin, Guangbin Dou
 
 # 🎖 Honors and Awards
+- Outstanding Student of Heilongjiang Province, *2025*
+- BYD Scholarship, *2025*
+- Shengshengbuxi Scholarship, *2025*
 - National Scholarship, *2024*
 - Tencent Scholarship, *2024*
 - Outstanding Graduate of Harbin Institute of Technology, *2023*
-- Second Prize at the 14th Undergraduate Academic Forum, Harbin Institute of Technology, *2021*
-- Honorable Award in American Mathematics Modelling Contest for College Students, *2021*
-- Outstanding Student of Harbin Institute of Technology, *2019-2024*
+- Outstanding Student of Harbin Institute of Technology, *2019-2025*
 - Renmin Scholarship, *2019-2022*
 
 # Professional Activities
-Reviewer: ICLR 2026, AAAI 2026, NeurIPS2025, ECAI2025
+Reviewer: TNNLS2026, ICLR 2026, AAAI 2026, NeurIPS2025, ECAI2025
 
