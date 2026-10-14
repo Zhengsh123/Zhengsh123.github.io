@@ -56,6 +56,9 @@ His current research interests lie in Large Language/Multimodal Models, Video Ge
 
 ## 🎯Large Language/Multimodal Models
 
+<span class="conf accepted">ECCV 2026</span> [Unfold The World: Factorize 4D Properties in Reinforcing Spatial Reasoning](https://arxiv.org/pdf/2609.03729) Yijun Yang<sup>†</sup>, **Shenghe Zheng<sup>†</sup>**, Wenbo Li, Jianhui Liu, Haoze Sun, Yanbing Zhang, Jiaxiu Jiang, Lin Song, Haoyang Huang, Nan Duan, Lei Zhu.
+
+
 <span class="conf accepted">ICLR 2026</span> [SCI-Verifier: Scientific Verifier with Thinking](https://arxiv.org/abs/2509.24285) **Shenghe Zheng<sup>†</sup>**, Chenyu Huang<sup>†</sup>, Fangchen Yu, Junchi Yao, Jingqi Ye, Tao Chen, Yun Luo, Ning Ding, Lei Bai, Ganqu Cui, Peng Ye.
 
 <span class="conf accepted">NeurIPS 2025</span> [Scaling Physical Reasoning with the PHYSICS Dataset](https://arxiv.org/abs/2506.00022) **Shenghe Zheng<sup>†</sup>**, Qianjia Cheng<sup>†</sup>, Junchi Yao<sup>†</sup>, Mengsong Wu, Haonan He, Ning Ding, Yu Cheng, Shuyue Hu, Lei Bai, Dongzhan Zhou, Ganqu Cui, Peng Ye.
@@ -67,6 +70,12 @@ His current research interests lie in Large Language/Multimodal Models, Video Ge
 ## 🎯Video Generation
 
 <span class="conf under-review">Arxiv 2026</span> [V-Bridge: Bridging Video Generative Priors to Versatile Few-shot Image Restoration](https://zhengsh123.github.io/V-Bridge/) **Shenghe Zheng**, Junpeng Jiang, Wenbo Li.
+
+## 🎯Embodied AI
+
+<span class="conf under-review">Tech Report</span> [WorldLine: Action-Driven Visual Simulation for Robotic Manipulation](https://arxiv.org/abs/2609.38059) **Shenghe Zheng**, Wenbo Li, Jiyao Zhang, Bin Xia, Haoyang Huang, Nan Duan, Jiaya Jia.
+
+<span class="conf under-review">Tech Report</span> [ZimaBlue: Evolving Generalizable World Action Models through Scalable Video Pre-training](https://arxiv.org/abs/2609.00188) Xionghao Wu, Yijun Yang, Shiyang Zhou, Haoze Sun, Jianhui Liu, Songsong Yu, Jiyao Zhang, Wenbo Li, Bo Wang, Guoqing Ma, Lin Song, Renjie Liao, **Shenghe Zheng**, Wei Tang, Xiaojuan Qi, Yanwei Li, Yuan Zhang, Zhuotao Tian, Haoyang Huang, Nan Duan.
 
 
 ## 🎯Efficient AI
