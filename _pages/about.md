@@ -58,7 +58,7 @@ His current research interests lie in Large Language/Multimodal Models, Video Ge
 
 <article class="publication-item">
   <p class="publication-main"><span class="conf accepted">ECCV 2026</span> <a href="https://arxiv.org/abs/2609.03729">Unfold The World: Factorize 4D Properties in Reinforcing Spatial Reasoning</a> Yijun Yang<sup>†</sup>, <strong>Shenghe Zheng<sup>†</sup></strong>, Wenbo Li, Jianhui Liu, Haoze Sun, Yanbing Zhang, Jiaxiu Jiang, Lin Song, Haoyang Huang, Nan Duan, Lei Zhu.</p>
-  <div class="publication-resources"><a class="publication-resource" href="https://arxiv.org/pdf/2609.03729" target="_blank" rel="noopener">PDF</a></div>
+  <div class="publication-resources"><a class="publication-resource" href="https://arxiv.org/pdf/2609.03729" target="_blank" rel="noopener">PDF</a><a class="publication-resource" href="https://github.com/ZimaBlue-WAM/FactoSR" target="_blank" rel="noopener">Code</a></div>
 </article>
 
 <article class="publication-item">
@@ -81,13 +81,6 @@ His current research interests lie in Large Language/Multimodal Models, Video Ge
   <div class="publication-resources"><a class="publication-resource" href="https://arxiv.org/pdf/2602.09443" target="_blank" rel="noopener">PDF</a></div>
 </article>
 
-## 🎯Video Generation
-
-<article class="publication-item">
-  <p class="publication-main"><span class="conf arxiv">arXiv 2026</span> <a href="https://zhengsh123.github.io/V-Bridge/">V-Bridge: Bridging Video Generative Priors to Versatile Few-shot Image Restoration</a> <strong>Shenghe Zheng</strong>, Junpeng Jiang, Wenbo Li.</p>
-  <div class="publication-resources"><a class="publication-resource" href="https://arxiv.org/pdf/2603.13089" target="_blank" rel="noopener">PDF</a><a class="publication-resource" href="https://github.com/Zhengsh123/V-Bridge" target="_blank" rel="noopener">Code</a><a class="publication-resource" href="https://zhengsh123.github.io/V-Bridge/" target="_blank" rel="noopener">Website</a><a class="publication-resource" href="https://huggingface.co/desimfj/V-Bridge" target="_blank" rel="noopener">Model</a></div>
-</article>
-
 ## 🎯Embodied AI
 
 <article class="publication-item">
@@ -98,6 +91,13 @@ His current research interests lie in Large Language/Multimodal Models, Video Ge
 <article class="publication-item">
   <p class="publication-main"><span class="conf tech-report">Tech Report</span> <a href="https://arxiv.org/abs/2609.00188">ZimaBlue: Evolving Generalizable World Action Models through Scalable Video Pre-training</a> Xionghao Wu, Yijun Yang, Shiyang Zhou, Haoze Sun, Jianhui Liu, Songsong Yu, Jiyao Zhang, Wenbo Li, Bo Wang, Guoqing Ma, Lin Song, Renjie Liao, <strong>Shenghe Zheng</strong>, Wei Tang, Xiaojuan Qi, Yanwei Li, Yuan Zhang, Zhuotao Tian, Haoyang Huang, Nan Duan.</p>
   <div class="publication-resources"><a class="publication-resource" href="https://arxiv.org/pdf/2609.00188" target="_blank" rel="noopener">PDF</a></div>
+</article>
+
+## 🎯Video Generation
+
+<article class="publication-item">
+  <p class="publication-main"><span class="conf arxiv">arXiv 2026</span> <a href="https://zhengsh123.github.io/V-Bridge/">V-Bridge: Bridging Video Generative Priors to Versatile Few-shot Image Restoration</a> <strong>Shenghe Zheng</strong>, Junpeng Jiang, Wenbo Li.</p>
+  <div class="publication-resources"><a class="publication-resource" href="https://arxiv.org/pdf/2603.13089" target="_blank" rel="noopener">PDF</a><a class="publication-resource" href="https://github.com/Zhengsh123/V-Bridge" target="_blank" rel="noopener">Code</a><a class="publication-resource" href="https://zhengsh123.github.io/V-Bridge/" target="_blank" rel="noopener">Website</a><a class="publication-resource" href="https://huggingface.co/desimfj/V-Bridge" target="_blank" rel="noopener">Model</a></div>
 </article>
 
 
